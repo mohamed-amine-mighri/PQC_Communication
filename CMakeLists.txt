@@ -1,24 +1,35 @@
 cmake_minimum_required(VERSION 3.10)
-project(dsa C)
+project(dsa_local C)
 
 set(CMAKE_C_STANDARD 11)
 
-# MQTT comm
-find_library(MQTT_LIB NAMES paho-mqtt3c PATHS /usr/lib/aarch64-linux-gnu/libpaho-mqtt3c.so REQUIRED)
-include_directories(/usr/include ${CMAKE_SOURCE_DIR})
+# ---------------- liboqs ----------------
+find_library(OQS_LIB oqs PATHS /usr/local/lib /usr/lib REQUIRED)
+include_directories(/usr/local/include ${CMAKE_SOURCE_DIR})
 
+add_executable(dsa_local DSA-Test-local.c)
+target_link_libraries(dsa_local PRIVATE ${OQS_LIB})
 
-# UART comm
-find_library(WIRINGPI_LIB wiringPi REQUIRED) 
+# (Optionnel) pingpong UART si tu veux le garder
+find_library(WIRINGPI_LIB wiringPi)
+if(WIRINGPI_LIB)
+  add_executable(pingpong pingpong.c)
+  target_link_libraries(pingpong PRIVATE ${WIRINGPI_LIB})
+endif()
 
-# ML-KEM lib
-find_library(OQS_LIB oqs PATHS /usr/local/lib)
-include_directories(/usr/local/include ${CMAKE_SOURCE_DIR}) 
+# ---------------- OpenSSL (RSA ref) ----------------
+# Pour activer: cmake -DUSE_OPENSSL=ON ..
+option(USE_OPENSSL "Enable OpenSSL RSA reference" OFF)
 
-# Test prorgam for UART
-add_executable(pingpong pingpong.c)
-target_link_libraries(pingpong PRIVATE ${WIRINGPI_LIB})
+if(USE_OPENSSL)
+  find_package(OpenSSL REQUIRED)
 
-# ML-KEM exec client
-add_executable(DSA_tests DSA-Test.c transport.c queue.c)
-target_link_libraries(DSA_tests ${WIRINGPI_LIB} ${OQS_LIB} ${MQTT_LIB})
+  # Active le #ifdef USE_OPENSSL dans ton code C
+  target_compile_definitions(dsa_local PRIVATE USE_OPENSSL)
+
+  # Inclut headers OpenSSL (souvent déjà inclus via OpenSSL::Crypto, mais sûr)
+  target_include_directories(dsa_local PRIVATE ${OPENSSL_INCLUDE_DIR})
+
+  # Link libcrypto
+  target_link_libraries(dsa_local PRIVATE OpenSSL::Crypto)
+endif()
