@@ -1,0 +1,3 @@
+[submodule "KEM_Argon"]
+	path = KEM_Argon
+	url = git@github.com:mohamed-amine-mighri/KEM_Argon.git
