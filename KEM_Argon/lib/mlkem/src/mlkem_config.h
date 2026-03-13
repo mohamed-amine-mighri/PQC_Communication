@@ -1,0 +1,10 @@
+#ifndef MLKEM_CONFIG_H
+#define MLKEM_CONFIG_H
+
+// ML-KEM Configuration
+// Uncomment one of the following
+#define PQCLEAN_MLKEM512_CLEAN_CRYPTO_ALGNAME
+// #define PQCLEAN_MLKEM768_CLEAN_CRYPTO_ALGNAME
+// #define PQCLEAN_MLKEM1024_CLEAN_CRYPTO_ALGNAME
+
+#endif

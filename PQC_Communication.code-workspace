@@ -1,0 +1,15 @@
+{
+  "folders": [
+    {
+      "path": "Hybrid_SIDH_ECDH_Bench_kyber",
+      "name": "Hybrid_SIDH_ECDH"
+    },
+    {
+      "path": "KEM_Argon",
+      "name": "KEM_Argon"
+    }
+  ],
+  "settings": {
+    "cmake.sourceDirectory": "${workspaceFolder}"
+  }
+}

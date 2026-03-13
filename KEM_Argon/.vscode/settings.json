@@ -1,0 +1,7 @@
+{
+    "cmake.sourceDirectory": "C:/Users/Amine_Mighri/Desktop/ML-KEM-IOT$/ML-KEM_Argon/components/mlkem",
+    "idf.currentSetup": "C:\\Users\\Amine_Mighri\\esp\\v5.2.1\\esp-idf",
+    "particle.targetPlatform": "argon",
+    "particle.firmwareVersion": "6.2.1",
+    "particle.targetDevice": ""
+}
