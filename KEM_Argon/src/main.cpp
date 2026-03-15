@@ -74,7 +74,7 @@ void main_task() {
 }
 #elif defined(client)
 void main_task() {
-    Serial.println("Running as client. ML-KEM-512");
+    Serial.println("Running as client. ML-KEM-768");
     // wait_for_ack scans the incoming byte stream until the ASCII string "ACK" is found
     auto wait_for_ack = [&](uint32_t timeout_ms) {
         unsigned long start = millis();
@@ -108,45 +108,77 @@ void main_task() {
     uint8_t *ss = (uint8_t*)malloc(MLKEM_SHAREDSECRETBYTES);
     assert(ss);
 
-    // receive and parse public key
+    // receive and parse public key with chunked receive for robustness
     Serial.println("[HANDSHAKE] Waiting for public key message");
     message_struct_t pk_msg;
     if (!receive_queue_get(&pk_msg, 10000)) {
         Serial.println("[ERROR] Timeout waiting for public key message");
         return;
     }
+    uint16_t pk_len = 0;
+    uint8_t *pk = NULL;
+    
+    // Read 2-byte length header
     if (pk_msg.size < 2) {
-        Serial.println("[ERROR] Public key message too short");
+        Serial.println("[ERROR] Public key header too short");
         free(pk_msg.content);
+        free(ss);
         return;
     }
-    uint16_t pk_len = ((uint16_t)pk_msg.content[0] << 8) | pk_msg.content[1];
+    pk_len = ((uint16_t)pk_msg.content[0] << 8) | pk_msg.content[1];
     Serial.print("[HANDSHAKE] pk_len="); Serial.println(pk_len);
-    if (pk_msg.size != pk_len + 2) {
-        Serial.println("[ERROR] Public key message size mismatch");
-        free(pk_msg.content);
-        free(ss);
-        return;
-    }
-    if (pk_len != MLKEM_PUBLICKEYBYTES) {
-        Serial.println("[ERROR] Public key length != MLKEM_PUBLICKEYBYTES");
-        free(pk_msg.content);
-        free(ss);
-        return;
-    }
-    uint8_t *pk = (uint8_t*)malloc(pk_len);
+    
+    // Allocate buffer for public key
+    pk = (uint8_t*)malloc(pk_len);
     if (!pk) {
         Serial.println("[ERROR] malloc(pk) failed");
         free(pk_msg.content);
         free(ss);
         return;
     }
-    memcpy(pk, pk_msg.content + 2, pk_len);
+    
+    // Copy any payload bytes already in the first message
+    size_t pk_copied = 0;
+    if (pk_msg.size > 2) {
+        size_t chunk_size = pk_msg.size - 2;
+        if (chunk_size > pk_len) chunk_size = pk_len;
+        memcpy(pk, pk_msg.content + 2, chunk_size);
+        pk_copied = chunk_size;
+    }
     free(pk_msg.content);
+    
+    // Receive remaining public key chunks until complete
+    Serial.print("[HANDSHAKE] Received "); Serial.print((unsigned)pk_copied); Serial.print(" of "); Serial.print((unsigned)pk_len); Serial.println(" bytes");
+    while (pk_copied < pk_len) {
+        message_struct_t pk_chunk;
+        if (!receive_queue_get(&pk_chunk, 5000)) {
+            Serial.println("[ERROR] Timeout receiving public key chunk");
+            free(pk);
+            free(ss);
+            return;
+        }
+        size_t chunk_size = pk_chunk.size;
+        if (pk_copied + chunk_size > pk_len) {
+            chunk_size = pk_len - pk_copied;
+        }
+        memcpy(pk + pk_copied, pk_chunk.content, chunk_size);
+        pk_copied += chunk_size;
+        Serial.print("[HANDSHAKE] Received "); Serial.print((unsigned)pk_copied); Serial.print(" of "); Serial.print((unsigned)pk_len); Serial.println(" bytes");
+        free(pk_chunk.content);
+    }
     Serial.println("[HANDSHAKE] Public key received");
 
-    // encapsulate and send ciphertext
-    uint8_t *ct = (uint8_t*)malloc(MLKEM_CIPHERTEXTBYTES);
+    // encapsulate and send ciphertext (size depends on variant)
+    // Use MLKEM_CIPHERTEXTBYTES as the max, but allocate dynamically if needed
+    size_t ct_len = 0;
+    if (pk_len == 800) ct_len = 768; // Kyber512
+    else if (pk_len == 1184) ct_len = 1088; // Kyber768
+    else if (pk_len == 1568) ct_len = 1568; // Kyber1024 (ct_len == pk_len)
+    else {
+        // Fallback: try to use the largest possible
+        ct_len = MLKEM_CIPHERTEXTBYTES;
+    }
+    uint8_t *ct = (uint8_t*)malloc(ct_len);
     if (!ct) {
         Serial.println("[ERROR] malloc(ct) failed");
         free(pk);
@@ -158,11 +190,11 @@ void main_task() {
     Serial.println("[HANDSHAKE] Encapsulation done");
     free(pk);
     // First try raw ciphertext. If no response arrives, retry once with framed payload.
-    send_message_raw(ct, MLKEM_CIPHERTEXTBYTES);
+    send_message_raw(ct, ct_len);
     Serial.println("[HANDSHAKE] Ciphertext sent (raw)");
     Serial.println("Sent ciphertext. Waiting for shared secret...");
 
-    // read shared secret message from queue
+    // read shared secret message from queue with chunked receive
     Serial.println("[HANDSHAKE] Waiting for shared secret message");
     message_struct_t ss_msg;
     if (!receive_queue_get(&ss_msg, 5000)) {
@@ -181,43 +213,55 @@ void main_task() {
     uint8_t *received_ss = NULL;
     uint16_t ss_len = 0;
 
-    // Accept both framed ([len_hi len_lo][payload]) and raw payload formats.
-    if (ss_msg.size == MLKEM_SHAREDSECRETBYTES) {
-        ss_len = MLKEM_SHAREDSECRETBYTES;
-        received_ss = (uint8_t*)malloc(ss_len);
-        if (!received_ss) {
-            Serial.println("[ERROR] malloc(received_ss) failed");
-            free(ss_msg.content);
-            free(ss);
-            return;
-        }
-        memcpy(received_ss, ss_msg.content, ss_len);
-        Serial.print("[HANDSHAKE] ss_len(raw)="); Serial.println(ss_len);
-    } else if (ss_msg.size >= 2) {
-        ss_len = ((uint16_t)ss_msg.content[0] << 8) | ss_msg.content[1];
-        Serial.print("[HANDSHAKE] ss_len(framed)="); Serial.println(ss_len);
-        if (ss_msg.size != ss_len + 2) {
-            Serial.println("[ERROR] Shared secret message size mismatch");
-            free(ss_msg.content);
-            free(ss);
-            return;
-        }
-        received_ss = (uint8_t*)malloc(ss_len);
-        if (!received_ss) {
-            Serial.println("[ERROR] malloc(received_ss) failed");
-            free(ss_msg.content);
-            free(ss);
-            return;
-        }
-        memcpy(received_ss, ss_msg.content + 2, ss_len);
-    } else {
-        Serial.println("[ERROR] Shared secret message too short");
+    // Read 2-byte length header
+    if (ss_msg.size < 2) {
+        Serial.println("[ERROR] Shared secret header too short");
         free(ss_msg.content);
         free(ss);
         return;
     }
-
+    ss_len = ((uint16_t)ss_msg.content[0] << 8) | ss_msg.content[1];
+    Serial.print("[HANDSHAKE] ss_len="); Serial.println(ss_len);
+    
+    // Allocate buffer for shared secret
+    received_ss = (uint8_t*)malloc(ss_len);
+    if (!received_ss) {
+        Serial.println("[ERROR] malloc(received_ss) failed");
+        free(ss_msg.content);
+        free(ss);
+        return;
+    }
+    
+    // Copy any payload bytes already in the first message
+    size_t ss_copied = 0;
+    if (ss_msg.size > 2) {
+        size_t chunk_size = ss_msg.size - 2;
+        if (chunk_size > ss_len) chunk_size = ss_len;
+        memcpy(received_ss, ss_msg.content + 2, chunk_size);
+        ss_copied = chunk_size;
+    }
     free(ss_msg.content);
+    
+    // Receive remaining shared secret chunks until complete
+    Serial.print("[HANDSHAKE] Received "); Serial.print((unsigned)ss_copied); Serial.print(" of "); Serial.print((unsigned)ss_len); Serial.println(" bytes");
+    while (ss_copied < ss_len) {
+        message_struct_t ss_chunk;
+        if (!receive_queue_get(&ss_chunk, 5000)) {
+            Serial.println("[ERROR] Timeout receiving shared secret chunk");
+            free(received_ss);
+            free(ss);
+            return;
+        }
+        size_t chunk_size = ss_chunk.size;
+        if (ss_copied + chunk_size > ss_len) {
+            chunk_size = ss_len - ss_copied;
+        }
+        memcpy(received_ss + ss_copied, ss_chunk.content, chunk_size);
+        ss_copied += chunk_size;
+        Serial.print("[HANDSHAKE] Received "); Serial.print((unsigned)ss_copied); Serial.print(" of "); Serial.print((unsigned)ss_len); Serial.println(" bytes");
+        free(ss_chunk.content);
+    }
+
     if (memcmp(ss, received_ss, ss_len) == 0) {
         Serial.println("Shared secrets match!");
     } else {
@@ -267,7 +311,7 @@ void setup() {
         receiveThread = new Thread("receive_task", receive_task_entry, nullptr, OS_THREAD_PRIORITY_DEFAULT, 4096);
     }
     if (!mainThread) {
-        mainThread = new Thread("main_task", main_task_entry, nullptr, OS_THREAD_PRIORITY_DEFAULT, 12288);
+        mainThread = new Thread("main_task", main_task_entry, nullptr, OS_THREAD_PRIORITY_DEFAULT, 24576);
     }
     
     RGB.color(0, 0, 255);  // Blue for running
