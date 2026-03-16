@@ -1,0 +1,36 @@
+menu "DSA App"
+
+choice DSA_APP
+    prompt "Select application"
+    default DSA_APP_LOCAL
+
+config DSA_APP_LOCAL
+    bool "Local benchmark"
+
+config DSA_APP_INTEROP
+    bool "Interop (ESP32 <-> RPi)"
+endchoice
+
+choice TRANSPORT_LAYER
+    prompt "Select transport layer"
+    default UART_LAYER
+
+config UART_LAYER
+    bool "UART"
+
+config MQTT_LAYER
+    bool "MQTT"
+endchoice
+
+choice DSA_ROLE
+    prompt "Select role (Interop only)"
+    default ROLE_ALICE
+
+config ROLE_ALICE
+    bool "Alice (signer)"
+
+config ROLE_BOB
+    bool "Bob (verifier)"
+endchoice
+
+endmenu
