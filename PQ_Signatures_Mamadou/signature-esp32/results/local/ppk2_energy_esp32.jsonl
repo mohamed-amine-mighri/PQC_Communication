@@ -1,0 +1,13 @@
+
+{"alg":"ML-DSA-44","op":"keypair","mode":"idle","trial":1,"iters":30,"charge_C":0.24455,"avg_current_A":0.01435}
+{"alg":"ML-DSA-44","op":"keypair","mode":"run","trial":1,"iters":30,"charge_C":0.24636,"avg_current_A":0.01440}
+
+{"alg":"ML-DSA-44","op":"sign","mode":"idle","trial":1,"iters":30,"charge_C":0.24463,"avg_current_A":0.01435}
+{"alg":"ML-DSA-44","op":"sign","mode":"run","trial":1,"iters":30,"charge_C":0.24523,"avg_current_A":0.01439}
+
+{"alg":"ML-DSA-44","op":"verify","mode":"idle","trial":1,"iters":30,"charge_C":0.24347,"avg_current_A":0.01428}
+{"alg":"ML-DSA-44","op":"verify","mode":"run","trial":1,"iters":30,"charge_C":0.24571,"avg_current_A":0.01442}
+
+{"alg":"ML-DSA-44","op":"whole","mode":"idle","trial":1,"iters":30,"charge_C":0.24502,"avg_current_A":0.01438}
+{"alg":"ML-DSA-44","op":"whole","mode":"run","trial":1,"iters":30,"charge_C":0.24700,"avg_current_A":0.01449}
+
