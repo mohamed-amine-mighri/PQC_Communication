@@ -1,0 +1,283 @@
+{
+  "variant": "ML-KEM-768",
+  "device": "Particle Argon (nRF52840)",
+  "cpu_mhz": 64,
+  "total_ram_bytes": 262144,
+  "free_heap_at_start_bytes": 74352,
+  "num_iterations": 10,
+  "methodology": {
+    "timing": "micros() \u2014 nRF52840 hardware timer, 1 us resolution",
+    "stack": "pqm4 stack watermark (0xDEADBEEF canary painting below SP)",
+    "heap": "System.freeMemory() delta around malloc calls"
+  },
+  "buffer_sizes": {
+    "public_key_bytes": 1184,
+    "secret_key_bytes": 2400,
+    "ciphertext_bytes": 1088,
+    "shared_secret_bytes": 32
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "key_generation": {
+        "time_ms": 25.169,
+        "stack_bytes": 10408,
+        "heap_bytes": 3600
+      },
+      "encapsulation": {
+        "time_ms": 28.051,
+        "stack_bytes": 13560,
+        "heap_bytes": 1136
+      },
+      "decapsulation": {
+        "time_ms": 32.713,
+        "stack_bytes": 14608,
+        "heap_bytes": 40
+      },
+      "total_time_ms": 85.933,
+      "peak_heap_bytes": 4776,
+      "free_heap_before": 74080,
+      "free_heap_after": 74080,
+      "shared_secret_match": true
+    },
+    {
+      "iteration": 2,
+      "key_generation": {
+        "time_ms": 25.215,
+        "stack_bytes": 10424,
+        "heap_bytes": 3600
+      },
+      "encapsulation": {
+        "time_ms": 28.076,
+        "stack_bytes": 13568,
+        "heap_bytes": 1136
+      },
+      "decapsulation": {
+        "time_ms": 32.726,
+        "stack_bytes": 14708,
+        "heap_bytes": 40
+      },
+      "total_time_ms": 86.017,
+      "peak_heap_bytes": 4776,
+      "free_heap_before": 74080,
+      "free_heap_after": 74080,
+      "shared_secret_match": true
+    },
+    {
+      "iteration": 3,
+      "key_generation": {
+        "time_ms": 25.15,
+        "stack_bytes": 10424,
+        "heap_bytes": 3600
+      },
+      "encapsulation": {
+        "time_ms": 28.121,
+        "stack_bytes": 13560,
+        "heap_bytes": 1136
+      },
+      "decapsulation": {
+        "time_ms": 32.724,
+        "stack_bytes": 14624,
+        "heap_bytes": 40
+      },
+      "total_time_ms": 85.995,
+      "peak_heap_bytes": 4776,
+      "free_heap_before": 74080,
+      "free_heap_after": 74080,
+      "shared_secret_match": true
+    },
+    {
+      "iteration": 4,
+      "key_generation": {
+        "time_ms": 25.142,
+        "stack_bytes": 10424,
+        "heap_bytes": 3600
+      },
+      "encapsulation": {
+        "time_ms": 28.101,
+        "stack_bytes": 13644,
+        "heap_bytes": 1136
+      },
+      "decapsulation": {
+        "time_ms": 32.605,
+        "stack_bytes": 14624,
+        "heap_bytes": 40
+      },
+      "total_time_ms": 85.848,
+      "peak_heap_bytes": 4776,
+      "free_heap_before": 74080,
+      "free_heap_after": 74080,
+      "shared_secret_match": true
+    },
+    {
+      "iteration": 5,
+      "key_generation": {
+        "time_ms": 25.157,
+        "stack_bytes": 10408,
+        "heap_bytes": 3600
+      },
+      "encapsulation": {
+        "time_ms": 28.099,
+        "stack_bytes": 13560,
+        "heap_bytes": 1136
+      },
+      "decapsulation": {
+        "time_ms": 32.65,
+        "stack_bytes": 14608,
+        "heap_bytes": 40
+      },
+      "total_time_ms": 85.906,
+      "peak_heap_bytes": 4776,
+      "free_heap_before": 74080,
+      "free_heap_after": 74080,
+      "shared_secret_match": true
+    },
+    {
+      "iteration": 6,
+      "key_generation": {
+        "time_ms": 25.617,
+        "stack_bytes": 10508,
+        "heap_bytes": 3600
+      },
+      "encapsulation": {
+        "time_ms": 28.404,
+        "stack_bytes": 13544,
+        "heap_bytes": 1136
+      },
+      "decapsulation": {
+        "time_ms": 33.017,
+        "stack_bytes": 14608,
+        "heap_bytes": 40
+      },
+      "total_time_ms": 87.038,
+      "peak_heap_bytes": 4776,
+      "free_heap_before": 73584,
+      "free_heap_after": 73584,
+      "shared_secret_match": true
+    },
+    {
+      "iteration": 7,
+      "key_generation": {
+        "time_ms": 25.273,
+        "stack_bytes": 10408,
+        "heap_bytes": 3600
+      },
+      "encapsulation": {
+        "time_ms": 28.101,
+        "stack_bytes": 13644,
+        "heap_bytes": 1136
+      },
+      "decapsulation": {
+        "time_ms": 32.669,
+        "stack_bytes": 14608,
+        "heap_bytes": 40
+      },
+      "total_time_ms": 86.043,
+      "peak_heap_bytes": 4776,
+      "free_heap_before": 73584,
+      "free_heap_after": 73584,
+      "shared_secret_match": true
+    },
+    {
+      "iteration": 8,
+      "key_generation": {
+        "time_ms": 25.13,
+        "stack_bytes": 10408,
+        "heap_bytes": 3600
+      },
+      "encapsulation": {
+        "time_ms": 28.184,
+        "stack_bytes": 13560,
+        "heap_bytes": 1136
+      },
+      "decapsulation": {
+        "time_ms": 32.669,
+        "stack_bytes": 14608,
+        "heap_bytes": 40
+      },
+      "total_time_ms": 85.983,
+      "peak_heap_bytes": 4776,
+      "free_heap_before": 73584,
+      "free_heap_after": 73584,
+      "shared_secret_match": true
+    },
+    {
+      "iteration": 9,
+      "key_generation": {
+        "time_ms": 25.141,
+        "stack_bytes": 10408,
+        "heap_bytes": 3600
+      },
+      "encapsulation": {
+        "time_ms": 28.141,
+        "stack_bytes": 13644,
+        "heap_bytes": 1136
+      },
+      "decapsulation": {
+        "time_ms": 32.6,
+        "stack_bytes": 14608,
+        "heap_bytes": 40
+      },
+      "total_time_ms": 85.882,
+      "peak_heap_bytes": 4776,
+      "free_heap_before": 73584,
+      "free_heap_after": 73584,
+      "shared_secret_match": true
+    },
+    {
+      "iteration": 10,
+      "key_generation": {
+        "time_ms": 25.14,
+        "stack_bytes": 10424,
+        "heap_bytes": 3600
+      },
+      "encapsulation": {
+        "time_ms": 28.166,
+        "stack_bytes": 13560,
+        "heap_bytes": 1136
+      },
+      "decapsulation": {
+        "time_ms": 32.669,
+        "stack_bytes": 14708,
+        "heap_bytes": 40
+      },
+      "total_time_ms": 85.975,
+      "peak_heap_bytes": 4776,
+      "free_heap_before": 73584,
+      "free_heap_after": 73584,
+      "shared_secret_match": true
+    }
+  ],
+  "summary": {
+    "key_generation": {
+      "avg_time_ms": 25.213,
+      "min_time_ms": 25.13,
+      "max_time_ms": 25.617,
+      "stddev_time_ms": 0.148,
+      "avg_stack_bytes": 10424,
+      "stddev_stack_bytes": 30
+    },
+    "encapsulation": {
+      "avg_time_ms": 28.144,
+      "min_time_ms": 28.051,
+      "max_time_ms": 28.404,
+      "stddev_time_ms": 0.1,
+      "avg_stack_bytes": 13584,
+      "stddev_stack_bytes": 42
+    },
+    "decapsulation": {
+      "avg_time_ms": 32.704,
+      "min_time_ms": 32.6,
+      "max_time_ms": 33.017,
+      "stddev_time_ms": 0.118,
+      "avg_stack_bytes": 14631,
+      "stddev_stack_bytes": 41
+    },
+    "total": {
+      "avg_time_ms": 86.062,
+      "min_time_ms": 85.848,
+      "max_time_ms": 87.038,
+      "stddev_time_ms": 0.348
+    }
+  }
+}

@@ -42,8 +42,9 @@ extern "C" bool read_bytes(uint8_t *buf, size_t len, uint32_t timeout_ms) {
 }
 void mqtt_callback(char* topic, byte* payload, unsigned int length);
 // ML-KEM payloads (pk/ct + 2-byte length header) exceed the default 255-byte MQTT buffer.
-static const int MQTT_PACKET_SIZE = 1200;
-MQTT client("192.168.0.14", 1883, MQTT_PACKET_SIZE, mqtt_callback);
+// Kyber1024 public key = 1568 + 2 header + ~30 MQTT overhead => need at least 1700.
+static const int MQTT_PACKET_SIZE = 2048;
+MQTT client("192.168.0.11", 1883, MQTT_PACKET_SIZE, mqtt_callback);
 
 void mqtt_callback(char* topic, byte* payload, unsigned int length) {
     Serial.print("[MQTT] Received on topic ");
@@ -62,7 +63,6 @@ void mqtt_callback(char* topic, byte* payload, unsigned int length) {
 
     // control messages handled separately
     if (length >= 3 && memcmp(payload, "ACK", 3) == 0) {
-        // payload begins with ACK; consume those three bytes
         Serial.println("[MQTT] Detected raw ACK prefix");
         message_struct_t msg = { 
             .content = (uint8_t*)malloc(3), 
@@ -71,12 +71,11 @@ void mqtt_callback(char* topic, byte* payload, unsigned int length) {
         if (msg.content) {
             memcpy(msg.content, payload, 3);
             receive_queue_push(&msg);
+            Serial.println("[MQTT] ACK pushed to queue");
         }
-        // if there are remaining bytes, fall through and append them
         if (length == 3) {
             return;
         }
-        // shift pointer past the ACK
         payload += 3;
         length -= 3;
         Serial.print("[MQTT] Leaving ");
@@ -92,6 +91,7 @@ void mqtt_callback(char* topic, byte* payload, unsigned int length) {
         if (msg.content) {
             memcpy(msg.content, payload, 5);
             receive_queue_push(&msg);
+            Serial.println("[MQTT] READY pushed to queue");
         }
         if (length == 5) {
             return;
@@ -103,9 +103,11 @@ void mqtt_callback(char* topic, byte* payload, unsigned int length) {
         Serial.println(" bytes for data buffer");
     }
 
-    // Forward remaining payload as one framed message to the handshake queue.
-    // MQTT preserves message boundaries, so each publish maps to one queue item.
+    // For non-control messages, always push the entire payload to queue
     if (length > 0) {
+        Serial.print("[MQTT] Pushing ");
+        Serial.print((unsigned)length);
+        Serial.println(" bytes to queue");
         message_struct_t msg = {
             .content = (uint8_t*)malloc(length),
             .size = length
@@ -113,8 +115,10 @@ void mqtt_callback(char* topic, byte* payload, unsigned int length) {
         if (msg.content) {
             memcpy(msg.content, payload, length);
             receive_queue_push(&msg);
+            Serial.println("[MQTT] Message pushed successfully");
+        } else {
+            Serial.println("[MQTT] ERROR: malloc failed");
         }
-
         // Keep legacy byte-stream mirror for compatibility with read_bytes().
         std::lock_guard<std::mutex> lock(data_mutex);
         for (unsigned int i = 0; i < length; ++i) {
@@ -128,7 +132,9 @@ extern "C" {
         WiFi.connect();
         waitUntil(WiFi.ready);
         client.connect("argonClient");
-        client.subscribe("mlkem/esp32/server_send");
+        client.subscribe("mlkem/esp32/server_send"); // legacy (public key, shared secret)
+        client.subscribe("mlkem/esp32/public_key");  // new (public key)
+        client.subscribe("mlkem/esp32/shared_secret"); // new (shared secret)
         initialized = true;
     }
 
