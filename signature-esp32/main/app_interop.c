@@ -39,6 +39,9 @@ enum ROLE { ALICE, BOB };
 
 // ---------------- Algorithms list ----------------
 static enum DSA_ALGO algorithms[] = {
+
+ML_DSA_44
+    /*
     FALCON_512,
     FALCON_1024,
     FALCON_PADDED_512,
@@ -57,7 +60,7 @@ static enum DSA_ALGO algorithms[] = {
     SPHINCS_SHAKE_192F,
     SPHINCS_SHAKE_192S,
     SPHINCS_SHAKE_256F,
-    SPHINCS_SHAKE_256S
+    SPHINCS_SHAKE_256S */
 };
 static const size_t num_algorithms = sizeof(algorithms) / sizeof(algorithms[0]);
 

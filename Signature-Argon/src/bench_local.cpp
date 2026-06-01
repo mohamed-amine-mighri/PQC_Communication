@@ -105,7 +105,7 @@ static void run_one_bench_op(DSA_ALGO algo);
 #endif
 
 #ifndef BENCH_ALG
-#define BENCH_ALG "SPHINCS_SHAKE_128S"
+#define BENCH_ALG "ML_DSA_44"
 #endif
 
 // ---------- Diagnostics ----------
