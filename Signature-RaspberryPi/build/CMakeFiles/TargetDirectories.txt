@@ -1,0 +1,3 @@
+/home/raspberrypi/Signature-RaspberryPi/build/CMakeFiles/DSA_tests.dir
+/home/raspberrypi/Signature-RaspberryPi/build/CMakeFiles/edit_cache.dir
+/home/raspberrypi/Signature-RaspberryPi/build/CMakeFiles/rebuild_cache.dir
