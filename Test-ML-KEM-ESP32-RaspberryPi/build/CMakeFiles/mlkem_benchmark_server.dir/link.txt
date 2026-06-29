@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/mlkem_benchmark_server.dir/mlkem_benchmark_server.c.o -o mlkem_benchmark_server  -Wl,-rpath,/usr/local/lib /usr/local/lib/liboqs.so /usr/lib/aarch64-linux-gnu/libpaho-mqtt3c.so /usr/lib/aarch64-linux-gnu/libcrypto.so 
