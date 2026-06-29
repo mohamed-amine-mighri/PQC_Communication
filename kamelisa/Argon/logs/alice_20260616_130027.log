@@ -1,0 +1,43 @@
+﻿==== serial log start 2026-06-16 13:00:27  port=COM8 ====
+(host 13:00:31.340) ========================================
+(host 13:00:31.358) PQC Signature Test - Particle Argon
+(host 13:00:31.360) ========================================
+(host 13:00:31.361) [TRANSPORT] Starting WiFi...
+(host 13:00:31.363) [TRANSPORT] Connecting to SSID: kamelisa  Broker: 192.168.137.1:1883
+(host 13:00:40.835) ...................
+(host 13:00:40.847) [TRANSPORT] WiFi connected! IP: 192.168.137.19  RSSI: 100 dBm
+(host 13:00:40.850) [TRANSPORT] Setting up MQTT...
+(host 13:00:40.858) [MQTT] Attempting to connect...
+(host 13:00:40.862) [MQTT] TCP connected!
+(host 13:00:40.963) [MQTT] Client ID: argon-alice-e00fce68
+(host 13:00:41.107) [MQTT] CONNACK received - connected!
+(host 13:00:41.109) [MQTT] Subscribed to dsa/bob/send
+(host 13:00:41.110) [INIT] Waiting for MQTT...
+(host 13:00:41.111) [INIT] MQTT connected!
+(host 13:00:41.113) [INIT] Syncing time from Particle Cloud...
+(host 13:00:41.508) [INIT] Time synced: 2026-06-16T13:00:40-04:00
+(host 13:00:42.510) [SYNC] Starting as Alice
+(host 13:00:42.512) [MQTT] Full message ready (5 bytes)
+(host 13:00:42.513) [SYNC] READY received
+(host 13:00:42.515) [MQTT_SEND] Sending 3 bytes to dsa/alice/send
+(host 13:00:42.519) [MQTT_PUB] Published 5 bytes to dsa/alice/send
+(host 13:00:44.011) ========================================
+(host 13:00:44.015) [2026-06-16 13:00:42:066] ROUND 1 START FALCON_512 (Alice)
+(host 13:00:44.020) ========================================
+(host 13:00:44.022) [ALICE] Free heap: 104736 bytes
+(host 13:00:44.024) [ALICE] Keygen (PK:897 SK:1281 SIG:752)
+(host 13:00:47.197) [2026-06-16 13:00:45:250] [ALICE] Keygen: 3183144 us
+(host 13:00:47.205) [ALICE] Sending PK (897 bytes)
+(host 13:00:47.209) [MQTT_SEND] Sending 897 bytes to dsa/alice/send
+(host 13:00:47.212) [MQTT_PUB] Published 899 bytes to dsa/alice/send
+(host 13:00:47.901) [MQTT] Full message ready (11 bytes)
+(host 13:00:47.907) [ALICE] pk_received, signing now
+(host 13:00:49.021) [2026-06-16 13:00:47:074] [ALICE] Sign: 1120970 us
+(host 13:00:49.026) [ALICE] Ensuring MQTT connection before sending SM...
+(host 13:00:50.020) [MQTT_SEND] Sending 678 bytes to dsa/alice/send
+(host 13:00:50.022) [MQTT_PUB] Published 680 bytes to dsa/alice/send
+(host 13:00:50.024) [ALICE] SM sent (678 bytes)
+(host 13:00:50.026) [ALICE] Waiting for verification response
+(host 13:00:50.623) [MQTT] Full message ready (20 bytes)
+(host 13:00:50.627) [2026-06-16 13:00:49:678] [ALICE] SUCCESS: Verified!
+(host 13:00:50.645) [2026-06-16 13:00:49:679] ROUND 1 PASS: FALCON_512

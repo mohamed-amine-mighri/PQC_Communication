@@ -1,0 +1,320 @@
+====================
+Starting ML-KEM Argon
+====================
+Reset reason: 70
+Running in BENCHMARK MODE
+Benchmark thread started (32KB stack).
+========================================
+[BENCHMARK] Variant    : ML-KEM-1024
+[BENCHMARK] Iterations : 10
+[BENCHMARK] Free heap  : 74352 bytes
+[BENCHMARK] Buffers    : PK=1568  SK=3168  CT=1568  SS=32
+[BENCHMARK] Stack meas : pqm4 watermark (0xDEADBEEF)
+[BENCHMARK] Timer      : micros() (nRF52840 HW, 1us)
+========================================
+[BENCHMARK] Warmup...
+[BENCHMARK] Warmup: KG=39.971 ms (15544 B)  EN=43.340 ms (19284 B)  DE=49.027 ms (20480 B)
+[BENCHMARK] Warmup done (discarded).
+Iter  1 | KG:  40.030 ms (15628 B)  EN:  43.196 ms (19200 B)  DE:  49.086 ms (20480 B)  Tot: 132.312 ms | OK
+Iter  2 | KG:  39.981 ms (15544 B)  EN:  43.346 ms (19200 B)  DE:  48.990 ms (20480 B)  Tot: 132.317 ms | OK
+Iter  3 | KG:  39.948 ms (15544 B)  EN:  43.333 ms (19208 B)  DE:  49.043 ms (20480 B)  Tot: 132.324 ms | OK
+Iter  4 | KG:  40.035 ms (15628 B)  EN:  43.287 ms (19284 B)  DE:  58.776 ms (20480 B)  Tot: 142.098 ms | OK
+Iter  5 | KG:  39.970 ms (15544 B)  EN:  43.403 ms (19284 B)  DE:  48.971 ms (20480 B)  Tot: 132.344 ms | OK
+Iter  6 | KG:  40.061 ms (15528 B)  EN:  43.161 ms (19208 B)  DE:  49.064 ms (20480 B)  Tot: 132.286 ms | OK
+Iter  7 | KG:  39.962 ms (15544 B)  EN:  43.280 ms (19200 B)  DE:  48.988 ms (20480 B)  Tot: 132.230 ms | OK
+Iter  8 | KG:  39.936 ms (15644 B)  EN:  43.367 ms (19300 B)  DE:  49.023 ms (20480 B)  Tot: 132.326 ms | OK
+Iter  9 | KG:  39.915 ms (15544 B)  EN:  43.257 ms (19184 B)  DE:  49.035 ms (20480 B)  Tot: 132.207 ms | OK
+Iter 10 | KG:  39.973 ms (15528 B)  EN:  43.054 ms (19200 B)  DE:  49.093 ms (20480 B)  Tot: 132.120 ms | OK
+===== AVERAGES =====
+Key Generation :  39.981 ms  |  Stack: 15568 bytes
+Encapsulation  :  43.268 ms  |  Stack: 19227 bytes
+Decapsulation  :  50.007 ms  |  Stack: 20480 bytes
+Total          : 133.256 ms
+====================
+===JSON_START===
+{
+"variant": "ML-KEM-1024",
+"device": "Particle Argon (nRF52840)",
+"cpu_mhz": 64,
+"total_ram_bytes": 262144,
+"free_heap_at_start_bytes": 74352,
+"num_iterations": 10,
+"methodology": {
+"timing": "micros() — nRF52840 hardware timer, 1 us resolution",
+"stack": "pqm4 stack watermark (0xDEADBEEF canary painting below SP)",
+"heap": "System.freeMemory() delta around malloc calls"
+},
+"buffer_sizes": {
+"public_key_bytes": 1568,
+"secret_key_bytes": 3168,
+"ciphertext_bytes": 1568,
+"shared_secret_bytes": 32
+},
+"iterations": [
+{
+"iteration": 1,
+"key_generation": {
+"time_ms": 40.030,
+"stack_bytes": 15628,
+"heap_bytes": 4752
+},
+"encapsulation": {
+"time_ms": 43.196,
+"stack_bytes": 19200,
+"heap_bytes": 1616
+},
+"decapsulation": {
+"time_ms": 49.086,
+"stack_bytes": 20480,
+"heap_bytes": 40
+},
+"total_time_ms": 132.312,
+"peak_heap_bytes": 6408,
+"free_heap_before": 74080,
+"free_heap_after": 74080,
+"shared_secret_match": true
+},
+{
+"iteration": 2,
+"key_generation": {
+"time_ms": 39.981,
+"stack_bytes": 15544,
+"heap_bytes": 4752
+},
+"encapsulation": {
+"time_ms": 43.346,
+"stack_bytes": 19200,
+"heap_bytes": 1616
+},
+"decapsulation": {
+"time_ms": 48.990,
+"stack_bytes": 20480,
+"heap_bytes": 40
+},
+"total_time_ms": 132.317,
+"peak_heap_bytes": 6408,
+"free_heap_before": 74080,
+"free_heap_after": 74080,
+"shared_secret_match": true
+},
+{
+"iteration": 3,
+"key_generation": {
+"time_ms": 39.948,
+"stack_bytes": 15544,
+"heap_bytes": 4752
+},
+"encapsulation": {
+"time_ms": 43.333,
+"stack_bytes": 19208,
+"heap_bytes": 1616
+},
+"decapsulation": {
+"time_ms": 49.043,
+"stack_bytes": 20480,
+"heap_bytes": 40
+},
+"total_time_ms": 132.324,
+"peak_heap_bytes": 6408,
+"free_heap_before": 74080,
+"free_heap_after": 74080,
+"shared_secret_match": true
+},
+{
+"iteration": 4,
+"key_generation": {
+"time_ms": 40.035,
+"stack_bytes": 15628,
+"heap_bytes": 4752
+},
+"encapsulation": {
+"time_ms": 43.287,
+"stack_bytes": 19284,
+"heap_bytes": 1616
+},
+"decapsulation": {
+"time_ms": 58.776,
+"stack_bytes": 20480,
+"heap_bytes": 40
+},
+"total_time_ms": 142.098,
+"peak_heap_bytes": 6408,
+"free_heap_before": 74080,
+"free_heap_after": 73584,
+"shared_secret_match": true
+},
+{
+"iteration": 5,
+"key_generation": {
+"time_ms": 39.970,
+"stack_bytes": 15544,
+"heap_bytes": 4752
+},
+"encapsulation": {
+"time_ms": 43.403,
+"stack_bytes": 19284,
+"heap_bytes": 1616
+},
+"decapsulation": {
+"time_ms": 48.971,
+"stack_bytes": 20480,
+"heap_bytes": 40
+},
+"total_time_ms": 132.344,
+"peak_heap_bytes": 6408,
+"free_heap_before": 73584,
+"free_heap_after": 73584,
+"shared_secret_match": true
+},
+{
+"iteration": 6,
+"key_generation": {
+"time_ms": 40.061,
+"stack_bytes": 15528,
+"heap_bytes": 4752
+},
+"encapsulation": {
+"time_ms": 43.161,
+"stack_bytes": 19208,
+"heap_bytes": 1616
+},
+"decapsulation": {
+"time_ms": 49.064,
+"stack_bytes": 20480,
+"heap_bytes": 40
+},
+"total_time_ms": 132.286,
+"peak_heap_bytes": 6408,
+"free_heap_before": 73584,
+"free_heap_after": 73584,
+"shared_secret_match": true
+},
+{
+"iteration": 7,
+"key_generation": {
+"time_ms": 39.962,
+"stack_bytes": 15544,
+"heap_bytes": 4752
+},
+"encapsulation": {
+"time_ms": 43.280,
+"stack_bytes": 19200,
+"heap_bytes": 1616
+},
+"decapsulation": {
+"time_ms": 48.988,
+"stack_bytes": 20480,
+"heap_bytes": 40
+},
+"total_time_ms": 132.230,
+"peak_heap_bytes": 6408,
+"free_heap_before": 73584,
+"free_heap_after": 73584,
+"shared_secret_match": true
+},
+{
+"iteration": 8,
+"key_generation": {
+"time_ms": 39.936,
+"stack_bytes": 15644,
+"heap_bytes": 4752
+},
+"encapsulation": {
+"time_ms": 43.367,
+"stack_bytes": 19300,
+"heap_bytes": 1616
+},
+"decapsulation": {
+"time_ms": 49.023,
+"stack_bytes": 20480,
+"heap_bytes": 40
+},
+"total_time_ms": 132.326,
+"peak_heap_bytes": 6408,
+"free_heap_before": 73584,
+"free_heap_after": 73584,
+"shared_secret_match": true
+},
+{
+"iteration": 9,
+"key_generation": {
+"time_ms": 39.915,
+"stack_bytes": 15544,
+"heap_bytes": 4752
+},
+"encapsulation": {
+"time_ms": 43.257,
+"stack_bytes": 19184,
+"heap_bytes": 1616
+},
+"decapsulation": {
+"time_ms": 49.035,
+"stack_bytes": 20480,
+"heap_bytes": 40
+},
+"total_time_ms": 132.207,
+"peak_heap_bytes": 6408,
+"free_heap_before": 73584,
+"free_heap_after": 73584,
+"shared_secret_match": true
+},
+{
+"iteration": 10,
+"key_generation": {
+"time_ms": 39.973,
+"stack_bytes": 15528,
+"heap_bytes": 4752
+},
+"encapsulation": {
+"time_ms": 43.054,
+"stack_bytes": 19200,
+"heap_bytes": 1616
+},
+"decapsulation": {
+"time_ms": 49.093,
+"stack_bytes": 20480,
+"heap_bytes": 40
+},
+"total_time_ms": 132.120,
+"peak_heap_bytes": 6408,
+"free_heap_before": 73584,
+"free_heap_after": 73584,
+"shared_secret_match": true
+}
+],
+"summary": {
+"key_generation": {
+"avg_time_ms": 39.981,
+"min_time_ms": 39.915,
+"max_time_ms": 40.061,
+"stddev_time_ms": 0.047,
+"avg_stack_bytes": 15568,
+"stddev_stack_bytes": 46
+},
+"encapsulation": {
+"avg_time_ms": 43.268,
+"min_time_ms": 43.054,
+"max_time_ms": 43.403,
+"stddev_time_ms": 0.106,
+"avg_stack_bytes": 19227,
+"stddev_stack_bytes": 44
+},
+"decapsulation": {
+"avg_time_ms": 50.007,
+"min_time_ms": 48.971,
+"max_time_ms": 58.776,
+"stddev_time_ms": 3.081,
+"avg_stack_bytes": 20480,
+"stddev_stack_bytes": 0
+},
+"total": {
+"avg_time_ms": 133.256,
+"min_time_ms": 132.120,
+"max_time_ms": 142.098,
+"stddev_time_ms": 3.107
+}
+}
+}
+===JSON_END===
+[BENCHMARK] Complete.
+Benchmark mode complete. Device idle.

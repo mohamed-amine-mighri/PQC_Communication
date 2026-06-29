@@ -1,0 +1,470 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{siunitx}
+
+\geometry{margin=2.5cm}
+
+\sisetup{
+  per-mode=symbol,
+  group-separator={,},
+}
+
+\title{Theoretical Radio Energy Consumption per Byte\\for Three IoT Platforms over Wi-Fi}
+\author{}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+
+%==========================================================================
+\section{Introduction}
+%==========================================================================
+
+This document presents a theoretical analysis of the energy consumed by the
+Wi-Fi radio of three IoT platforms when transmitting one byte of data.
+The three boards considered are:
+
+\begin{enumerate}
+  \item \textbf{Raspberry~Pi~3~Model~B} — Broadcom BCM2837 SoC with
+        Infineon CYW43438 Wi-Fi/BT combo chip.
+  \item \textbf{ESP32-WROOM-32} — Espressif ESP32 SoC with integrated
+        Wi-Fi radio.
+  \item \textbf{Particle Argon} — Nordic nRF52840 MCU + Espressif ESP32
+        Wi-Fi co-processor.
+\end{enumerate}
+
+All three platforms support IEEE~802.11\,b/g/n at \SI{2.4}{\GHz}.
+
+%==========================================================================
+\section{Datasheet Source Parameters}
+%==========================================================================
+
+Table~\ref{tab:hw-params} summarises the key hardware parameters taken from
+the official datasheets of each platform.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Hardware and radio parameters from datasheets.}
+  \label{tab:hw-params}
+  \begin{tabular}{@{}lccc@{}}
+    \toprule
+    \textbf{Parameter}
+      & \textbf{RPi\,3 (CYW43438)}
+      & \textbf{ESP32-WROOM}
+      & \textbf{Particle Argon} \\
+    \midrule
+    Wi-Fi Standard       & 802.11\,b/g/n & 802.11\,b/g/n & 802.11\,b/g/n \\
+    Frequency Band       & \SI{2.4}{\GHz} & \SI{2.4}{\GHz} & \SI{2.4}{\GHz} \\
+    Supply Voltage       & \SI{3.3}{\volt} & \SI{3.3}{\volt} & \SI{3.3}{\volt} \\
+    Max PHY Rate (HT20)  & \SI{72.2}{\Mbps} & \SI{72.2}{\Mbps} & \SI{72.2}{\Mbps} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+%--------------------------------------------------------------------------
+\subsection{TX Current Consumption}
+%--------------------------------------------------------------------------
+
+Table~\ref{tab:tx-current} lists the transmit current for each 802.11 mode
+as reported in the respective datasheets.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Radio TX current by 802.11 mode (datasheet values).}
+  \label{tab:tx-current}
+  \begin{tabular}{@{}lccc@{}}
+    \toprule
+    \textbf{802.11 Mode}
+      & \textbf{CYW43438\textsuperscript{1}}
+      & \textbf{ESP32\textsuperscript{2}}
+      & \textbf{Argon\textsuperscript{3}} \\
+    \midrule
+    802.11b @ \SI{11}{\Mbps}       & \SI{340}{\mA} & \SI{240}{\mA} & \SI{247}{\mA} \\
+    802.11g @ \SI{54}{\Mbps}       & \SI{270}{\mA} & \SI{190}{\mA} & \SI{197}{\mA} \\
+    802.11n MCS7 @ \SI{72.2}{\Mbps} & \SI{250}{\mA} & \SI{180}{\mA} & \SI{187}{\mA} \\
+    \bottomrule
+  \end{tabular}
+
+  \vspace{4pt}
+  \footnotesize
+  \textsuperscript{1}\,Infineon CYW43438 Datasheet.\quad
+  \textsuperscript{2}\,Espressif ESP32 Datasheet v4.6, Table~12.\quad
+  \textsuperscript{3}\,ESP32 radio + nRF52840 MCU overhead
+  (${\approx}\SI{7}{\mA}$); confirmed by Particle Argon Datasheet peak of
+  \SI{261}{\mA}.
+\end{table}
+
+%==========================================================================
+\section{Energy per Byte at the PHY Layer}
+%==========================================================================
+
+The energy required to transmit one byte at the physical layer is:
+
+\begin{equation}
+  \label{eq:energy-byte}
+  E_{\text{byte}}
+    = \frac{V \times I_{\text{TX}} \times 8}{R_{\text{data}}}
+    \quad [\si{\joule\per\byte}]
+\end{equation}
+
+where $V$ is the supply voltage (\si{\volt}), $I_{\text{TX}}$ the transmit
+current (\si{\ampere}), and $R_{\text{data}}$ the PHY data rate
+(\si{\bit\per\second}).
+
+%--------------------------------------------------------------------------
+\subsection{802.11n MCS7 HT20 (\SI{72.2}{\Mbps}) — Best Case}
+%--------------------------------------------------------------------------
+
+\begin{table}[htbp]
+  \centering
+  \caption{PHY-layer energy per byte — 802.11n MCS7 (\SI{72.2}{\Mbps}).}
+  \label{tab:phy-11n}
+  \begin{tabular}{@{}lccc@{}}
+    \toprule
+    \textbf{Board}
+      & $\boldsymbol{P_{\text{TX}}}$ \textbf{(\si{\mW})}
+      & \textbf{Calculation}
+      & $\boldsymbol{E_{\text{byte}}}$ \textbf{(\si{\nJ/byte})} \\
+    \midrule
+    Raspberry Pi\,3
+      & $3.3 \times 250 = 825$
+      & $\dfrac{825 \times 8}{72.2}$
+      & \textbf{91.4} \\[8pt]
+    ESP32-WROOM
+      & $3.3 \times 180 = 594$
+      & $\dfrac{594 \times 8}{72.2}$
+      & \textbf{65.8} \\[8pt]
+    Particle Argon
+      & $3.3 \times 187 = 617$
+      & $\dfrac{617 \times 8}{72.2}$
+      & \textbf{68.3} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+%--------------------------------------------------------------------------
+\subsection{802.11g (\SI{54}{\Mbps})}
+%--------------------------------------------------------------------------
+
+\begin{table}[htbp]
+  \centering
+  \caption{PHY-layer energy per byte — 802.11g (\SI{54}{\Mbps}).}
+  \label{tab:phy-11g}
+  \begin{tabular}{@{}lcc@{}}
+    \toprule
+    \textbf{Board}
+      & $\boldsymbol{P_{\text{TX}}}$ \textbf{(\si{\mW})}
+      & $\boldsymbol{E_{\text{byte}}}$ \textbf{(\si{\nJ/byte})} \\
+    \midrule
+    Raspberry Pi\,3  & 891 & \textbf{132.0} \\
+    ESP32-WROOM      & 627 & \textbf{92.9}  \\
+    Particle Argon   & 650 & \textbf{96.3}  \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+%--------------------------------------------------------------------------
+\subsection{802.11b (\SI{11}{\Mbps}) — Worst Case}
+%--------------------------------------------------------------------------
+
+\begin{table}[htbp]
+  \centering
+  \caption{PHY-layer energy per byte — 802.11b (\SI{11}{\Mbps}).}
+  \label{tab:phy-11b}
+  \begin{tabular}{@{}lcc@{}}
+    \toprule
+    \textbf{Board}
+      & $\boldsymbol{P_{\text{TX}}}$ \textbf{(\si{\mW})}
+      & $\boldsymbol{E_{\text{byte}}}$ \textbf{(\si{\nJ/byte})} \\
+    \midrule
+    Raspberry Pi\,3  & 1122 & \textbf{816.0} \\
+    ESP32-WROOM      & 792  & \textbf{576.0} \\
+    Particle Argon   & 815  & \textbf{592.7} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+%==========================================================================
+\section{Realistic IoT Scenario: Small MQTT Packets}
+%==========================================================================
+
+At the PHY layer, a 256-byte payload takes only ${\approx}\SI{28}{\us}$ at
+\SI{72.2}{\Mbps}.  However, Wi-Fi protocol overhead (DIFS, back-off,
+preamble, MAC header, SIFS, ACK) adds ${\approx}\SI{180}{\us}$, making the
+effective air-time ${\approx}\SI{210}{\us}$ per frame.
+
+During this time, the radio alternates between TX and RX/idle states:
+
+\begin{table}[htbp]
+  \centering
+  \caption{Time-domain breakdown of a single 256-byte Wi-Fi frame.}
+  \label{tab:frame-phases}
+  \begin{tabular}{@{}lcrr@{}}
+    \toprule
+    \textbf{Phase} & \textbf{Duration}
+      & \textbf{ESP32 Current} & \textbf{CYW43438 Current} \\
+    \midrule
+    DIFS + Back-off (RX/idle) & \SI{96}{\us}  & \SI{95}{\mA}  & \SI{40}{\mA}  \\
+    Preamble + Data TX        & \SI{68}{\us}  & \SI{180}{\mA} & \SI{250}{\mA} \\
+    SIFS + ACK (RX)           & \SI{49}{\us}  & \SI{95}{\mA}  & \SI{40}{\mA}  \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Effective energy per application byte (256-byte MQTT payload).}
+  \label{tab:effective}
+  \begin{tabular}{@{}lccc@{}}
+    \toprule
+    \textbf{Board}
+      & \textbf{Energy/frame (\si{\uJ})}
+      & \textbf{Energy/byte (\si{\nJ})}
+      & \textbf{Overhead factor} \\
+    \midrule
+    Raspberry Pi\,3  & ${\approx}64.5$  & ${\approx}\textbf{252}$ & $2.8\times$ PHY \\
+    ESP32-WROOM      & ${\approx}86.0$  & ${\approx}\textbf{336}$ & $5.1\times$ PHY \\
+    Particle Argon   & ${\approx}89.2$  & ${\approx}\textbf{348}$ & $5.1\times$ PHY \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\noindent
+\textit{Note:} The CYW43438 has a lower RX current (${\approx}\SI{40}{\mA}$)
+compared to the ESP32 (${\approx}\SI{95}{\mA}$).  Despite its higher TX
+current, the RPi\,3 radio is more energy-efficient during protocol overhead
+periods.
+
+%==========================================================================
+\section{ML-KEM Communication Overhead Analysis}
+%==========================================================================
+
+This section analyses the \textbf{application-layer communication cost} of
+the ML-KEM key exchange protocol, independent of the underlying transport
+(MQTT, CoAP, raw TCP, etc.).  The focus is on the raw bytes that must
+traverse the radio interface for a complete key exchange.
+
+%--------------------------------------------------------------------------
+\subsection{Protocol Messages}
+%--------------------------------------------------------------------------
+
+The ML-KEM key exchange consists of a 2-message handshake preamble followed
+by a 3-message cryptographic exchange, for a total of \textbf{5 messages}
+per handshake (constant across all security levels).
+
+\begin{table}[htbp]
+  \centering
+  \caption{ML-KEM key exchange message sequence.}
+  \label{tab:mlkem-msgs}
+  \begin{tabular}{@{}cllll@{}}
+    \toprule
+    \textbf{\#} & \textbf{Direction} & \textbf{Message} & \textbf{Content} & \textbf{Size} \\
+    \midrule
+    1 & Client $\to$ Server & READY        & ASCII \texttt{"READY"}           & \SI{5}{\byte} \\
+    2 & Server $\to$ Client & ACK          & ASCII \texttt{"ACK"}             & \SI{3}{\byte} \\
+    3 & Server $\to$ Client & Public Key   & 2\,B length header + \texttt{pk} & $\text{pk} + 2$\,B \\
+    4 & Client $\to$ Server & Ciphertext   & raw binary \texttt{ct}           & $\text{ct}$\,B \\
+    5 & Server $\to$ Client & Shared Secret& 2\,B length header + \texttt{ss} & $\text{ss} + 2$\,B \\
+    \bottomrule
+  \end{tabular}
+
+  \vspace{4pt}\footnotesize
+  Serialization: raw binary encoding.  Framing: 2-byte big-endian length
+  header on messages~3 and~5 only.  No JSON, Protobuf, or other serialization
+  overhead.
+\end{table}
+
+%--------------------------------------------------------------------------
+\subsection{Cryptographic Parameter Sizes}
+%--------------------------------------------------------------------------
+
+\begin{table}[htbp]
+  \centering
+  \caption{ML-KEM cryptographic object sizes (bytes) per security level.}
+  \label{tab:mlkem-params}
+  \begin{tabular}{@{}lSSS@{}}
+    \toprule
+    \textbf{Parameter}
+      & {\textbf{ML-KEM-512}} & {\textbf{ML-KEM-768}} & {\textbf{ML-KEM-1024}} \\
+    \midrule
+    Public key (\texttt{pk})    & 800  & 1184 & 1568 \\
+    Secret key (\texttt{sk})\textsuperscript{$\dagger$}
+                                & 1632 & 2400 & 3168 \\
+    Ciphertext (\texttt{ct})    & 768  & 1088 & 1568 \\
+    Shared secret (\texttt{ss}) & 32   & 32   & 32   \\
+    \bottomrule
+  \end{tabular}
+
+  \vspace{4pt}\footnotesize
+  \textsuperscript{$\dagger$}\,The secret key is \textbf{never transmitted};
+  it is listed for completeness only.
+\end{table}
+
+%--------------------------------------------------------------------------
+\subsection{Total Application-Layer Bytes per Handshake}
+%--------------------------------------------------------------------------
+
+\begin{table}[htbp]
+  \centering
+  \caption{Application-layer data transmitted per ML-KEM handshake (bytes).}
+  \label{tab:mlkem-total}
+  \begin{tabular}{@{}lSSS@{}}
+    \toprule
+    \textbf{Message}
+      & {\textbf{ML-KEM-512}} & {\textbf{ML-KEM-768}} & {\textbf{ML-KEM-1024}} \\
+    \midrule
+    READY                      & 5    & 5    & 5    \\
+    ACK                        & 3    & 3    & 3    \\
+    Public Key + 2\,B header   & 802  & 1186 & 1570 \\
+    Ciphertext (raw)           & 768  & 1088 & 1568 \\
+    Shared Secret + 2\,B header& 34   & 34   & 34   \\
+    \midrule
+    \textbf{Total payload}     & \textbf{1612} & \textbf{2316} & \textbf{3180} \\
+    \quad Framing overhead      & 4    & 4    & 4    \\
+    \quad Control messages      & 8    & 8    & 8    \\
+    \quad Pure crypto data      & 1600 & 2304 & 3168 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+%--------------------------------------------------------------------------
+\subsection{Directional Breakdown}
+%--------------------------------------------------------------------------
+
+\begin{table}[htbp]
+  \centering
+  \caption{Application-layer bytes by direction (Client = Particle Argon).}
+  \label{tab:mlkem-direction}
+  \begin{tabular}{@{}lSSS@{}}
+    \toprule
+    \textbf{Direction}
+      & {\textbf{ML-KEM-512}} & {\textbf{ML-KEM-768}} & {\textbf{ML-KEM-1024}} \\
+    \midrule
+    \multicolumn{4}{@{}l}{\textit{Client $\to$ Server (TX)}} \\
+    \quad READY         & 5   & 5    & 5    \\
+    \quad Ciphertext    & 768 & 1088 & 1568 \\
+    \quad\textbf{Subtotal TX} & \textbf{773} & \textbf{1093} & \textbf{1573} \\
+    \midrule
+    \multicolumn{4}{@{}l}{\textit{Server $\to$ Client (RX)}} \\
+    \quad ACK                     & 3   & 3    & 3    \\
+    \quad Public Key + header     & 802 & 1186 & 1570 \\
+    \quad Shared Secret + header  & 34  & 34   & 34   \\
+    \quad\textbf{Subtotal RX} & \textbf{839} & \textbf{1223} & \textbf{1607} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+%--------------------------------------------------------------------------
+\subsection{Cross-Variant Comparison}
+%--------------------------------------------------------------------------
+
+\begin{table}[htbp]
+  \centering
+  \caption{Communication overhead comparison across ML-KEM variants.}
+  \label{tab:mlkem-compare}
+  \begin{tabular}{@{}lSSSl@{}}
+    \toprule
+    \textbf{Metric}
+      & {\textbf{ML-KEM-512}} & {\textbf{ML-KEM-768}} & {\textbf{ML-KEM-1024}}
+      & \textbf{Ratio} \\
+    \midrule
+    Messages              & 5    & 5    & 5    & $1:1:1$ \\
+    Total bytes           & 1612 & 2316 & 3180 & $1:1.44:1.97$ \\
+    Client TX (bytes)     & 773  & 1093 & 1573 & $1:1.41:2.04$ \\
+    Client RX (bytes)     & 839  & 1223 & 1607 & $1:1.46:1.92$ \\
+    Round trips           & {2.5}  & {2.5}  & {2.5}  & $1:1:1$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The dominant cost per message is:
+\begin{itemize}
+  \item \textbf{Public key}: \SI{50}{\percent}--\SI{51}{\percent} of total
+        data for ML-KEM-512 and 768; \SI{49}{\percent} for ML-KEM-1024
+        (where \texttt{ct} has equal size).
+  \item \textbf{Ciphertext}: \SI{48}{\percent}--\SI{49}{\percent} of total
+        data.
+  \item \textbf{Shared secret}: always \SI{32}{\byte}, representing only
+        \SI{1}{\percent}--\SI{2}{\percent} of the total.
+\end{itemize}
+
+Communication complexity is $O(1)$ in number of messages and $O(k^2)$ in
+total data, where $k$ is the lattice dimension parameter
+($k \in \{2,\,3,\,4\}$ for the three security levels).
+
+%--------------------------------------------------------------------------
+\subsection{Key Observations}
+%--------------------------------------------------------------------------
+
+\begin{enumerate}
+  \item \textbf{PK and CT dominate}: together they account for
+        \SI{97}{\percent}--\SI{99}{\percent} of all transmitted data.
+  \item \textbf{Framing overhead is negligible}: 4~bytes total
+        ($< \SI{0.3}{\percent}$).
+  \item \textbf{ML-KEM-1024 transmits ${\approx}2\times$ the data of
+        ML-KEM-512} for the same 32-byte shared secret.
+  \item \textbf{Message count and round trips are constant} across all
+        variants — only payload sizes change.
+  \item \textbf{No serialization overhead}: raw binary encoding avoids the
+        bloat of JSON or text-based formats.
+\end{enumerate}
+
+%==========================================================================
+\section{Summary}
+%==========================================================================
+
+\begin{table}[htbp]
+  \centering
+  \caption{Overall comparison of radio energy efficiency.}
+  \label{tab:summary}
+  \begin{tabular}{@{}lccc@{}}
+    \toprule
+    \textbf{Metric}
+      & \textbf{RPi\,3 (CYW43438)}
+      & \textbf{ESP32-WROOM}
+      & \textbf{Particle Argon} \\
+    \midrule
+    PHY \si{\nJ/byte} (802.11n best)
+      & 91.4  & 65.8  & 68.3  \\
+    Effective \si{\nJ/byte} (256\,B MQTT)
+      & ${\approx}252$ & ${\approx}336$ & ${\approx}348$ \\
+    $\mu$J per ML-KEM key exchange (${\approx}$3\,KB)
+      & ${\approx}0.27$ (PHY) & ${\approx}0.20$ (PHY) & ${\approx}0.20$ (PHY) \\
+    Radio TX power (\si{\mW})
+      & 825  & 594  & 617  \\
+    Radio idle power (\si{\mW})
+      & ${\approx}132$ & ${\approx}314$ & ${\approx}337$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+%--------------------------------------------------------------------------
+\subsection{Key Takeaways}
+%--------------------------------------------------------------------------
+
+\begin{enumerate}
+  \item \textbf{ESP32 has the lowest TX power} (\SI{594}{\mW}) and the best
+        PHY-level efficiency (\SI{65.8}{\nJ/byte}).
+  \item \textbf{CYW43438 (RPi\,3) draws more during TX} but has
+        \textbf{much lower idle/RX power} (${\approx}\SI{40}{\mA}$ vs.\
+        ${\approx}\SI{95}{\mA}$), which benefits small IoT packets.
+  \item \textbf{Particle Argon adds ${\approx}\SI{7}{\mA}$ overhead} over a
+        bare ESP32 due to the nRF52840 MCU bridge.
+  \item For \textbf{small IoT payloads} (typical MQTT), protocol overhead
+        dominates — effective energy is \textbf{3--5$\times$ higher} than the
+        raw PHY calculation.
+  \item All three use 802.11\,b/g/n at \SI{2.4}{\GHz}, so the
+        \textbf{PHY rates are identical}; differences come purely from
+        radio-chip power efficiency.
+\end{enumerate}
+
+\end{document}

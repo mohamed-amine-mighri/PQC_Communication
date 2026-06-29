@@ -1,0 +1,21 @@
+{
+  "name": "ML-KEM_Argon",
+  "version": "0.0.1",
+  "description": "ML-KEM implementation for Particle Argon with MQTT, UART, WiFi, RGB LED",
+  "private": true,
+  "author": "Amine Mighri",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "Apache-2.0",
+  "frameworks": [
+    "particle"
+  ],
+  "platforms": [
+    "argon"
+  ],
+  "dependencies": {
+    "MQTT": "*"
+  }
+}

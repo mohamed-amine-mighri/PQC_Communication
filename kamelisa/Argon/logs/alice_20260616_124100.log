@@ -1,0 +1,40 @@
+﻿==== serial log start 2026-06-16 12:41:00  port=COM8  label=alice ====
+[2026-06-16 12:41:00.512] --- port COM8 opened ---
+[2026-06-16 12:41:02.044] ========================================
+[2026-06-16 12:41:02.046] PQC Signature Test - Particle Argon
+[2026-06-16 12:41:02.047] ========================================
+[2026-06-16 12:41:02.048] [TRANSPORT] Starting WiFi...
+[2026-06-16 12:41:02.049] [TRANSPORT] Connecting to SSID: kamelisa  Broker: 192.168.137.1:1883
+[2026-06-16 12:41:11.530] ...................
+[2026-06-16 12:41:11.543] [TRANSPORT] WiFi connected! IP: 192.168.137.19  RSSI: 100 dBm
+[2026-06-16 12:41:11.546] [TRANSPORT] Setting up MQTT...
+[2026-06-16 12:41:11.548] [MQTT] Attempting to connect...
+[2026-06-16 12:41:11.577] [MQTT] TCP connected!
+[2026-06-16 12:41:11.678] [MQTT] Client ID: argon-alice-e00fce68
+[2026-06-16 12:41:11.749] [MQTT] CONNACK received - connected!
+[2026-06-16 12:41:11.751] [MQTT] Subscribed to dsa/bob/send
+[2026-06-16 12:41:11.752] [INIT] Waiting for MQTT...
+[2026-06-16 12:41:11.754] [INIT] MQTT connected!
+[2026-06-16 12:41:12.750] [SYNC] Starting as Alice
+[2026-06-16 12:41:12.751] [MQTT] Full message ready (5 bytes)
+[2026-06-16 12:41:12.754] [SYNC] READY received
+[2026-06-16 12:41:12.757] [MQTT_SEND] Sending 3 bytes to dsa/alice/send
+[2026-06-16 12:41:12.759] [MQTT_PUB] Published 5 bytes to dsa/alice/send
+[2026-06-16 12:41:14.252] [TEST] Algorithm FALCON_512
+[2026-06-16 12:41:14.255] [ALICE] Free heap: 109720 bytes
+[2026-06-16 12:41:14.258] [ALICE] Keygen (PK:897 SK:1281 SIG:752)
+[2026-06-16 12:41:17.417] [ALICE] Keygen: 3164125 us
+[2026-06-16 12:41:17.419] [ALICE] Sending PK (897 bytes)
+[2026-06-16 12:41:17.422] [MQTT_SEND] Sending 897 bytes to dsa/alice/send
+[2026-06-16 12:41:17.425] [MQTT_PUB] Published 899 bytes to dsa/alice/send
+[2026-06-16 12:41:18.721] [MQTT] Full message ready (11 bytes)
+[2026-06-16 12:41:18.734] [ALICE] pk_received, signing now
+[2026-06-16 12:41:19.844] [ALICE] Sign: 1123544 us
+[2026-06-16 12:41:19.847] [ALICE] Ensuring MQTT connection before sending SM...
+[2026-06-16 12:41:20.846] [MQTT_SEND] Sending 678 bytes to dsa/alice/send
+[2026-06-16 12:41:20.850] [MQTT_PUB] Published 680 bytes to dsa/alice/send
+[2026-06-16 12:41:20.854] [ALICE] SM sent (678 bytes)
+[2026-06-16 12:41:20.859] [ALICE] Waiting for verification response
+[2026-06-16 12:41:21.749] [MQTT] Full message ready (20 bytes)
+[2026-06-16 12:41:21.754] [ALICE] SUCCESS: Verified!
+[2026-06-16 12:41:21.762] [TEST] PASS: FALCON_512

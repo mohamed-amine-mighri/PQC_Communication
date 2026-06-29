@@ -1,0 +1,1437 @@
+===== ALICE (COM4) =====
+[ALICE] ets Jun  8 2016 00:22:57
+[ALICE] 
+[ALICE] rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[ALICE] configsip: 0, SPIWP:0xee
+[ALICE] clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+[ALICE] mode:DIO, clock div:2
+[ALICE] load:0x3fff0030,len:6272
+[ALICE] load:0x40078000,len:15748
+[ALICE] ho 0 tail 12 room 4
+[ALICE] load:0x40080400,len:3708
+[ALICE] entry 0x40080618
+[ALICE] I (28) boot: ESP-IDF v5.5.4 2nd stage bootloader
+[ALICE] I (28) boot: compile time Jun 15 2026 13:59:25
+[ALICE] W (28) boot: Unicore bootloader
+[ALICE] I (29) boot: chip revision: v1.0
+[ALICE] I (32) boot.esp32: SPI Speed      : 40MHz
+[ALICE] I (36) boot.esp32: SPI Mode       : DIO
+[ALICE] I (39) boot.esp32: SPI Flash Size : 2MB
+[ALICE] I (43) boot: Enabling RNG early entropy source...
+[ALICE] I (47) boot: Partition Table:
+[ALICE] I (50) boot: ## Label            Usage          Type ST Offset   Length
+[ALICE] I (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+[ALICE] I (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+[ALICE] I (69) boot:  2 factory          factory app      00 00 00010000 00177000
+[ALICE] I (76) boot: End of partition table
+[ALICE] I (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3b480h (242816) map
+[ALICE] I (169) esp_image: segment 1: paddr=0004b4a8 vaddr=3ffb0000 size=038ach ( 14508) load
+[ALICE] I (175) esp_image: segment 2: paddr=0004ed5c vaddr=40080000 size=012bch (  4796) load
+[ALICE] I (177) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=dad50h (896336) map
+[ALICE] I (487) esp_image: segment 4: paddr=0012ad78 vaddr=400812bc size=15c98h ( 89240) load
+[ALICE] I (522) esp_image: segment 5: paddr=00140a18 vaddr=50000000 size=00020h (    32) load
+[ALICE] I (533) boot: Loaded app from partition at offset 0x10000
+[ALICE] I (533) boot: Disabling RNG early entropy source...
+[ALICE] I (544) cpu_start: Unicore app
+[ALICE] I (544) cpu_start: Single core mode
+[ALICE] I (552) cpu_start: GPIO 3 and 1 are used as console UART I/O pins
+[ALICE] I (552) cpu_start: Pro cpu start user code
+[ALICE] I (552) cpu_start: cpu freq: 160000000 Hz
+[ALICE] I (556) app_init: Application information:
+[ALICE] I (559) app_init: Project name:     signature-esp32
+[ALICE] I (564) app_init: App version:      ffe3e2a-dirty
+[ALICE] I (569) app_init: Compile time:     Jun 15 2026 13:58:55
+[ALICE] I (574) app_init: ELF file SHA256:  985944025...
+[ALICE] I (578) app_init: ESP-IDF:          v5.5.4
+[ALICE] I (582) efuse_init: Min chip rev:     v0.0
+[ALICE] I (586) efuse_init: Max chip rev:     v3.99 
+[ALICE] I (590) efuse_init: Chip rev:         v1.0
+[ALICE] I (594) heap_init: Initializing. RAM available for dynamic allocation:
+[ALICE] I (600) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+[ALICE] I (605) heap_init: At 3FFB80F0 len 00027F10 (159 KiB): DRAM
+[ALICE] I (610) heap_init: At 3FFE0440 len 0001FBC0 (126 KiB): D/IRAM
+[ALICE] I (616) heap_init: At 40078000 len 00008000 (32 KiB): IRAM
+[ALICE] I (621) heap_init: At 40096F54 len 000090AC (36 KiB): IRAM
+[ALICE] I (626) heap_init: At 3FF80000 len 00002000 (8 KiB): RTCRAM
+[ALICE] I (633) spi_flash: detected chip: generic
+[ALICE] I (635) spi_flash: flash io: dio
+[ALICE] W (638) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+[ALICE] I (651) main_task: Started on CPU0
+[ALICE] I (651) main_task: Calling app_main()
+[ALICE] [MAYO] scratch reserved 149664 bytes at 0x3ffb9e20
+[ALICE] I (681) wifi:wifi driver task: 3ff81e98, prio:23, stack:6656, core=0
+[ALICE] I (681) wifi:wifi firmware version: 0947e8b
+[ALICE] I (681) wifi:wifi certification version: v7.0
+[ALICE] I (691) wifi:config NVS flash: enabled
+[ALICE] I (691) wifi:config nano formatting: disabled
+[ALICE] I (691) wifi:Init data frame dynamic rx buffer num: 32
+[ALICE] I (691) wifi:Init static rx mgmt buffer num: 5
+[ALICE] I (701) wifi:Init management short buffer num: 32
+[ALICE] I (701) wifi:Init dynamic tx buffer num: 32
+[ALICE] I (711) wifi:Init static rx buffer size: 1600
+[ALICE] I (711) wifi:Init static rx buffer num: 10
+[ALICE] I (711) wifi:Init dynamic rx buffer num: 32
+[ALICE] I (721) wifi_init: rx ba win: 6
+[ALICE] I (721) wifi_init: accept mbox: 6
+[ALICE] I (721) wifi_init: tcpip mbox: 32
+[ALICE] I (731) wifi_init: udp mbox: 6
+[ALICE] I (731) wifi_init: tcp mbox: 6
+[ALICE] I (731) wifi_init: tcp tx win: 5760
+[ALICE] I (741) wifi_init: tcp rx win: 5760
+[ALICE] I (741) wifi_init: tcp mss: 1440
+[ALICE] I (741) wifi_init: WiFi IRAM OP enabled
+[ALICE] I (751) wifi_init: WiFi RX IRAM OP enabled
+[ALICE] I (751) wifi:Set ps type: 0, coexist: 0
+[ALICE] 
+[ALICE] I (751) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06
+[ALICE] I (831) wifi:mode : sta (1c:9d:c2:35:ae:60)
+[ALICE] I (831) wifi:enable tsf
+[ALICE] WIFI CONNECTING....
+[ALICE] I (851) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (851) wifi:state: init -> auth (0xb0)
+[ALICE] I (861) wifi:state: auth -> assoc (0x0)
+[ALICE] I (871) wifi:state: assoc -> init (0x2c0)
+[ALICE] I (881) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+[ALICE] I (3301) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (3301) wifi:state: init -> auth (0xb0)
+[ALICE] I (3311) wifi:state: auth -> assoc (0x0)
+[ALICE] I (3321) wifi:state: assoc -> run (0x10)
+[ALICE] I (3371) wifi:connected with pqctest, aid = 2, channel 6, BW20, bssid = b8:27:eb:33:81:3c
+[ALICE] I (3371) wifi:security: WPA-PSK, phy: bgn, rssi: -48, cipher(pairwise:0x3, group:0x1), pmf:0
+[ALICE] I (3371) wifi:pm start, type: 0
+[ALICE] 
+[ALICE] I (3381) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[ALICE] WiFi CONNECTED
+[ALICE] I (3401) wifi:<ba-add>idx:0 (ifx:0, b8:27:eb:33:81:3c), tid:7, ssn:0, winSize:64
+[ALICE] I (3411) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+[ALICE] I (3411) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[ALICE] I (4421) esp_netif_handlers: sta ip: 10.42.0.70, mask: 255.255.255.0, gw: 10.42.0.1
+[ALICE] Wifi got IP...
+[ALICE] 
+[ALICE] I (4431) wifi:<ba-add>idx:1 (ifx:0, b8:27:eb:33:81:3c), tid:0, ssn:3, winSize:64
+[ALICE] MQTT_EVENT_CONNECTED
+[ALICE] MQTT_EVENT_SUBSCRIBED
+[ALICE] [MAIN] MQTT initialized, creating test task with 64KB stack...
+[ALICE] [MAIN] Test task created, exiting app_main
+[ALICE] I (4541) main_task: Returned from app_main()
+[ALICE] Starting as Alice
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] ACK received
+[ALICE] Beginning algorithm MAYO_1.
+[ALICE] [MQTT_SEND] Sending 1420 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+[ALICE] 
+[ALICE] Core  0 register dump:
+[ALICE] PC      : 0x400895e2  PS      : 0x00050033  A0      : 0x4008949f  A1      : 0x3ffe5800  
+[ALICE] A2      : 0xffffffa0  A3      : 0x00000000  A4      : 0x80000880  A5      : 0x40089422  
+[ALICE] A6      : 0x10100011  A7      : 0x80800088  A8      : 0x80082588  A9      : 0x3ffb1b80  
+[ALICE] A10     : 0x00000000  A11     : 0x40000000  A12     : 0x8008978f  A13     : 0x3ffb1b90  
+[ALICE] A14     : 0x00000003  A15     : 0x00060023  SAR     : 0x0000000a  EXCCAUSE: 0x0000001d  
+[ALICE] EXCVADDR: 0xffffffa0  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+[ALICE] 
+[ALICE] 
+[ALICE] Backtrace: 0x400895df:0x3ffe5800 0x4008949c:0x3ffe5810 0x0005001e:0xc148d94b |<-CORRUPTED
+[ALICE] 
+[ALICE] 
+[ALICE] 
+[ALICE] 
+[ALICE] ELF file SHA256: 985944025
+[ALICE] 
+[ALICE] Rebooting...
+[ALICE] ets Jun  8 2016 00:22:57
+[ALICE] 
+[ALICE] rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[ALICE] configsip: 0, SPIWP:0xee
+[ALICE] clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+[ALICE] mode:DIO, clock div:2
+[ALICE] load:0x3fff0030,len:6272
+[ALICE] load:0x40078000,len:15748
+[ALICE] ho 0 tail 12 room 4
+[ALICE] load:0x40080400,len:3708
+[ALICE] entry 0x40080618
+[ALICE] I (29) boot: ESP-IDF v5.5.4 2nd stage bootloader
+[ALICE] I (29) boot: compile time Jun 15 2026 13:59:25
+[ALICE] W (29) boot: Unicore bootloader
+[ALICE] I (30) boot: chip revision: v1.0
+[ALICE] I (33) boot.esp32: SPI Speed      : 40MHz
+[ALICE] I (37) boot.esp32: SPI Mode       : DIO
+[ALICE] I (40) boot.esp32: SPI Flash Size : 2MB
+[ALICE] I (44) boot: Enabling RNG early entropy source...
+[ALICE] I (48) boot: Partition Table:
+[ALICE] I (51) boot: ## Label            Usage          Type ST Offset   Length
+[ALICE] I (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+[ALICE] I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+[ALICE] I (70) boot:  2 factory          factory app      00 00 00010000 00177000
+[ALICE] I (77) boot: End of partition table
+[ALICE] I (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3b480h (242816) map
+[ALICE] I (171) esp_image: segment 1: paddr=0004b4a8 vaddr=3ffb0000 size=038ach ( 14508) load
+[ALICE] I (176) esp_image: segment 2: paddr=0004ed5c vaddr=40080000 size=012bch (  4796) load
+[ALICE] I (178) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=dad50h (896336) map
+[ALICE] I (488) esp_image: segment 4: paddr=0012ad78 vaddr=400812bc size=15c98h ( 89240) load
+[ALICE] I (523) esp_image: segment 5: paddr=00140a18 vaddr=50000000 size=00020h (    32) load
+[ALICE] I (534) boot: Loaded app from partition at offset 0x10000
+[ALICE] I (535) boot: Disabling RNG early entropy source...
+[ALICE] I (545) cpu_start: Unicore app
+[ALICE] I (545) cpu_start: Single core mode
+[ALICE] I (553) cpu_start: GPIO 3 and 1 are used as console UART I/O pins
+[ALICE] I (553) cpu_start: Pro cpu start user code
+[ALICE] I (553) cpu_start: cpu freq: 160000000 Hz
+[ALICE] I (557) app_init: Application information:
+[ALICE] I (561) app_init: Project name:     signature-esp32
+[ALICE] I (565) app_init: App version:      ffe3e2a-dirty
+[ALICE] I (570) app_init: Compile time:     Jun 15 2026 13:58:55
+[ALICE] I (575) app_init: ELF file SHA256:  985944025...
+[ALICE] I (579) app_init: ESP-IDF:          v5.5.4
+[ALICE] I (583) efuse_init: Min chip rev:     v0.0
+[ALICE] I (587) efuse_init: Max chip rev:     v3.99 
+[ALICE] I (591) efuse_init: Chip rev:         v1.0
+[ALICE] I (595) heap_init: Initializing. RAM available for dynamic allocation:
+[ALICE] I (601) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+[ALICE] I (606) heap_init: At 3FFB80F0 len 00027F10 (159 KiB): DRAM
+[ALICE] I (611) heap_init: At 3FFE0440 len 0001FBC0 (126 KiB): D/IRAM
+[ALICE] I (617) heap_init: At 40078000 len 00008000 (32 KiB): IRAM
+[ALICE] I (622) heap_init: At 40096F54 len 000090AC (36 KiB): IRAM
+[ALICE] I (627) heap_init: At 3FF80000 len 00002000 (8 KiB): RTCRAM
+[ALICE] I (634) spi_flash: detected chip: generic
+[ALICE] I (636) spi_flash: flash io: dio
+[ALICE] W (639) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+[ALICE] I (652) main_task: Started on CPU0
+[ALICE] I (652) main_task: Calling app_main()
+[ALICE] [MAYO] scratch reserved 149664 bytes at 0x3ffb9e20
+[ALICE] I (682) wifi:wifi driver task: 3ff81e98, prio:23, stack:6656, core=0
+[ALICE] I (682) wifi:wifi firmware version: 0947e8b
+[ALICE] I (682) wifi:wifi certification version: v7.0
+[ALICE] I (692) wifi:config NVS flash: enabled
+[ALICE] I (692) wifi:config nano formatting: disabled
+[ALICE] I (692) wifi:Init data frame dynamic rx buffer num: 32
+[ALICE] I (692) wifi:Init static rx mgmt buffer num: 5
+[ALICE] I (702) wifi:Init management short buffer num: 32
+[ALICE] I (702) wifi:Init dynamic tx buffer num: 32
+[ALICE] I (712) wifi:Init static rx buffer size: 1600
+[ALICE] I (712) wifi:Init static rx buffer num: 10
+[ALICE] I (712) wifi:Init dynamic rx buffer num: 32
+[ALICE] I (722) wifi_init: rx ba win: 6
+[ALICE] I (722) wifi_init: accept mbox: 6
+[ALICE] I (722) wifi_init: tcpip mbox: 32
+[ALICE] I (732) wifi_init: udp mbox: 6
+[ALICE] I (732) wifi_init: tcp mbox: 6
+[ALICE] I (732) wifi_init: tcp tx win: 5760
+[ALICE] I (742) wifi_init: tcp rx win: 5760
+[ALICE] I (742) wifi_init: tcp mss: 1440
+[ALICE] I (742) wifi_init: WiFi IRAM OP enabled
+[ALICE] I (752) wifi_init: WiFi RX IRAM OP enabled
+[ALICE] I (752) wifi:Set ps type: 0, coexist: 0
+[ALICE] 
+[ALICE] I (752) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06
+[ALICE] I (822) wifi:mode : sta (1c:9d:c2:35:ae:60)
+[ALICE] I (822) wifi:enable tsf
+[ALICE] WIFI CONNECTING....
+[ALICE] I (842) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (842) wifi:state: init -> auth (0xb0)
+[ALICE] I (842) wifi:state: auth -> assoc (0x0)
+[ALICE] I (852) wifi:state: assoc -> init (0x2c0)
+[ALICE] I (862) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+[ALICE] I (3282) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (3282) wifi:state: init -> auth (0xb0)
+[ALICE] I (3292) wifi:state: auth -> assoc (0x0)
+[ALICE] I (3292) wifi:state: assoc -> run (0x10)
+[ALICE] I (3332) wifi:connected with pqctest, aid = 2, channel 6, BW20, bssid = b8:27:eb:33:81:3c
+[ALICE] I (3332) wifi:security: WPA-PSK, phy: bgn, rssi: -47, cipher(pairwise:0x3, group:0x1), pmf:0
+[ALICE] I (3342) wifi:pm start, type: 0
+[ALICE] 
+[ALICE] I (3342) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[ALICE] WiFi CONNECTED
+[ALICE] I (3362) wifi:<ba-add>idx:0 (ifx:0, b8:27:eb:33:81:3c), tid:7, ssn:0, winSize:64
+[ALICE] I (3412) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+[ALICE] I (3412) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[ALICE] I (4392) esp_netif_handlers: sta ip: 10.42.0.70, mask: 255.255.255.0, gw: 10.42.0.1
+[ALICE] Wifi got IP...
+[ALICE] 
+[ALICE] I (4402) wifi:<ba-add>idx:1 (ifx:0, b8:27:eb:33:81:3c), tid:0, ssn:3, winSize:64
+[ALICE] MQTT_EVENT_CONNECTED
+[ALICE] MQTT_EVENT_SUBSCRIBED
+[ALICE] [MAIN] MQTT initialized, creating test task with 64KB stack...
+[ALICE] [MAIN] Test task created, exiting app_main
+[ALICE] I (4532) main_task: Returned from app_main()
+[ALICE] Starting as Alice
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] ACK received
+[ALICE] Beginning algorithm MAYO_1.
+[ALICE] [MQTT_SEND] Sending 1420 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+[ALICE] 
+[ALICE] Core  0 register dump:
+[ALICE] PC      : 0x400895e2  PS      : 0x00050033  A0      : 0x4008949f  A1      : 0x3ffe5800  
+[ALICE] A2      : 0xffffffa0  A3      : 0x00000000  A4      : 0x553a3913  A5      : 0x40089422  
+[ALICE] A6      : 0x4767b997  A7      : 0xaad7daad  A8      : 0x80082588  A9      : 0x3ffb1b80  
+[ALICE] A10     : 0x00000000  A11     : 0x11000000  A12     : 0x8008978f  A13     : 0x3ffb1b90  
+[ALICE] A14     : 0x00000003  A15     : 0x00060023  SAR     : 0x0000000a  EXCCAUSE: 0x0000001d  
+[ALICE] EXCVADDR: 0xffffffa0  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+[ALICE] 
+[ALICE] 
+[ALICE] Backtrace: 0x400895df:0x3ffe5800 0x4008949c:0x3ffe5810 0x0005001e:0xe5afe7b9 |<-CORRUPTED
+[ALICE] 
+[ALICE] 
+[ALICE] 
+[ALICE] 
+[ALICE] ELF file SHA256: 985944025
+[ALICE] 
+[ALICE] Rebooting...
+[ALICE] ets Jun  8 2016 00:22:57
+[ALICE] 
+[ALICE] rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[ALICE] configsip: 0, SPIWP:0xee
+[ALICE] clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+[ALICE] mode:DIO, clock div:2
+[ALICE] load:0x3fff0030,len:6272
+[ALICE] load:0x40078000,len:15748
+[ALICE] ho 0 tail 12 room 4
+[ALICE] load:0x40080400,len:3708
+[ALICE] entry 0x40080618
+[ALICE] I (29) boot: ESP-IDF v5.5.4 2nd stage bootloader
+[ALICE] I (29) boot: compile time Jun 15 2026 13:59:25
+[ALICE] W (29) boot: Unicore bootloader
+[ALICE] I (30) boot: chip revision: v1.0
+[ALICE] I (33) boot.esp32: SPI Speed      : 40MHz
+[ALICE] I (37) boot.esp32: SPI Mode       : DIO
+[ALICE] I (40) boot.esp32: SPI Flash Size : 2MB
+[ALICE] I (44) boot: Enabling RNG early entropy source...
+[ALICE] I (48) boot: Partition Table:
+[ALICE] I (51) boot: ## Label            Usage          Type ST Offset   Length
+[ALICE] I (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+[ALICE] I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+[ALICE] I (70) boot:  2 factory          factory app      00 00 00010000 00177000
+[ALICE] I (77) boot: End of partition table
+[ALICE] I (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3b480h (242816) map
+[ALICE] I (171) esp_image: segment 1: paddr=0004b4a8 vaddr=3ffb0000 size=038ach ( 14508) load
+[ALICE] I (176) esp_image: segment 2: paddr=0004ed5c vaddr=40080000 size=012bch (  4796) load
+[ALICE] I (178) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=dad50h (896336) map
+[ALICE] I (488) esp_image: segment 4: paddr=0012ad78 vaddr=400812bc size=15c98h ( 89240) load
+[ALICE] I (523) esp_image: segment 5: paddr=00140a18 vaddr=50000000 size=00020h (    32) load
+[ALICE] I (534) boot: Loaded app from partition at offset 0x10000
+[ALICE] I (535) boot: Disabling RNG early entropy source...
+[ALICE] I (545) cpu_start: Unicore app
+[ALICE] I (545) cpu_start: Single core mode
+[ALICE] I (553) cpu_start: GPIO 3 and 1 are used as console UART I/O pins
+[ALICE] I (553) cpu_start: Pro cpu start user code
+[ALICE] I (553) cpu_start: cpu freq: 160000000 Hz
+[ALICE] I (557) app_init: Application information:
+[ALICE] I (561) app_init: Project name:     signature-esp32
+[ALICE] I (565) app_init: App version:      ffe3e2a-dirty
+[ALICE] I (570) app_init: Compile time:     Jun 15 2026 13:58:55
+[ALICE] I (575) app_init: ELF file SHA256:  985944025...
+[ALICE] I (579) app_init: ESP-IDF:          v5.5.4
+[ALICE] I (583) efuse_init: Min chip rev:     v0.0
+[ALICE] I (587) efuse_init: Max chip rev:     v3.99 
+[ALICE] I (591) efuse_init: Chip rev:         v1.0
+[ALICE] I (595) heap_init: Initializing. RAM available for dynamic allocation:
+[ALICE] I (601) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+[ALICE] I (606) heap_init: At 3FFB80F0 len 00027F10 (159 KiB): DRAM
+[ALICE] I (611) heap_init: At 3FFE0440 len 0001FBC0 (126 KiB): D/IRAM
+[ALICE] I (617) heap_init: At 40078000 len 00008000 (32 KiB): IRAM
+[ALICE] I (622) heap_init: At 40096F54 len 000090AC (36 KiB): IRAM
+[ALICE] I (627) heap_init: At 3FF80000 len 00002000 (8 KiB): RTCRAM
+[ALICE] I (634) spi_flash: detected chip: generic
+[ALICE] I (636) spi_flash: flash io: dio
+[ALICE] W (639) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+[ALICE] I (652) main_task: Started on CPU0
+[ALICE] I (652) main_task: Calling app_main()
+[ALICE] [MAYO] scratch reserved 149664 bytes at 0x3ffb9e20
+[ALICE] I (682) wifi:wifi driver task: 3ff81e98, prio:23, stack:6656, core=0
+[ALICE] I (682) wifi:wifi firmware version: 0947e8b
+[ALICE] I (682) wifi:wifi certification version: v7.0
+[ALICE] I (692) wifi:config NVS flash: enabled
+[ALICE] I (692) wifi:config nano formatting: disabled
+[ALICE] I (692) wifi:Init data frame dynamic rx buffer num: 32
+[ALICE] I (692) wifi:Init static rx mgmt buffer num: 5
+[ALICE] I (702) wifi:Init management short buffer num: 32
+[ALICE] I (702) wifi:Init dynamic tx buffer num: 32
+[ALICE] I (712) wifi:Init static rx buffer size: 1600
+[ALICE] I (712) wifi:Init static rx buffer num: 10
+[ALICE] I (712) wifi:Init dynamic rx buffer num: 32
+[ALICE] I (722) wifi_init: rx ba win: 6
+[ALICE] I (722) wifi_init: accept mbox: 6
+[ALICE] I (722) wifi_init: tcpip mbox: 32
+[ALICE] I (732) wifi_init: udp mbox: 6
+[ALICE] I (732) wifi_init: tcp mbox: 6
+[ALICE] I (732) wifi_init: tcp tx win: 5760
+[ALICE] I (742) wifi_init: tcp rx win: 5760
+[ALICE] I (742) wifi_init: tcp mss: 1440
+[ALICE] I (742) wifi_init: WiFi IRAM OP enabled
+[ALICE] I (752) wifi_init: WiFi RX IRAM OP enabled
+[ALICE] I (752) wifi:Set ps type: 0, coexist: 0
+[ALICE] 
+[ALICE] I (752) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06
+[ALICE] I (822) wifi:mode : sta (1c:9d:c2:35:ae:60)
+[ALICE] I (822) wifi:enable tsf
+[ALICE] WIFI CONNECTING....
+[ALICE] I (842) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (842) wifi:state: init -> auth (0xb0)
+[ALICE] I (842) wifi:state: auth -> assoc (0x0)
+[ALICE] I (852) wifi:state: assoc -> run (0x10)
+[ALICE] I (852) wifi:state: run -> init (0x2c0)
+[ALICE] I (862) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+[ALICE] I (3282) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (3282) wifi:state: init -> auth (0xb0)
+[ALICE] I (3302) wifi:state: auth -> assoc (0x0)
+[ALICE] I (3312) wifi:state: assoc -> run (0x10)
+[ALICE] I (3352) wifi:connected with pqctest, aid = 2, channel 6, BW20, bssid = b8:27:eb:33:81:3c
+[ALICE] I (3352) wifi:security: WPA-PSK, phy: bgn, rssi: -46, cipher(pairwise:0x3, group:0x1), pmf:0
+[ALICE] I (3352) wifi:pm start, type: 0
+[ALICE] 
+[ALICE] I (3352) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[ALICE] WiFi CONNECTED
+[ALICE] I (3382) wifi:<ba-add>idx:0 (ifx:0, b8:27:eb:33:81:3c), tid:7, ssn:0, winSize:64
+[ALICE] I (3412) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+[ALICE] I (3412) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[ALICE] I (3552) wifi:<ba-add>idx:1 (ifx:0, b8:27:eb:33:81:3c), tid:0, ssn:3, winSize:64
+[ALICE] I (4392) esp_netif_handlers: sta ip: 10.42.0.70, mask: 255.255.255.0, gw: 10.42.0.1
+[ALICE] Wifi got IP...
+[ALICE] 
+[ALICE] MQTT_EVENT_CONNECTED
+[ALICE] MQTT_EVENT_SUBSCRIBED
+[ALICE] [MAIN] MQTT initialized, creating test task with 64KB stack...
+[ALICE] [MAIN] Test task created, exiting app_main
+[ALICE] I (4532) main_task: Returned from app_main()
+[ALICE] Starting as Alice
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] ACK received
+[ALICE] Beginning algorithm MAYO_1.
+[ALICE] [MQTT_SEND] Sending 1420 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+[ALICE] 
+[ALICE] Core  0 register dump:
+[ALICE] PC      : 0x400895e2  PS      : 0x00050033  A0      : 0x4008949f  A1      : 0x3ffe5250  
+[ALICE] A2      : 0xffffffa0  A3      : 0x00000000  A4      : 0x009dcd5d  A5      : 0x40089422  
+[ALICE] A6      : 0x9d7beeb8  A7      : 0x0000000a  A8      : 0x80082588  A9      : 0x3ffb1b80  
+[ALICE] A10     : 0x00000000  A11     : 0x00aa0aaa  A12     : 0x8008978f  A13     : 0x3ffb1b90  
+[ALICE] A14     : 0x00000003  A15     : 0x00060023  SAR     : 0x0000000a  EXCCAUSE: 0x0000001d  
+[ALICE] EXCVADDR: 0xffffffa0  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+[ALICE] 
+[ALICE] 
+[ALICE] Backtrace: 0x400895df:0x3ffe5250 0x4008949c:0x3ffe5260 0x0005001e:0x1ad48ea2 |<-CORRUPTED
+[ALICE] 
+[ALICE] 
+[ALICE] 
+[ALICE] 
+[ALICE] ELF file SHA256: 985944025
+[ALICE] 
+[ALICE] Rebooting...
+[ALICE] ets Jun  8 2016 00:22:57
+[ALICE] 
+[ALICE] rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[ALICE] configsip: 0, SPIWP:0xee
+[ALICE] clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+[ALICE] mode:DIO, clock div:2
+[ALICE] load:0x3fff0030,len:6272
+[ALICE] load:0x40078000,len:15748
+[ALICE] ho 0 tail 12 room 4
+[ALICE] load:0x40080400,len:3708
+[ALICE] entry 0x40080618
+[ALICE] I (29) boot: ESP-IDF v5.5.4 2nd stage bootloader
+[ALICE] I (29) boot: compile time Jun 15 2026 13:59:25
+[ALICE] W (29) boot: Unicore bootloader
+[ALICE] I (30) boot: chip revision: v1.0
+[ALICE] I (33) boot.esp32: SPI Speed      : 40MHz
+[ALICE] I (37) boot.esp32: SPI Mode       : DIO
+[ALICE] I (40) boot.esp32: SPI Flash Size : 2MB
+[ALICE] I (44) boot: Enabling RNG early entropy source...
+[ALICE] I (48) boot: Partition Table:
+[ALICE] I (51) boot: ## Label            Usage          Type ST Offset   Length
+[ALICE] I (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+[ALICE] I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+[ALICE] I (70) boot:  2 factory          factory app      00 00 00010000 00177000
+[ALICE] I (77) boot: End of partition table
+[ALICE] I (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3b480h (242816) map
+[ALICE] I (171) esp_image: segment 1: paddr=0004b4a8 vaddr=3ffb0000 size=038ach ( 14508) load
+[ALICE] I (176) esp_image: segment 2: paddr=0004ed5c vaddr=40080000 size=012bch (  4796) load
+[ALICE] I (178) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=dad50h (896336) map
+[ALICE] I (488) esp_image: segment 4: paddr=0012ad78 vaddr=400812bc size=15c98h ( 89240) load
+[ALICE] I (523) esp_image: segment 5: paddr=00140a18 vaddr=50000000 size=00020h (    32) load
+[ALICE] I (534) boot: Loaded app from partition at offset 0x10000
+[ALICE] I (535) boot: Disabling RNG early entropy source...
+[ALICE] I (545) cpu_start: Unicore app
+[ALICE] I (545) cpu_start: Single core mode
+[ALICE] I (553) cpu_start: GPIO 3 and 1 are used as console UART I/O pins
+[ALICE] I (553) cpu_start: Pro cpu start user code
+[ALICE] I (553) cpu_start: cpu freq: 160000000 Hz
+[ALICE] I (557) app_init: Application information:
+[ALICE] I (561) app_init: Project name:     signature-esp32
+[ALICE] I (565) app_init: App version:      ffe3e2a-dirty
+[ALICE] I (570) app_init: Compile time:     Jun 15 2026 13:58:55
+[ALICE] I (575) app_init: ELF file SHA256:  985944025...
+[ALICE] I (579) app_init: ESP-IDF:          v5.5.4
+[ALICE] I (583) efuse_init: Min chip rev:     v0.0
+[ALICE] I (587) efuse_init: Max chip rev:     v3.99 
+[ALICE] I (591) efuse_init: Chip rev:         v1.0
+[ALICE] I (595) heap_init: Initializing. RAM available for dynamic allocation:
+[ALICE] I (601) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+[ALICE] I (606) heap_init: At 3FFB80F0 len 00027F10 (159 KiB): DRAM
+[ALICE] I (611) heap_init: At 3FFE0440 len 0001FBC0 (126 KiB): D/IRAM
+[ALICE] I (617) heap_init: At 40078000 len 00008000 (32 KiB): IRAM
+[ALICE] I (622) heap_init: At 40096F54 len 000090AC (36 KiB): IRAM
+[ALICE] I (627) heap_init: At 3FF80000 len 00002000 (8 KiB): RTCRAM
+[ALICE] I (634) spi_flash: detected chip: generic
+[ALICE] I (636) spi_flash: flash io: dio
+[ALICE] W (639) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+[ALICE] I (652) main_task: Started on CPU0
+[ALICE] I (652) main_task: Calling app_main()
+[ALICE] [MAYO] scratch reserved 149664 bytes at 0x3ffb9e20
+[ALICE] I (682) wifi:wifi driver task: 3ff81e98, prio:23, stack:6656, core=0
+[ALICE] I (682) wifi:wifi firmware version: 0947e8b
+[ALICE] I (682) wifi:wifi certification version: v7.0
+[ALICE] I (692) wifi:config NVS flash: enabled
+[ALICE] I (692) wifi:config nano formatting: disabled
+[ALICE] I (692) wifi:Init data frame dynamic rx buffer num: 32
+[ALICE] I (692) wifi:Init static rx mgmt buffer num: 5
+[ALICE] I (702) wifi:Init management short buffer num: 32
+[ALICE] I (702) wifi:Init dynamic tx buffer num: 32
+[ALICE] I (712) wifi:Init static rx buffer size: 1600
+[ALICE] I (712) wifi:Init static rx buffer num: 10
+[ALICE] I (712) wifi:Init dynamic rx buffer num: 32
+[ALICE] I (722) wifi_init: rx ba win: 6
+[ALICE] I (722) wifi_init: accept mbox: 6
+[ALICE] I (722) wifi_init: tcpip mbox: 32
+[ALICE] I (732) wifi_init: udp mbox: 6
+[ALICE] I (732) wifi_init: tcp mbox: 6
+[ALICE] I (732) wifi_init: tcp tx win: 5760
+[ALICE] I (742) wifi_init: tcp rx win: 5760
+[ALICE] I (742) wifi_init: tcp mss: 1440
+[ALICE] I (742) wifi_init: WiFi IRAM OP enabled
+[ALICE] I (752) wifi_init: WiFi RX IRAM OP enabled
+[ALICE] I (752) wifi:Set ps type: 0, coexist: 0
+[ALICE] 
+[ALICE] I (752) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06
+[ALICE] I (822) wifi:mode : sta (1c:9d:c2:35:ae:60)
+[ALICE] I (822) wifi:enable tsf
+[ALICE] WIFI CONNECTING....
+[ALICE] I (842) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (842) wifi:state: init -> auth (0xb0)
+[ALICE] I (852) wifi:state: auth -> assoc (0x0)
+[ALICE] I (852) wifi:state: assoc -> init (0x2c0)
+[ALICE] I (862) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+[ALICE] I (3282) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (3282) wifi:state: init -> auth (0xb0)
+[ALICE] I (3302) wifi:state: auth -> assoc (0x0)
+[ALICE] I (3312) wifi:state: assoc -> run (0x10)
+[ALICE] I (3352) wifi:connected with pqctest, aid = 2, channel 6, BW20, bssid = b8:27:eb:33:81:3c
+[ALICE] I (3352) wifi:security: WPA-PSK, phy: bgn, rssi: -48, cipher(pairwise:0x3, group:0x1), pmf:0
+[ALICE] I (3362) wifi:pm start, type: 0
+[ALICE] 
+[ALICE] I (3362) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[ALICE] WiFi CONNECTED
+[ALICE] I (3392) wifi:<ba-add>idx:0 (ifx:0, b8:27:eb:33:81:3c), tid:7, ssn:0, winSize:64
+[ALICE] I (3412) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+[ALICE] I (3412) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[ALICE] I (3922) wifi:<ba-add>idx:1 (ifx:0, b8:27:eb:33:81:3c), tid:0, ssn:3, winSize:64
+[ALICE] I (4402) esp_netif_handlers: sta ip: 10.42.0.70, mask: 255.255.255.0, gw: 10.42.0.1
+[ALICE] Wifi got IP...
+[ALICE] 
+[ALICE] MQTT_EVENT_CONNECTED
+[ALICE] MQTT_EVENT_SUBSCRIBED
+[ALICE] [MAIN] MQTT initialized, creating test task with 64KB stack...
+[ALICE] [MAIN] Test task created, exiting app_main
+[ALICE] I (4532) main_task: Returned from app_main()
+[ALICE] Starting as Alice
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] ACK received
+[ALICE] Beginning algorithm MAYO_1.
+[ALICE] [MQTT_SEND] Sending 1420 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+[ALICE] 
+[ALICE] Core  0 register dump:
+[ALICE] PC      : 0x400895e2  PS      : 0x00050033  A0      : 0x4008949f  A1      : 0x3ffe5180  
+[ALICE] A2      : 0xffffffa0  A3      : 0x00000000  A4      : 0x00f07773  A5      : 0x40089422  
+[ALICE] A6      : 0xfe0ce999  A7      : 0x20022220  A8      : 0x80082588  A9      : 0x3ffb1b80  
+[ALICE] A10     : 0x00000000  A11     : 0x00110011  A12     : 0x8008978f  A13     : 0x3ffb1b90  
+[ALICE] A14     : 0x00000003  A15     : 0x00060023  SAR     : 0x0000000a  EXCCAUSE: 0x0000001d  
+[ALICE] EXCVADDR: 0xffffffa0  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+[ALICE] 
+[ALICE] 
+[ALICE] Backtrace: 0x400895df:0x3ffe5180 0x4008949c:0x3ffe5190 0x0005001e:0x0c407c89 |<-CORRUPTED
+[ALICE] 
+[ALICE] 
+[ALICE] 
+[ALICE] 
+[ALICE] ELF file SHA256: 985944025
+[ALICE] 
+[ALICE] Rebooting...
+[ALICE] ets Jun  8 2016 00:22:57
+[ALICE] 
+[ALICE] rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[ALICE] configsip: 0, SPIWP:0xee
+[ALICE] clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+[ALICE] mode:DIO, clock div:2
+[ALICE] load:0x3fff0030,len:6272
+[ALICE] load:0x40078000,len:15748
+[ALICE] ho 0 tail 12 room 4
+[ALICE] load:0x40080400,len:3708
+[ALICE] entry 0x40080618
+[ALICE] I (29) boot: ESP-IDF v5.5.4 2nd stage bootloader
+[ALICE] I (29) boot: compile time Jun 15 2026 13:59:25
+[ALICE] W (29) boot: Unicore bootloader
+[ALICE] I (30) boot: chip revision: v1.0
+[ALICE] I (33) boot.esp32: SPI Speed      : 40MHz
+[ALICE] I (37) boot.esp32: SPI Mode       : DIO
+[ALICE] I (40) boot.esp32: SPI Flash Size : 2MB
+[ALICE] I (44) boot: Enabling RNG early entropy source...
+[ALICE] I (48) boot: Partition Table:
+[ALICE] I (51) boot: ## Label            Usage          Type ST Offset   Length
+[ALICE] I (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+[ALICE] I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+[ALICE] I (70) boot:  2 factory          factory app      00 00 00010000 00177000
+[ALICE] I (77) boot: End of partition table
+[ALICE] I (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3b480h (242816) map
+[ALICE] I (171) esp_image: segment 1: paddr=0004b4a8 vaddr=3ffb0000 size=038ach ( 14508) load
+[ALICE] I (176) esp_image: segment 2: paddr=0004ed5c vaddr=40080000 size=012bch (  4796) load
+[ALICE] I (178) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=dad50h (896336) map
+[ALICE] I (488) esp_image: segment 4: paddr=0012ad78 vaddr=400812bc size=15c98h ( 89240) load
+[ALICE] I (523) esp_image: segment 5: paddr=00140a18 vaddr=50000000 size=00020h (    32) load
+[ALICE] I (534) boot: Loaded app from partition at offset 0x10000
+[ALICE] I (535) boot: Disabling RNG early entropy source...
+[ALICE] I (545) cpu_start: Unicore app
+[ALICE] I (545) cpu_start: Single core mode
+[ALICE] I (553) cpu_start: GPIO 3 and 1 are used as console UART I/O pins
+[ALICE] I (553) cpu_start: Pro cpu start user code
+[ALICE] I (553) cpu_start: cpu freq: 160000000 Hz
+[ALICE] I (557) app_init: Application information:
+[ALICE] I (561) app_init: Project name:     signature-esp32
+[ALICE] I (565) app_init: App version:      ffe3e2a-dirty
+[ALICE] I (570) app_init: Compile time:     Jun 15 2026 13:58:55
+[ALICE] I (575) app_init: ELF file SHA256:  985944025...
+[ALICE] I (579) app_init: ESP-IDF:          v5.5.4
+[ALICE] I (583) efuse_init: Min chip rev:     v0.0
+[ALICE] I (587) efuse_init: Max chip rev:     v3.99 
+[ALICE] I (591) efuse_init: Chip rev:         v1.0
+[ALICE] I (595) heap_init: Initializing. RAM available for dynamic allocation:
+[ALICE] I (601) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+[ALICE] I (606) heap_init: At 3FFB80F0 len 00027F10 (159 KiB): DRAM
+[ALICE] I (611) heap_init: At 3FFE0440 len 0001FBC0 (126 KiB): D/IRAM
+[ALICE] I (617) heap_init: At 40078000 len 00008000 (32 KiB): IRAM
+[ALICE] I (622) heap_init: At 40096F54 len 000090AC (36 KiB): IRAM
+[ALICE] I (627) heap_init: At 3FF80000 len 00002000 (8 KiB): RTCRAM
+[ALICE] I (634) spi_flash: detected chip: generic
+[ALICE] I (636) spi_flash: flash io: dio
+[ALICE] W (639) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+[ALICE] I (652) main_task: Started on CPU0
+[ALICE] I (652) main_task: Calling app_main()
+[ALICE] [MAYO] scratch reserved 149664 bytes at 0x3ffb9e20
+[ALICE] I (682) wifi:wifi driver task: 3ff81e98, prio:23, stack:6656, core=0
+[ALICE] I (682) wifi:wifi firmware version: 0947e8b
+[ALICE] I (682) wifi:wifi certification version: v7.0
+[ALICE] I (692) wifi:config NVS flash: enabled
+[ALICE] I (692) wifi:config nano formatting: disabled
+[ALICE] I (692) wifi:Init data frame dynamic rx buffer num: 32
+[ALICE] I (692) wifi:Init static rx mgmt buffer num: 5
+[ALICE] I (702) wifi:Init management short buffer num: 32
+[ALICE] I (702) wifi:Init dynamic tx buffer num: 32
+[ALICE] I (712) wifi:Init static rx buffer size: 1600
+[ALICE] I (712) wifi:Init static rx buffer num: 10
+[ALICE] I (712) wifi:Init dynamic rx buffer num: 32
+[ALICE] I (722) wifi_init: rx ba win: 6
+[ALICE] I (722) wifi_init: accept mbox: 6
+[ALICE] I (722) wifi_init: tcpip mbox: 32
+[ALICE] I (732) wifi_init: udp mbox: 6
+[ALICE] I (732) wifi_init: tcp mbox: 6
+[ALICE] I (732) wifi_init: tcp tx win: 5760
+[ALICE] I (742) wifi_init: tcp rx win: 5760
+[ALICE] I (742) wifi_init: tcp mss: 1440
+[ALICE] I (742) wifi_init: WiFi IRAM OP enabled
+[ALICE] I (752) wifi_init: WiFi RX IRAM OP enabled
+[ALICE] I (752) wifi:Set ps type: 0, coexist: 0
+[ALICE] 
+[ALICE] I (752) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06
+[ALICE] I (822) wifi:mode : sta (1c:9d:c2:35:ae:60)
+[ALICE] I (822) wifi:enable tsf
+[ALICE] WIFI CONNECTING....
+[ALICE] I (842) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (842) wifi:state: init -> auth (0xb0)
+[ALICE] I (852) wifi:state: auth -> assoc (0x0)
+[ALICE] I (852) wifi:state: assoc -> run (0x10)
+[ALICE] I (862) wifi:state: run -> init (0x2c0)
+[ALICE] I (872) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+[ALICE] I (3292) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (3292) wifi:state: init -> auth (0xb0)
+[ALICE] I (3302) wifi:state: auth -> assoc (0x0)
+[ALICE] I (3312) wifi:state: assoc -> run (0x10)
+[ALICE] I (3352) wifi:connected with pqctest, aid = 2, channel 6, BW20, bssid = b8:27:eb:33:81:3c
+[ALICE] I (3352) wifi:security: WPA-PSK, phy: bgn, rssi: -48, cipher(pairwise:0x3, group:0x1), pmf:0
+[ALICE] I (3352) wifi:pm start, type: 0
+[ALICE] 
+[ALICE] I (3362) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[ALICE] WiFi CONNECTED
+[ALICE] I (3382) wifi:<ba-add>idx:0 (ifx:0, b8:27:eb:33:81:3c), tid:7, ssn:0, winSize:64
+[ALICE] I (3412) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+[ALICE] I (3412) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[ALICE] I (3562) wifi:<ba-add>idx:1 (ifx:0, b8:27:eb:33:81:3c), tid:0, ssn:3, winSize:64
+[ALICE] I (4402) esp_netif_handlers: sta ip: 10.42.0.70, mask: 255.255.255.0, gw: 10.42.0.1
+[ALICE] Wifi got IP...
+[ALICE] 
+[ALICE] MQTT_EVENT_CONNECTED
+[ALICE] MQTT_EVENT_SUBSCRIBED
+[ALICE] [MAIN] MQTT initialized, creating test task with 64KB stack...
+[ALICE] [MAIN] Test task created, exiting app_main
+[ALICE] I (4532) main_task: Returned from app_main()
+[ALICE] Starting as Alice
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] ACK received
+[ALICE] Beginning algorithm MAYO_1.
+[ALICE] [MQTT_SEND] Sending 1420 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+[ALICE] 
+[ALICE] Core  0 register dump:
+[ALICE] PC      : 0x400895e2  PS      : 0x00050033  A0      : 0x4008949f  A1      : 0x3ffe51a0  
+[ALICE] A2      : 0xffffffa0  A3      : 0x00000000  A4      : 0x3ffed14c  A5      : 0x40089422  
+[ALICE] A6      : 0x0000000c  A7      : 0x00000f5a  A8      : 0x80082588  A9      : 0x3ffb1b80  
+[ALICE] A10     : 0x00000000  A11     : 0xab35a43c  A12     : 0x659f3e7f  A13     : 0x8528c8ed  
+[ALICE] A14     : 0x393d4af8  A15     : 0xd6e2b48b  SAR     : 0x389b52f4  EXCCAUSE: 0x6cb4f071  
+[ALICE] EXCVADDR: 0x83dd1cd9  LBEG    : 0xe55b311f  LEND    : 0x985fc0b9  LCOUNT  : 0x2362f31c  
+[ALICE] 
+[ALICE] 
+[ALICE] Backtrace: 0x22faba7e:0x5e0e85d8 |<-CORRUPTED
+[ALICE] 
+[ALICE] 
+[ALICE] Guru Meditation Error: Core  0 panic'ed (Double exception). 
+[ALICE] 
+[ALICE] Core  0 register dump:
+[ALICE] PC      : 0x40096e1e  PS      : 0x00040336  A0      : 0x800d243d  A1      : 0x3ffe5020  
+[ALICE] A2      : 0x3ffe50e0  A3      : 0x3ffe5070  A4      : 0x0016e360  A5      : 0x40000000  
+[ALICE] A6      : 0x3ffb95cc  A7      : 0x3ffb0040  A8      : 0x800d2481  A9      : 0x3ffe5000  
+[ALICE] A10     : 0x3f4006ec  A11     : 0x00000000  A12     : 0x00000008  A13     : 0x3ffe5048  
+[ALICE] A14     : 0x00000000  A15     : 0x00000002  SAR     : 0x0000000a  EXCCAUSE: 0x00000002  
+[ALICE] EXCVADDR: 0xffffffd0  LBEG    : 0x4000c2e0  LEND    : 0x4000c2f6  LCOUNT  : 0x00000000  
+[ALICE] 
+[ALICE] 
+[ALICE] Backtrace: 0x40096e1b:0x3ffe5020 0x400d243a:0x3005ffb7 |<-CORRUPTED
+[ALICE] 
+[ALICE] 
+[ALICE] 
+[ALICE] 
+[ALICE] ELF file SHA256: 985944025
+[ALICE] 
+[ALICE] Rebooting...
+[ALICE] ets Jun  8 2016 00:22:57
+[ALICE] 
+[ALICE] rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[ALICE] configsip: 0, SPIWP:0xee
+[ALICE] clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+[ALICE] mode:DIO, clock div:2
+[ALICE] load:0x3fff0030,len:6272
+[ALICE] load:0x40078000,len:15748
+[ALICE] ho 0 tail 12 room 4
+[ALICE] load:0x40080400,len:3708
+[ALICE] entry 0x40080618
+[ALICE] I (29) boot: ESP-IDF v5.5.4 2nd stage bootloader
+[ALICE] I (29) boot: compile time Jun 15 2026 13:59:25
+[ALICE] W (29) boot: Unicore bootloader
+[ALICE] I (30) boot: chip revision: v1.0
+[ALICE] I (33) boot.esp32: SPI Speed      : 40MHz
+[ALICE] I (37) boot.esp32: SPI Mode       : DIO
+[ALICE] I (40) boot.esp32: SPI Flash Size : 2MB
+[ALICE] I (44) boot: Enabling RNG early entropy source...
+[ALICE] I (48) boot: Partition Table:
+[ALICE] I (51) boot: ## Label            Usage          Type ST Offset   Length
+[ALICE] I (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+[ALICE] I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+[ALICE] I (70) boot:  2 factory          factory app      00 00 00010000 00177000
+[ALICE] I (77) boot: End of partition table
+[ALICE] I (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3b480h (242816) map
+[ALICE] I (171) esp_image: segment 1: paddr=0004b4a8 vaddr=3ffb0000 size=038ach ( 14508) load
+[ALICE] I (176) esp_image: segment 2: paddr=0004ed5c vaddr=40080000 size=012bch (  4796) load
+[ALICE] I (178) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=dad50h (896336) map
+[ALICE] I (488) esp_image: segment 4: paddr=0012ad78 vaddr=400812bc size=15c98h ( 89240) load
+[ALICE] I (523) esp_image: segment 5: paddr=00140a18 vaddr=50000000 size=00020h (    32) load
+[ALICE] I (534) boot: Loaded app from partition at offset 0x10000
+[ALICE] I (535) boot: Disabling RNG early entropy source...
+[ALICE] I (545) cpu_start: Unicore app
+[ALICE] I (545) cpu_start: Single core mode
+[ALICE] I (553) cpu_start: GPIO 3 and 1 are used as console UART I/O pins
+[ALICE] I (553) cpu_start: Pro cpu start user code
+[ALICE] I (553) cpu_start: cpu freq: 160000000 Hz
+[ALICE] I (557) app_init: Application information:
+[ALICE] I (561) app_init: Project name:     signature-esp32
+[ALICE] I (565) app_init: App version:      ffe3e2a-dirty
+[ALICE] I (570) app_init: Compile time:     Jun 15 2026 13:58:55
+[ALICE] I (575) app_init: ELF file SHA256:  985944025...
+[ALICE] I (579) app_init: ESP-IDF:          v5.5.4
+[ALICE] I (583) efuse_init: Min chip rev:     v0.0
+[ALICE] I (587) efuse_init: Max chip rev:     v3.99 
+[ALICE] I (591) efuse_init: Chip rev:         v1.0
+[ALICE] I (595) heap_init: Initializing. RAM available for dynamic allocation:
+[ALICE] I (601) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+[ALICE] I (606) heap_init: At 3FFB80F0 len 00027F10 (159 KiB): DRAM
+[ALICE] I (611) heap_init: At 3FFE0440 len 0001FBC0 (126 KiB): D/IRAM
+[ALICE] I (617) heap_init: At 40078000 len 00008000 (32 KiB): IRAM
+[ALICE] I (622) heap_init: At 40096F54 len 000090AC (36 KiB): IRAM
+[ALICE] I (627) heap_init: At 3FF80000 len 00002000 (8 KiB): RTCRAM
+[ALICE] I (634) spi_flash: detected chip: generic
+[ALICE] I (636) spi_flash: flash io: dio
+[ALICE] W (639) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+[ALICE] I (652) main_task: Started on CPU0
+[ALICE] I (652) main_task: Calling app_main()
+[ALICE] [MAYO] scratch reserved 149664 bytes at 0x3ffb9e20
+[ALICE] I (682) wifi:wifi driver task: 3ff81e98, prio:23, stack:6656, core=0
+[ALICE] I (682) wifi:wifi firmware version: 0947e8b
+[ALICE] I (682) wifi:wifi certification version: v7.0
+[ALICE] I (692) wifi:config NVS flash: enabled
+[ALICE] I (692) wifi:config nano formatting: disabled
+[ALICE] I (692) wifi:Init data frame dynamic rx buffer num: 32
+[ALICE] I (692) wifi:Init static rx mgmt buffer num: 5
+[ALICE] I (702) wifi:Init management short buffer num: 32
+[ALICE] I (702) wifi:Init dynamic tx buffer num: 32
+[ALICE] I (712) wifi:Init static rx buffer size: 1600
+[ALICE] I (712) wifi:Init static rx buffer num: 10
+[ALICE] I (712) wifi:Init dynamic rx buffer num: 32
+[ALICE] I (722) wifi_init: rx ba win: 6
+[ALICE] I (722) wifi_init: accept mbox: 6
+[ALICE] I (722) wifi_init: tcpip mbox: 32
+[ALICE] I (732) wifi_init: udp mbox: 6
+[ALICE] I (732) wifi_init: tcp mbox: 6
+[ALICE] I (732) wifi_init: tcp tx win: 5760
+[ALICE] I (742) wifi_init: tcp rx win: 5760
+[ALICE] I (742) wifi_init: tcp mss: 1440
+[ALICE] I (742) wifi_init: WiFi IRAM OP enabled
+[ALICE] I (752) wifi_init: WiFi RX IRAM OP enabled
+[ALICE] I (752) wifi:Set ps type: 0, coexist: 0
+[ALICE] 
+[ALICE] I (752) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06
+[ALICE] I (822) wifi:mode : sta (1c:9d:c2:35:ae:60)
+[ALICE] I (822) wifi:enable tsf
+[ALICE] WIFI CONNECTING....
+[ALICE] I (842) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (842) wifi:state: init -> auth (0xb0)
+[ALICE] I (852) wifi:state: auth -> assoc (0x0)
+[ALICE] I (852) wifi:state: assoc -> run (0x10)
+[ALICE] I (852) wifi:state: run -> init (0x2c0)
+[ALICE] I (862) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+[ALICE] I (3282) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (3282) wifi:state: init -> auth (0xb0)
+[ALICE] I (3302) wifi:state: auth -> assoc (0x0)
+[ALICE] I (3312) wifi:state: assoc -> run (0x10)
+[ALICE] I (3342) wifi:connected with pqctest, aid = 2, channel 6, BW20, bssid = b8:27:eb:33:81:3c
+[ALICE] I (3342) wifi:security: WPA-PSK, phy: bgn, rssi: -45, cipher(pairwise:0x3, group:0x1), pmf:0
+[ALICE] I (3352) wifi:pm start, type: 0
+[ALICE] 
+[ALICE] I (3352) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[ALICE] I (3362) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+[ALICE] I (3362) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[ALICE] WiFi CONNECTED
+[ALICE] I (3382) wifi:<ba-add>idx:0 (ifx:0, b8:27:eb:33:81:3c), tid:7, ssn:0, winSize:64
+[ALICE] I (3492) wifi:<ba-add>idx:1 (ifx:0, b8:27:eb:33:81:3c), tid:0, ssn:3, winSize:64
+[ALICE] I (4402) esp_netif_handlers: sta ip: 10.42.0.70, mask: 255.255.255.0, gw: 10.42.0.1
+[ALICE] Wifi got IP...
+[ALICE] 
+[ALICE] MQTT_EVENT_CONNECTED
+[ALICE] MQTT_EVENT_SUBSCRIBED
+[ALICE] [MAIN] MQTT initialized, creating test task with 64KB stack...
+[ALICE] [MAIN] Test task created, exiting app_main
+[ALICE] I (4532) main_task: Returned from app_main()
+[ALICE] Starting as Alice
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] ACK received
+[ALICE] Beginning algorithm MAYO_1.
+[ALICE] [MQTT_SEND] Sending 1420 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+[ALICE] 
+[ALICE] Core  0 register dump:
+[ALICE] PC      : 0x400895e2  PS      : 0x00050033  A0      : 0x4008949f  A1      : 0x3ffe5180  
+[ALICE] A2      : 0xffffffa0  A3      : 0x00000000  A4      : 0x8958e5eb  A5      : 0x40089422  
+[ALICE] A6      : 0x127ca252  A7      : 0x60000000  A8      : 0x80082588  A9      : 0x3ffb1b80  
+[ALICE] A10     : 0x00000000  A11     : 0x00202220  A12     : 0x8008978f  A13     : 0x3ffb1b90  
+[ALICE] A14     : 0x00000003  A15     : 0x00060023  SAR     : 0x0000000a  EXCCAUSE: 0x0000001d  
+[ALICE] EXCVADDR: 0xffffffa0  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+[ALICE] 
+[ALICE] 
+[ALICE] Backtrace: 0x400895df:0x3ffe5180 0x4008949c:0x3ffe5190 0x0005001e:0x5abb7c70 |<-CORRUPTED
+[ALICE] 
+[ALICE] 
+[ALICE] 
+[ALICE] 
+[ALICE] ELF file SHA256: 985944025
+[ALICE] 
+[ALICE] Rebooting...
+[ALICE] ets Jun  8 2016 00:22:57
+[ALICE] 
+[ALICE] rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[ALICE] configsip: 0, SPIWP:0xee
+[ALICE] clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+[ALICE] mode:DIO, clock div:2
+[ALICE] load:0x3fff0030,len:6272
+[ALICE] load:0x40078000,len:15748
+[ALICE] ho 0 tail 12 room 4
+[ALICE] load:0x40080400,len:3708
+[ALICE] entry 0x40080618
+[ALICE] I (29) boot: ESP-IDF v5.5.4 2nd stage bootloader
+[ALICE] I (29) boot: compile time Jun 15 2026 13:59:25
+[ALICE] W (29) boot: Unicore bootloader
+[ALICE] I (30) boot: chip revision: v1.0
+[ALICE] I (33) boot.esp32: SPI Speed      : 40MHz
+[ALICE] I (37) boot.esp32: SPI Mode       : DIO
+[ALICE] I (40) boot.esp32: SPI Flash Size : 2MB
+[ALICE] I (44) boot: Enabling RNG early entropy source...
+[ALICE] I (48) boot: Partition Table:
+[ALICE] I (51) boot: ## Label            Usage          Type ST Offset   Length
+[ALICE] I (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+[ALICE] I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+[ALICE] I (70) boot:  2 factory          factory app      00 00 00010000 00177000
+[ALICE] I (77) boot: End of partition table
+[ALICE] I (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3b480h (242816) map
+[ALICE] I (171) esp_image: segment 1: paddr=0004b4a8 vaddr=3ffb0000 size=038ach ( 14508) load
+[ALICE] I (176) esp_image: segment 2: paddr=0004ed5c vaddr=40080000 size=012bch (  4796) load
+[ALICE] I (178) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=dad50h (896336) map
+[ALICE] I (488) esp_image: segment 4: paddr=0012ad78 vaddr=400812bc size=15c98h ( 89240) load
+[ALICE] I (523) esp_image: segment 5: paddr=00140a18 vaddr=50000000 size=00020h (    32) load
+[ALICE] I (534) boot: Loaded app from partition at offset 0x10000
+[ALICE] I (535) boot: Disabling RNG early entropy source...
+[ALICE] I (545) cpu_start: Unicore app
+[ALICE] I (545) cpu_start: Single core mode
+[ALICE] I (553) cpu_start: GPIO 3 and 1 are used as console UART I/O pins
+[ALICE] I (553) cpu_start: Pro cpu start user code
+[ALICE] I (553) cpu_start: cpu freq: 160000000 Hz
+[ALICE] I (557) app_init: Application information:
+[ALICE] I (561) app_init: Project name:     signature-esp32
+[ALICE] I (565) app_init: App version:      ffe3e2a-dirty
+[ALICE] I (570) app_init: Compile time:     Jun 15 2026 13:58:55
+[ALICE] I (575) app_init: ELF file SHA256:  985944025...
+[ALICE] I (579) app_init: ESP-IDF:          v5.5.4
+[ALICE] I (583) efuse_init: Min chip rev:     v0.0
+[ALICE] I (587) efuse_init: Max chip rev:     v3.99 
+[ALICE] I (591) efuse_init: Chip rev:         v1.0
+[ALICE] I (595) heap_init: Initializing. RAM available for dynamic allocation:
+[ALICE] I (601) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+[ALICE] I (606) heap_init: At 3FFB80F0 len 00027F10 (159 KiB): DRAM
+[ALICE] I (611) heap_init: At 3FFE0440 len 0001FBC0 (126 KiB): D/IRAM
+[ALICE] I (617) heap_init: At 40078000 len 00008000 (32 KiB): IRAM
+[ALICE] I (622) heap_init: At 40096F54 len 000090AC (36 KiB): IRAM
+[ALICE] I (627) heap_init: At 3FF80000 len 00002000 (8 KiB): RTCRAM
+[ALICE] I (634) spi_flash: detected chip: generic
+[ALICE] I (636) spi_flash: flash io: dio
+[ALICE] W (639) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+[ALICE] I (652) main_task: Started on CPU0
+[ALICE] I (652) main_task: Calling app_main()
+[ALICE] [MAYO] scratch reserved 149664 bytes at 0x3ffb9e20
+[ALICE] I (682) wifi:wifi driver task: 3ff81e98, prio:23, stack:6656, core=0
+[ALICE] I (682) wifi:wifi firmware version: 0947e8b
+[ALICE] I (682) wifi:wifi certification version: v7.0
+[ALICE] I (692) wifi:config NVS flash: enabled
+[ALICE] I (692) wifi:config nano formatting: disabled
+[ALICE] I (692) wifi:Init data frame dynamic rx buffer num: 32
+[ALICE] I (692) wifi:Init static rx mgmt buffer num: 5
+[ALICE] I (702) wifi:Init management short buffer num: 32
+[ALICE] I (702) wifi:Init dynamic tx buffer num: 32
+[ALICE] I (712) wifi:Init static rx buffer size: 1600
+[ALICE] I (712) wifi:Init static rx buffer num: 10
+[ALICE] I (712) wifi:Init dynamic rx buffer num: 32
+[ALICE] I (722) wifi_init: rx ba win: 6
+[ALICE] I (722) wifi_init: accept mbox: 6
+[ALICE] I (722) wifi_init: tcpip mbox: 32
+[ALICE] I (732) wifi_init: udp mbox: 6
+[ALICE] I (732) wifi_init: tcp mbox: 6
+[ALICE] I (732) wifi_init: tcp tx win: 5760
+[ALICE] I (742) wifi_init: tcp rx win: 5760
+[ALICE] I (742) wifi_init: tcp mss: 1440
+[ALICE] I (742) wifi_init: WiFi IRAM OP enabled
+[ALICE] I (752) wifi_init: WiFi RX IRAM OP enabled
+[ALICE] I (752) wifi:Set ps type: 0, coexist: 0
+[ALICE] 
+[ALICE] I (752) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06
+[ALICE] I (822) wifi:mode : sta (1c:9d:c2:35:ae:60)
+[ALICE] I (822) wifi:enable tsf
+[ALICE] WIFI CONNECTING....
+[ALICE] I (842) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (842) wifi:state: init -> auth (0xb0)
+[ALICE] I (852) wifi:state: auth -> assoc (0x0)
+[ALICE] I (852) wifi:state: assoc -> init (0x2c0)
+[ALICE] I (872) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+[ALICE] I (3292) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (3302) wifi:state: init -> auth (0xb0)
+[ALICE] I (3312) wifi:state: auth -> assoc (0x0)
+[ALICE] I (3322) wifi:state: assoc -> run (0x10)
+[ALICE] I (3362) wifi:connected with pqctest, aid = 2, channel 6, BW20, bssid = b8:27:eb:33:81:3c
+[ALICE] I (3362) wifi:security: WPA-PSK, phy: bgn, rssi: -47, cipher(pairwise:0x3, group:0x1), pmf:0
+[ALICE] I (3372) wifi:pm start, type: 0
+[ALICE] 
+[ALICE] I (3372) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[ALICE] WiFi CONNECTED
+[ALICE] I (3392) wifi:<ba-add>idx:0 (ifx:0, b8:27:eb:33:81:3c), tid:7, ssn:0, winSize:64
+[ALICE] I (3412) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+[ALICE] I (3412) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[ALICE] I (3492) wifi:<ba-add>idx:1 (ifx:0, b8:27:eb:33:81:3c), tid:0, ssn:3, winSize:64
+[ALICE] I (4412) esp_netif_handlers: sta ip: 10.42.0.70, mask: 255.255.255.0, gw: 10.42.0.1
+[ALICE] Wifi got IP...
+[ALICE] 
+[ALICE] MQTT_EVENT_CONNECTED
+[ALICE] MQTT_EVENT_SUBSCRIBED
+[ALICE] [MAIN] MQTT initialized, creating test task with 64KB stack...
+[ALICE] [MAIN] Test task created, exiting app_main
+[ALICE] I (4532) main_task: Returned from app_main()
+[ALICE] Starting as Alice
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] [MQTT_SEND] Sending 5 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] ACK received
+[ALICE] Beginning algorithm MAYO_1.
+[ALICE] [MQTT_SEND] Sending 1420 bytes
+[ALICE] [MQTT_SEND] Publishing to topic: dsa/alice/send
+[ALICE] [MQTT_SEND] Publish result: 0
+[ALICE] Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+[ALICE] 
+[ALICE] Core  0 register dump:
+[ALICE] PC      : 0x400895e2  PS      : 0x00050033  A0      : 0x4008949f  A1      : 0x3ffe5170  
+[ALICE] A2      : 0xffffffa0  A3      : 0x00000000  A4      : 0x793f4762  A5      : 0x40089422  
+[ALICE] A6      : 0xa190c99e  A7      : 0x00000003  A8      : 0x80082588  A9      : 0x3ffb1b80  
+[ALICE] A10     : 0x00000000  A11     : 0x33330300  A12     : 0x00000000  A13     : 0x00000000  
+[ALICE] A14     : 0x00000003  A15     : 0x00060023  SAR     : 0x0000000a  EXCCAUSE: 0x0000001d  
+[ALICE] EXCVADDR: 0xffffffa0  LBEG    : 0x4000c46c  LEND    : 0x4000c477  LCOUNT  : 0x00000000  
+[ALICE] 
+[ALICE] 
+[ALICE] Backtrace: 0x400895df:0x3ffe5170 0x4008949c:0x3ffe5180 0x0005001e:0xfba5428c |<-CORRUPTED
+[ALICE] 
+[ALICE] 
+[ALICE] 
+[ALICE] 
+[ALICE] ELF file SHA256: 985944025
+[ALICE] 
+[ALICE] Rebooting...
+[ALICE] ets Jun  8 2016 00:22:57
+[ALICE] 
+[ALICE] rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[ALICE] configsip: 0, SPIWP:0xee
+[ALICE] clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+[ALICE] mode:DIO, clock div:2
+[ALICE] load:0x3fff0030,len:6272
+[ALICE] load:0x40078000,len:15748
+[ALICE] ho 0 tail 12 room 4
+[ALICE] load:0x40080400,len:3708
+[ALICE] entry 0x40080618
+[ALICE] I (29) boot: ESP-IDF v5.5.4 2nd stage bootloader
+[ALICE] I (29) boot: compile time Jun 15 2026 13:59:25
+[ALICE] W (29) boot: Unicore bootloader
+[ALICE] I (30) boot: chip revision: v1.0
+[ALICE] I (33) boot.esp32: SPI Speed      : 40MHz
+[ALICE] I (37) boot.esp32: SPI Mode       : DIO
+[ALICE] I (40) boot.esp32: SPI Flash Size : 2MB
+[ALICE] I (44) boot: Enabling RNG early entropy source...
+[ALICE] I (48) boot: Partition Table:
+[ALICE] I (51) boot: ## Label            Usage          Type ST Offset   Length
+[ALICE] I (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+[ALICE] I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+[ALICE] I (70) boot:  2 factory          factory app      00 00 00010000 00177000
+[ALICE] I (77) boot: End of partition table
+[ALICE] I (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3b480h (242816) map
+[ALICE] I (171) esp_image: segment 1: paddr=0004b4a8 vaddr=3ffb0000 size=038ach ( 14508) load
+[ALICE] I (176) esp_image: segment 2: paddr=0004ed5c vaddr=40080000 size=012bch (  4796) load
+[ALICE] I (178) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=dad50h (896336) map
+[ALICE] I (488) esp_image: segment 4: paddr=0012ad78 vaddr=400812bc size=15c98h ( 89240) load
+[ALICE] I (523) esp_image: segment 5: paddr=00140a18 vaddr=50000000 size=00020h (    32) load
+[ALICE] I (534) boot: Loaded app from partition at offset 0x10000
+[ALICE] I (535) boot: Disabling RNG early entropy source...
+[ALICE] I (545) cpu_start: Unicore app
+[ALICE] I (545) cpu_start: Single core mode
+[ALICE] I (553) cpu_start: GPIO 3 and 1 are used as console UART I/O pins
+[ALICE] I (553) cpu_start: Pro cpu start user code
+[ALICE] I (553) cpu_start: cpu freq: 160000000 Hz
+[ALICE] I (557) app_init: Application information:
+[ALICE] I (561) app_init: Project name:     signature-esp32
+[ALICE] I (565) app_init: App version:      ffe3e2a-dirty
+[ALICE] I (570) app_init: Compile time:     Jun 15 2026 13:58:55
+[ALICE] I (575) app_init: ELF file SHA256:  985944025...
+[ALICE] I (579) app_init: ESP-IDF:          v5.5.4
+[ALICE] I (583) efuse_init: Min chip rev:     v0.0
+[ALICE] I (587) efuse_init: Max chip rev:     v3.99 
+[ALICE] I (591) efuse_init: Chip rev:         v1.0
+[ALICE] I (595) heap_init: Initializing. RAM available for dynamic allocation:
+[ALICE] I (601) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+[ALICE] I (606) heap_init: At 3FFB80F0 len 00027F10 (159 KiB): DRAM
+[ALICE] I (611) heap_init: At 3FFE0440 len 0001FBC0 (126 KiB): D/IRAM
+[ALICE] I (617) heap_init: At 40078000 len 00008000 (32 KiB): IRAM
+[ALICE] I (622) heap_init: At 40096F54 len 000090AC (36 KiB): IRAM
+[ALICE] I (627) heap_init: At 3FF80000 len 00002000 (8 KiB): RTCRAM
+[ALICE] I (634) spi_flash: detected chip: generic
+[ALICE] I (636) spi_flash: flash io: dio
+[ALICE] W (639) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+[ALICE] I (652) main_task: Started on CPU0
+[ALICE] I (652) main_task: Calling app_main()
+[ALICE] [MAYO] scratch reserved 149664 bytes at 0x3ffb9e20
+[ALICE] I (682) wifi:wifi driver task: 3ff81e98, prio:23, stack:6656, core=0
+[ALICE] I (682) wifi:wifi firmware version: 0947e8b
+[ALICE] I (682) wifi:wifi certification version: v7.0
+[ALICE] I (692) wifi:config NVS flash: enabled
+[ALICE] I (692) wifi:config nano formatting: disabled
+[ALICE] I (692) wifi:Init data frame dynamic rx buffer num: 32
+[ALICE] I (692) wifi:Init static rx mgmt buffer num: 5
+[ALICE] I (702) wifi:Init management short buffer num: 32
+[ALICE] I (702) wifi:Init dynamic tx buffer num: 32
+[ALICE] I (712) wifi:Init static rx buffer size: 1600
+[ALICE] I (712) wifi:Init static rx buffer num: 10
+[ALICE] I (712) wifi:Init dynamic rx buffer num: 32
+[ALICE] I (722) wifi_init: rx ba win: 6
+[ALICE] I (722) wifi_init: accept mbox: 6
+[ALICE] I (722) wifi_init: tcpip mbox: 32
+[ALICE] I (732) wifi_init: udp mbox: 6
+[ALICE] I (732) wifi_init: tcp mbox: 6
+[ALICE] I (732) wifi_init: tcp tx win: 5760
+[ALICE] I (742) wifi_init: tcp rx win: 5760
+[ALICE] I (742) wifi_init: tcp mss: 1440
+[ALICE] I (742) wifi_init: WiFi IRAM OP enabled
+[ALICE] I (752) wifi_init: WiFi RX IRAM OP enabled
+[ALICE] I (752) wifi:Set ps type: 0, coexist: 0
+[ALICE] 
+[ALICE] I (752) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06
+[ALICE] I (822) wifi:mode : sta (1c:9d:c2:35:ae:60)
+[ALICE] I (822) wifi:enable tsf
+[ALICE] WIFI CONNECTING....
+[ALICE] I (842) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] I (842) wifi:state: init -> auth (0xb0)
+[ALICE] I (842) wifi:state: auth -> assoc (0x0)
+[ALICE] I (852) wifi:state: assoc -> init (0x2c0)
+[ALICE] I (862) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[ALICE] WiFi lost connection
+[ALICE] Retrying to Connect...
+
+===== BOB (COM3) =====
+[BOB] ets Jul 29 2019 12:21:46
+[BOB] 
+[BOB] rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[BOB] configsip: 0, SPIWP:0xee
+[BOB] clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+[BOB] mode:DIO, clock div:2
+[BOB] load:0x3fff0030,len:6272
+[BOB] load:0x40078000,len:15748
+[BOB] ho 0 tail 12 room 4
+[BOB] load:0x40080400,len:3708
+[BOB] entry 0x40080618
+[BOB] I (29) boot: ESP-IDF v5.5.4 2nd stage bootloader
+[BOB] I (29) boot: compile time Jun 15 2026 14:00:16
+[BOB] W (29) boot: Unicore bootloader
+[BOB] I (30) boot: chip revision: v3.1
+[BOB] I (33) boot.esp32: SPI Speed      : 40MHz
+[BOB] I (37) boot.esp32: SPI Mode       : DIO
+[BOB] I (40) boot.esp32: SPI Flash Size : 2MB
+[BOB] I (44) boot: Enabling RNG early entropy source...
+[BOB] I (49) boot: Partition Table:
+[BOB] I (51) boot: ## Label            Usage          Type ST Offset   Length
+[BOB] I (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+[BOB] I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+[BOB] I (71) boot:  2 factory          factory app      00 00 00010000 00177000
+[BOB] I (77) boot: End of partition table
+[BOB] I (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3bcb8h (244920) map
+[BOB] I (171) esp_image: segment 1: paddr=0004bce0 vaddr=3ffb0000 size=0391ch ( 14620) load
+[BOB] I (177) esp_image: segment 2: paddr=0004f604 vaddr=40080000 size=00a14h (  2580) load
+[BOB] I (178) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=de21ch (909852) map
+[BOB] I (494) esp_image: segment 4: paddr=0012e244 vaddr=40080a14 size=16568h ( 91496) load
+[BOB] I (530) esp_image: segment 5: paddr=001447b4 vaddr=50000000 size=00020h (    32) load
+[BOB] I (541) boot: Loaded app from partition at offset 0x10000
+[BOB] I (541) boot: Disabling RNG early entropy source...
+[BOB] I (551) cpu_start: Unicore app
+[BOB] I (551) cpu_start: Single core mode
+[BOB] I (559) cpu_start: GPIO 3 and 1 are used as console UART I/O pins
+[BOB] I (559) cpu_start: Pro cpu start user code
+[BOB] I (559) cpu_start: cpu freq: 160000000 Hz
+[BOB] I (563) app_init: Application information:
+[BOB] I (567) app_init: Project name:     signature-esp32
+[BOB] I (572) app_init: App version:      ffe3e2a-dirty
+[BOB] I (576) app_init: Compile time:     Jun 15 2026 13:59:43
+[BOB] I (581) app_init: ELF file SHA256:  0cc700420...
+[BOB] I (585) app_init: ESP-IDF:          v5.5.4
+[BOB] I (589) efuse_init: Min chip rev:     v0.0
+[BOB] I (593) efuse_init: Max chip rev:     v3.99 
+[BOB] I (597) efuse_init: Chip rev:         v3.1
+[BOB] I (601) heap_init: Initializing. RAM available for dynamic allocation:
+[BOB] I (607) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+[BOB] I (612) heap_init: At 3FFB81C8 len 00027E38 (159 KiB): DRAM
+[BOB] I (618) heap_init: At 3FFE0440 len 0001FBC0 (126 KiB): D/IRAM
+[BOB] I (623) heap_init: At 40078000 len 00008000 (32 KiB): IRAM
+[BOB] I (628) heap_init: At 40096F7C len 00009084 (36 KiB): IRAM
+[BOB] I (633) heap_init: At 3FF80000 len 00002000 (8 KiB): RTCRAM
+[BOB] I (640) spi_flash: detected chip: generic
+[BOB] I (643) spi_flash: flash io: dio
+[BOB] W (645) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+[BOB] I (658) main_task: Started on CPU0
+[BOB] I (658) main_task: Calling app_main()
+[BOB] [MAYO] scratch reserved 149664 bytes at 0x3ffb9f30
+[BOB] [MQTT] Dynamic role configuration applied: BOB
+[BOB] I (698) wifi:wifi driver task: 3ff81ae4, prio:23, stack:6656, core=0
+[BOB] I (708) wifi:wifi firmware version: 0947e8b
+[BOB] I (708) wifi:wifi certification version: v7.0
+[BOB] I (708) wifi:config NVS flash: enabled
+[BOB] I (708) wifi:config nano formatting: disabled
+[BOB] I (708) wifi:Init data frame dynamic rx buffer num: 32
+[BOB] I (718) wifi:Init static rx mgmt buffer num: 5
+[BOB] I (718) wifi:Init management short buffer num: 32
+[BOB] I (728) wifi:Init dynamic tx buffer num: 32
+[BOB] I (728) wifi:Init static rx buffer size: 1600
+[BOB] I (738) wifi:Init static rx buffer num: 10
+[BOB] I (738) wifi:Init dynamic rx buffer num: 32
+[BOB] I (738) wifi_init: rx ba win: 6
+[BOB] I (748) wifi_init: accept mbox: 6
+[BOB] I (748) wifi_init: tcpip mbox: 32
+[BOB] I (748) wifi_init: udp mbox: 6
+[BOB] I (758) wifi_init: tcp mbox: 6
+[BOB] I (758) wifi_init: tcp tx win: 5760
+[BOB] I (758) wifi_init: tcp rx win: 5760
+[BOB] I (758) wifi_init: tcp mss: 1440
+[BOB] I (768) wifi_init: WiFi IRAM OP enabled
+[BOB] I (768) wifi_init: WiFi RX IRAM OP enabled
+[BOB] I (778) wifi:Set ps type: 0, coexist: 0
+[BOB] 
+[BOB] I (778) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06
+[BOB] I (848) wifi:mode : sta (10:06:1c:98:4e:fc)
+[BOB] I (848) wifi:enable tsf
+[BOB] WIFI CONNECTING....
+[BOB] I (858) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[BOB] I (868) wifi:state: init -> auth (0xb0)
+[BOB] I (868) wifi:state: auth -> assoc (0x0)
+[BOB] I (878) wifi:state: assoc -> init (0x2c0)
+[BOB] I (888) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[BOB] WiFi lost connection (reason=203)
+[BOB] Retrying to Connect (1/10)...
+[BOB] WiFi lost connection (reason=205)
+[BOB] Retrying to Connect (2/10)...
+[BOB] I (3318) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[BOB] I (3318) wifi:state: init -> auth (0xb0)
+[BOB] I (3328) wifi:state: auth -> assoc (0x0)
+[BOB] I (3338) wifi:state: assoc -> run (0x10)
+[BOB] I (3388) wifi:connected with pqctest, aid = 4, channel 6, BW20, bssid = b8:27:eb:33:81:3c
+[BOB] I (3388) wifi:security: WPA-PSK, phy: bgn, rssi: -47, cipher(pairwise:0x3, group:0x1), pmf:0
+[BOB] I (3388) wifi:pm start, type: 0
+[BOB] 
+[BOB] I (3388) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[BOB] WiFi CONNECTED
+[BOB] I (3418) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+[BOB] I (3418) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[BOB] I (3428) wifi:<ba-add>idx:0 (ifx:0, b8:27:eb:33:81:3c), tid:7, ssn:0, winSize:64
+[BOB] I (4448) esp_netif_handlers: sta ip: 10.42.0.238, mask: 255.255.255.0, gw: 10.42.0.1
+[BOB] Wifi got IP
+[BOB] [TIME] Fetching real-world time from pool.ntp.org...
+[BOB] I (4458) wifi:<ba-add>idx:1 (ifx:0, b8:27:eb:33:81:3c), tid:0, ssn:3, winSize:64
+[BOB] MQTT_EVENT_CONNECTED
+[BOB] Subscribing to dsa/alice/send, msg_id=8305
+[BOB] MQTT_EVENT_SUBSCRIBED id=8305
+[BOB] [MAIN] MQTT initialized, creating test task
+[BOB] I (4558) main_task: Returned from app_main()
+[BOB] [SYNC] Starting as Bob (server)
+[BOB] [SYNC] Bob got msg size=5
+[BOB] [SYNC] READY received, sending ACK
+[BOB] 
+[BOB] ========================================
+[BOB] [19:00:06:000] ROUND 1 START (Bob - MAYO_1)
+[BOB] ========================================
+[BOB] [BOB] Waiting for PK (1420 bytes)
+[BOB] [BOB] PK received (1420 bytes)
+[BOB] [BOB] Sending pk_received
+[BOB] [BOB] Waiting for SM
+[BOB] [BOB] SM received (5 bytes)
+[BOB] [CRYPTO] Error: payload 5 smaller than header claims 29287
+[BOB] [BOB] Verify FAILED in 140 us
+[BOB] 
+[BOB] ========================================
+[BOB] [14:25:38:169] ROUND 1 END (Bob - MAYO_1)
+[BOB] ========================================
+[BOB] 
+[BOB] Round complete, restarting in 2s...
+[BOB] [SYNC] Starting as Bob (server)
+[BOB] [SYNC] Bob got msg size=5
+[BOB] [SYNC] READY received, sending ACK
+[BOB] 
+[BOB] ========================================
+[BOB] [14:25:41:175] ROUND 2 START (Bob - MAYO_1)
+[BOB] ========================================
+[BOB] [BOB] Waiting for PK (1420 bytes)
+[BOB] [BOB] Wrong size 5 expected 1420
+[BOB] [BOB] PK received (1420 bytes)
+[BOB] [BOB] Sending pk_received
+[BOB] [BOB] Waiting for SM
+[BOB] [BOB] SM received (5 bytes)
+[BOB] [CRYPTO] Error: payload 5 smaller than header claims 29287
+[BOB] [BOB] Verify FAILED in 140 us
+[BOB] 
+[BOB] ========================================
+[BOB] [14:25:46:566] ROUND 2 END (Bob - MAYO_1)
+[BOB] ========================================
+[BOB] 
+[BOB] Round complete, restarting in 2s...
+[BOB] [SYNC] Starting as Bob (server)
+[BOB] [SYNC] Bob got msg size=5
+[BOB] [SYNC] READY received, sending ACK
+[BOB] 
+[BOB] ========================================
+[BOB] [14:25:49:575] ROUND 3 START (Bob - MAYO_1)
+[BOB] ========================================
+[BOB] [BOB] Waiting for PK (1420 bytes)
+[BOB] [BOB] Wrong size 5 expected 1420
+[BOB] [BOB] PK received (1420 bytes)
+[BOB] [BOB] Sending pk_received
+[BOB] [BOB] Waiting for SM
+[BOB] [BOB] SM received (5 bytes)
+[BOB] [CRYPTO] Error: payload 5 smaller than header claims 29287
+[BOB] [BOB] Verify FAILED in 140 us
+[BOB] 
+[BOB] ========================================
+[BOB] [14:25:54:965] ROUND 3 END (Bob - MAYO_1)
+[BOB] ========================================
+[BOB] 
+[BOB] Round complete, restarting in 2s...
+[BOB] [SYNC] Starting as Bob (server)
+[BOB] [SYNC] Bob got msg size=5
+[BOB] [SYNC] READY received, sending ACK
+[BOB] 
+[BOB] ========================================
+[BOB] [14:25:57:965] ROUND 4 START (Bob - MAYO_1)
+[BOB] ========================================
+[BOB] [BOB] Waiting for PK (1420 bytes)
+[BOB] [BOB] Wrong size 5 expected 1420
+[BOB] [BOB] PK received (1420 bytes)
+[BOB] [BOB] Sending pk_received
+[BOB] [BOB] Waiting for SM
+[BOB] [BOB] SM received (5 bytes)
+[BOB] [CRYPTO] Error: payload 5 smaller than header claims 29287
+[BOB] [BOB] Verify FAILED in 140 us
+[BOB] 
+[BOB] ========================================
+[BOB] [14:26:03:362] ROUND 4 END (Bob - MAYO_1)
+[BOB] ========================================
+[BOB] 
+[BOB] Round complete, restarting in 2s...
+[BOB] [SYNC] Starting as Bob (server)
+[BOB] [SYNC] Bob got msg size=5
+[BOB] [SYNC] READY received, sending ACK
+[BOB] 
+[BOB] ========================================
+[BOB] [14:26:06:366] ROUND 5 START (Bob - MAYO_1)
+[BOB] ========================================
+[BOB] [BOB] Waiting for PK (1420 bytes)
+[BOB] [BOB] Wrong size 5 expected 1420
+[BOB] [BOB] PK received (1420 bytes)
+[BOB] [BOB] Sending pk_received
+[BOB] [BOB] Waiting for SM
+[BOB] [BOB] SM received (5 bytes)
+[BOB] [CRYPTO] Error: payload 5 smaller than header claims 29287
+[BOB] [BOB] Verify FAILED in 140 us
+[BOB] 
+[BOB] ========================================
+[BOB] [14:26:11:822] ROUND 5 END (Bob - MAYO_1)
+[BOB] ========================================
+[BOB] 
+[BOB] Round complete, restarting in 2s...
+[BOB] [SYNC] Starting as Bob (server)
+[BOB] [SYNC] Bob got msg size=5
+[BOB] [SYNC] READY received, sending ACK
+[BOB] 
+[BOB] ========================================
+[BOB] [14:26:14:825] ROUND 6 START (Bob - MAYO_1)
+[BOB] ========================================
+[BOB] [BOB] Waiting for PK (1420 bytes)
+[BOB] [BOB] Wrong size 5 expected 1420
+[BOB] [BOB] PK received (1420 bytes)
+[BOB] [BOB] Sending pk_received
+[BOB] [BOB] Waiting for SM
+[BOB] [BOB] SM received (5 bytes)
+[BOB] [CRYPTO] Error: payload 5 smaller than header claims 29287
+[BOB] [BOB] Verify FAILED in 140 us
+[BOB] 
+[BOB] ========================================
+[BOB] [14:26:20:256] ROUND 6 END (Bob - MAYO_1)
+[BOB] ========================================
+[BOB] 
+[BOB] Round complete, restarting in 2s...
+[BOB] [SYNC] Starting as Bob (server)
+[BOB] [SYNC] Bob got msg size=5
+[BOB] [SYNC] READY received, sending ACK
+[BOB] 
+[BOB] ========================================
+[BOB] [14:26:23:265] ROUND 7 START (Bob - MAYO_1)
+[BOB] ========================================
+[BOB] [BOB] Waiting for PK (1420 bytes)
+[BOB] [BOB] Wrong size 5 expected 1420
+[BOB] [BOB] PK received (1420 bytes)
+[BOB] [BOB] Sending pk_received
+[BOB] [BOB] Waiting for SM
