@@ -1,0 +1,71 @@
+# ==============================
+# Build outputs
+# ==============================
+build/
+Build/
+Debug/
+Release/
+out/
+bin/
+obj/
+
+# Particle build files
+.particle/
+target/
+
+# ==============================
+# VS Code
+# ==============================
+.vscode/
+*.code-workspace
+
+# ==============================
+# C/C++ generated files
+# ==============================
+*.o
+*.obj
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.d
+*.su
+*.a
+*.so
+*.dll
+*.exe
+
+# ==============================
+# Temporary / backup files
+# ==============================
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Python cache
+# ==============================
+__pycache__/
+*.pyc
+
+# ==============================
+# IDE-generated files
+# ==============================
+.idea/
+
+# ==============================
+# Secrets / environment files
+# ==============================
+.env
+.env.*
+*.pem
+*.key
+# Windows reserved NUL files
+nul
+**/nul
