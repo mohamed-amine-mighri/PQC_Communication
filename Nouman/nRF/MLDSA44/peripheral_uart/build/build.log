@@ -1,0 +1,49 @@
+2026-09-18T18:33:18.557Z west build --build-dir c:/peripheral_uart/build c:/peripheral_uart
+2026-09-18T18:33:20.023Z [0/6] Performing build step for 'peripheral_uart'
+2026-09-18T18:33:20.377Z [0/2] Re-checking globbed directories...
+2026-09-18T18:33:22.355Z [1/8] Building C object CMakeFiles/app.dir/src/main.c.obj
+2026-09-18T18:33:22.964Z [2/8] Linking C static library app\libapp.a
+2026-09-18T18:33:24.682Z [3/8] Linking C executable zephyr\zephyr_pre0.elf; Logical command for additional byproducts on target: zephyr_pre0
+2026-09-18T18:33:25.965Z [4/8] Generating linker.cmd
+2026-09-18T18:33:26.535Z [5/8] Generating isr_tables.c, isr_tables_vt.ld, isr_tables_swi.ld
+2026-09-18T18:33:26.984Z [6/8] Building C object zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.obj
+2026-09-18T18:33:28.991Z [7/8] Linking C executable zephyr\zephyr.elf
+2026-09-18T18:33:28.991Z Memory region         Used Size  Region Size  %age Used
+2026-09-18T18:33:28.992Z            FLASH:      199820 B         1 MB     19.06%
+2026-09-18T18:33:28.992Z              RAM:      126780 B       448 KB     27.64%
+2026-09-18T18:33:28.992Z         IDT_LIST:          0 GB        32 KB      0.00%
+2026-09-18T18:33:28.992Z Generating files from C:/peripheral_uart/build/peripheral_uart/zephyr/zephyr.elf for board: nrf5340dk/nrf5340/cpuapp
+2026-09-18T18:33:29.011Z [1/6] Performing build step for 'ipc_radio'
+2026-09-18T18:33:29.332Z ninja: no work to do.
+2026-09-18T18:33:29.341Z [2/6] No install step for 'peripheral_uart'
+2026-09-18T18:33:29.432Z [4/6] Completed 'peripheral_uart'
+2026-09-18T18:33:29.440Z [5/6] No install step for 'ipc_radio'
+2026-09-18T18:33:29.710Z [6/6] Completed 'ipc_radio'
+.3.3/nrf/tests/include -IC:/ncs/v3.3.3/modules/hal/cmsis_6/CMSIS/Core/Include -IC:/ncs/v3.3.3/zephyr/modules/cmsis_6/. -IC:/ncs/v3.3.3/nrf/modules/hal_nordic/. -IC:/ncs/v3.3.3/modules/hal/nordic/nrfx -IC:/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/include -IC:/ncs/v3.3.3/modules/hal/nordic/nrfx/bsp/stable -IC:/ncs/v3.3.3/modules/hal/nordic/nrfx/bsp/stable/templates -IC:/ncs/v3.3.3/zephyr/modules/hal_nordic/nrfx/. -IC:/ncs/v3.3.3/modules/hal/st/sensor/inc -IC:/peripheral_uart/build/peripheral_uart/modules/libmetal/libmetal/lib/include -IC:/ncs/v3.3.3/modules/lib/open-amp/open-amp/lib/include -IC:/ncs/v3.3.3/modules/debug/segger/SEGGER -IC:/ncs/v3.3.3/modules/debug/segger/Config -IC:/ncs/v3.3.3/nrfxlib/softdevice_controller/include -IC:/peripheral_uart/build/peripheral_uart/generated/library_nrf_security_psa -IC:/ncs/v3.3.3/nrf/subsys/nrf_security/include -IC:/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers -IC:/ncs/v3.3.3/nrf/subsys/nrf_security/src/utils -IC:/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/include -IC:/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/library -IC:/ncs/v3.3.3/modules/crypto/mbedtls/library -IC:/ncs/v3.3.3/modules/crypto/mbedtls/include -IC:/ncs/v3.3.3/modules/crypto/mbedtls/include/library -IC:/ncs/v3.3.3/nrfxlib/crypto/nrf_oberon/include -IC:/ncs/v3.3.3/nrfxlib/crypto/nrf_oberon/include/mbedtls -isystem C:/ncs/v3.3.3/zephyr/lib/libc/common/include -isystem C:/ncs/v3.3.3/nrfxlib/crypto/nrf_cc312_platform/include -fno-strict-aliasing -Os -imacros C:/peripheral_uart/build/peripheral_uart/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m33 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=C:/ncs/toolchains/936afb6332/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi -imacros C:/ncs/v3.3.3/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=C:/peripheral_uart=CMAKE_SOURCE_DIR -fmacro-prefix-map=C:/ncs/v3.3.3/zephyr=ZEPHYR_BASE -fmacro-prefix-map=C:/ncs/v3.3.3=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c17 -MD -MT CMakeFiles/app.dir/src/main.c.obj -MF CMakeFiles\app.dir\src\main.c.obj.d -o CMakeFiles/app.dir/src/main.c.obj -c C:/peripheral_uart/src/main.c
+2026-09-18T18:33:07.006Z [01m[KC:/peripheral_uart/src/main.c:[m[K In function '[01m[Kble_write_thread[m[K':
+2026-09-18T18:33:07.006Z [01m[KC:/peripheral_uart/src/main.c:1123:49:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+2026-09-18T18:33:07.006Z  1123 |                                         LOG_WRN([01;35m[K"[m[KFailed to send data over BLE connection);
+2026-09-18T18:33:07.006Z       |                                                 [01;35m[K^[m[K
+2026-09-18T18:33:07.006Z [01m[KC:/peripheral_uart/src/main.c:1136:39:[m[K [01;31m[Kerror: [m[Kunterminated argument list invoking macro "LOG_WRN"
+2026-09-18T18:33:07.006Z  1136 |                 NULL, PRIORITY, 0, 0);
+2026-09-18T18:33:07.006Z       |                                       [01;31m[K^[m[K
+2026-09-18T18:33:07.006Z [01m[KC:/peripheral_uart/src/main.c:1123:41:[m[K [01;31m[Kerror: [m[K'[01m[KLOG_WRN[m[K' undeclared (first use in this function)
+2026-09-18T18:33:07.006Z  1123 |                                         [01;31m[KLOG_WRN[m[K("Failed to send data over BLE connection);
+2026-09-18T18:33:07.006Z       |                                         [01;31m[K^~~~~~~[m[K
+2026-09-18T18:33:07.006Z [01m[KC:/peripheral_uart/src/main.c:1123:41:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+2026-09-18T18:33:07.006Z [01m[KC:/peripheral_uart/src/main.c:1123:48:[m[K [01;31m[Kerror: [m[Kexpected '[01m[K;[m[K' at end of input
+2026-09-18T18:33:07.006Z  1123 |                                         LOG_WRN[01;31m[K([m[K"Failed to send data over BLE connection);
+2026-09-18T18:33:07.006Z       |                                                [01;31m[K^[m[K
+2026-09-18T18:33:07.006Z       |                                                [32m[K;[m[K
+2026-09-18T18:33:07.006Z ......
+2026-09-18T18:33:07.006Z [01m[KC:/peripheral_uart/src/main.c:1123:41:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+2026-09-18T18:33:07.007Z  1123 |                                         [01;31m[KLOG_WRN[m[K("Failed to send data over BLE connection);
+2026-09-18T18:33:07.007Z       |                                         [01;31m[K^~~~~~~[m[K
+2026-09-18T18:33:07.007Z [01m[KC:/peripheral_uart/src/main.c:1123:41:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+2026-09-18T18:33:07.007Z [01m[KC:/peripheral_uart/src/main.c:1123:41:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+2026-09-18T18:33:07.007Z [01m[KC:/peripheral_uart/src/main.c:1123:41:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+2026-09-18T18:33:07.007Z [01m[KC:/peripheral_uart/src/main.c:1123:41:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+2026-09-18T18:33:07.007Z ninja: build stopped: subcommand failed.
+2026-09-18T18:33:07.016Z [31mFAILED: [code=1] [0m_sysbuild/sysbuild/images/peripheral_uart-prefix/src/peripheral_uart-stamp/peripheral_uart-build C:/peripheral_uart/build/_sysbuild/sysbuild/images/peripheral_uart-prefix/src/peripheral_uart-stamp/peripheral_uart-build 
+2026-09-18T18:33:07.016Z C:\windows\system32\cmd.exe /C "cd /D C:\peripheral_uart\build\peripheral_uart && C:\ncs\toolchains\936afb6332\opt\bin\cmake.exe --build ."
+2026-09-18T18:33:07.016Z ninja: build stopped: subcommand failed.

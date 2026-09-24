@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/central_uart_1/build/_sysbuild/sysbuild/images/CMakeFiles/central_uart_1"
+		},
+		{
+			"file" : "C:/central_uart_1/build/_sysbuild/sysbuild/images/CMakeFiles/central_uart_1.rule"
+		},
+		{
+			"file" : "C:/central_uart_1/build/_sysbuild/sysbuild/images/CMakeFiles/central_uart_1-complete.rule"
+		},
+		{
+			"file" : "C:/central_uart_1/build/_sysbuild/sysbuild/images/central_uart_1-prefix/src/central_uart_1-stamp/central_uart_1-build.rule"
+		},
+		{
+			"file" : "C:/central_uart_1/build/_sysbuild/sysbuild/images/central_uart_1-prefix/src/central_uart_1-stamp/central_uart_1-configure.rule"
+		},
+		{
+			"file" : "C:/central_uart_1/build/_sysbuild/sysbuild/images/central_uart_1-prefix/src/central_uart_1-stamp/central_uart_1-download.rule"
+		},
+		{
+			"file" : "C:/central_uart_1/build/_sysbuild/sysbuild/images/central_uart_1-prefix/src/central_uart_1-stamp/central_uart_1-install.rule"
+		},
+		{
+			"file" : "C:/central_uart_1/build/_sysbuild/sysbuild/images/central_uart_1-prefix/src/central_uart_1-stamp/central_uart_1-mkdir.rule"
+		},
+		{
+			"file" : "C:/central_uart_1/build/_sysbuild/sysbuild/images/central_uart_1-prefix/src/central_uart_1-stamp/central_uart_1-patch.rule"
+		},
+		{
+			"file" : "C:/central_uart_1/build/_sysbuild/sysbuild/images/central_uart_1-prefix/src/central_uart_1-stamp/central_uart_1-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"central_uart_1"
+		],
+		"name" : "central_uart_1"
+	}
+}

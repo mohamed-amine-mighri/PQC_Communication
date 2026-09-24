@@ -1,0 +1,13 @@
+# Target labels
+ central_uart_1
+# Source files and their labels
+C:/central_uart_1/build/_sysbuild/sysbuild/images/CMakeFiles/central_uart_1
+C:/central_uart_1/build/_sysbuild/sysbuild/images/CMakeFiles/central_uart_1.rule
+C:/central_uart_1/build/_sysbuild/sysbuild/images/CMakeFiles/central_uart_1-complete.rule
+C:/central_uart_1/build/_sysbuild/sysbuild/images/central_uart_1-prefix/src/central_uart_1-stamp/central_uart_1-build.rule
+C:/central_uart_1/build/_sysbuild/sysbuild/images/central_uart_1-prefix/src/central_uart_1-stamp/central_uart_1-configure.rule
+C:/central_uart_1/build/_sysbuild/sysbuild/images/central_uart_1-prefix/src/central_uart_1-stamp/central_uart_1-download.rule
+C:/central_uart_1/build/_sysbuild/sysbuild/images/central_uart_1-prefix/src/central_uart_1-stamp/central_uart_1-install.rule
+C:/central_uart_1/build/_sysbuild/sysbuild/images/central_uart_1-prefix/src/central_uart_1-stamp/central_uart_1-mkdir.rule
+C:/central_uart_1/build/_sysbuild/sysbuild/images/central_uart_1-prefix/src/central_uart_1-stamp/central_uart_1-patch.rule
+C:/central_uart_1/build/_sysbuild/sysbuild/images/central_uart_1-prefix/src/central_uart_1-stamp/central_uart_1-update.rule

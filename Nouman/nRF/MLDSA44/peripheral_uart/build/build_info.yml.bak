@@ -1,0 +1,24 @@
+cmake:
+  board:
+    name: 'nrf5340dk'
+    path:
+     - 'C:/ncs/v3.3.3/zephyr/boards/nordic/nrf5340dk'
+    qualifiers: 'nrf5340/cpuapp'
+    revision: ''
+  images:
+   - name: 'peripheral_uart'
+     source-dir: 'C:/peripheral_uart'
+     type: 'MAIN'
+   - name: 'ipc_radio'
+     source-dir: ''
+  kconfig:
+    files:
+     - 'C:/peripheral_uart/build/_sysbuild/empty.conf'
+     - 'C:/peripheral_uart/build/_sysbuild/empty.conf'
+    user-files:
+     - 'C:/peripheral_uart/build/_sysbuild/empty.conf'
+version: '0.1.0'
+west:
+  command: 'C:\ncs\toolchains\936afb6332\opt\bin\Scripts\west build --build-dir c:/peripheral_uart/build c:/peripheral_uart --pristine --board nrf5340dk/nrf5340/cpuapp -- -DDEBUG_THREAD_INFO=Off'
+  topdir: 'c:\ncs\v3.3.3'
+  version: '1.5.0'

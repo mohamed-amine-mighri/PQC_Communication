@@ -1,0 +1,13 @@
+# Target labels
+ ipc_radio
+# Source files and their labels
+C:/central_uart_1/build/modules/nrf/CMakeFiles/ipc_radio
+C:/central_uart_1/build/modules/nrf/CMakeFiles/ipc_radio.rule
+C:/central_uart_1/build/modules/nrf/CMakeFiles/ipc_radio-complete.rule
+C:/central_uart_1/build/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-build.rule
+C:/central_uart_1/build/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-configure.rule
+C:/central_uart_1/build/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-download.rule
+C:/central_uart_1/build/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-install.rule
+C:/central_uart_1/build/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-mkdir.rule
+C:/central_uart_1/build/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-patch.rule
+C:/central_uart_1/build/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-update.rule

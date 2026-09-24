@@ -1,0 +1,58 @@
+cmake:
+  application:
+    configuration-dir: 'C:/nrf_work/SHAKE2f/central_uart'
+    source-dir: 'C:/nrf_work/SHAKE2f/central_uart'
+  board:
+    name: 'nrf5340dk'
+    path:
+     - 'C:/ncs/v3.3.3/zephyr/boards/nordic/nrf5340dk'
+    qualifiers: 'nrf5340/cpuapp'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/ncs/v3.3.3/nrf/dts/bindings'
+     - 'C:/ncs/v3.3.3/zephyr/dts/bindings'
+    files:
+     - 'C:/ncs/v3.3.3/zephyr/boards/nordic/nrf5340dk/nrf5340dk_nrf5340_cpuapp.dts'
+    include-dirs:
+     - 'C:/ncs/v3.3.3/nrf/include'
+     - 'C:/ncs/v3.3.3/nrf/dts/common'
+     - 'C:/ncs/v3.3.3/nrf/dts/riscv'
+     - 'C:/ncs/v3.3.3/nrf/dts/arm'
+     - 'C:/ncs/v3.3.3/nrf/dts'
+     - 'C:/ncs/v3.3.3/zephyr/include'
+     - 'C:/ncs/v3.3.3/zephyr/include/zephyr'
+     - 'C:/ncs/v3.3.3/zephyr/dts/common'
+     - 'C:/ncs/v3.3.3/zephyr/dts/vendor'
+     - 'C:/ncs/v3.3.3/zephyr/dts/rx'
+     - 'C:/ncs/v3.3.3/zephyr/dts/x86'
+     - 'C:/ncs/v3.3.3/zephyr/dts/xtensa'
+     - 'C:/ncs/v3.3.3/zephyr/dts/sparc'
+     - 'C:/ncs/v3.3.3/zephyr/dts/riscv'
+     - 'C:/ncs/v3.3.3/zephyr/dts/posix'
+     - 'C:/ncs/v3.3.3/zephyr/dts/arm64'
+     - 'C:/ncs/v3.3.3/zephyr/dts/arm'
+     - 'C:/ncs/v3.3.3/zephyr/dts/arc'
+     - 'C:/ncs/v3.3.3/zephyr/dts'
+  kconfig:
+    files:
+     - 'C:/ncs/v3.3.3/zephyr/boards/nordic/nrf5340dk/nrf5340dk_nrf5340_cpuapp_defconfig'
+     - 'C:/nrf_work/SHAKE2f/central_uart/prj.conf'
+     - 'C:/nrf_work/SHAKE2f/central_uart/boards/nrf5340dk_nrf5340_cpuapp.conf'
+    user-files:
+     - 'C:/nrf_work/SHAKE2f/central_uart/prj.conf'
+     - 'C:/nrf_work/SHAKE2f/central_uart/boards/nrf5340dk_nrf5340_cpuapp.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/ncs/toolchains/936afb6332/opt/zephyr-sdk'
+  vendor-specific:
+    nordic:
+      svdfile: 'C:/ncs/v3.3.3/modules/hal/nordic/nrfx/bsp/stable/mdk/nrf5340_application.svd'
+  zephyr:
+    version: '4.3.99'
+    zephyr-base: 'C:/ncs/v3.3.3/zephyr'
+version: '0.1.0'
+west:
+  command: 'C:\ncs\toolchains\936afb6332\opt\bin\Scripts\west build --build-dir c:/nrf_work/SHAKE2f/central_uart/build c:/nrf_work/SHAKE2f/central_uart --pristine --board nrf5340dk/nrf5340/cpuapp --no-sysbuild -- -DDEBUG_THREAD_INFO=Off'
+  topdir: 'c:\ncs\v3.3.3'
+  version: '1.5.0'

@@ -1,0 +1,731 @@
+2026-09-18T21:53:48.438Z west build --build-dir c:/nrf_work/SHA2f/central_uart/build c:/nrf_work/SHA2f/central_uart
+2026-09-18T21:53:49.415Z [0/2] Re-checking globbed directories...
+2026-09-18T21:53:49.596Z ninja: no work to do.
+ect zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/data.c.obj
+2026-09-18T21:51:39.602Z [2/165] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc7_sw.c.obj
+2026-09-18T21:51:39.623Z [3/165] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/buf.c.obj
+2026-09-18T21:51:39.645Z [4/165] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc16_sw.c.obj
+2026-09-18T21:51:39.665Z [5/165] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc24_sw.c.obj
+2026-09-18T21:51:39.684Z [6/165] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/hci_common.c.obj
+2026-09-18T21:51:39.756Z [7/165] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc4_sw.c.obj
+2026-09-18T21:51:39.787Z [8/165] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc32_sw.c.obj
+2026-09-18T21:51:39.853Z [9/165] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc32c_sw.c.obj
+2026-09-18T21:51:39.875Z [10/165] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc32k_4_2_sw.c.obj
+2026-09-18T21:51:39.960Z [11/165] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc8_sw.c.obj
+2026-09-18T21:51:40.110Z [12/165] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/scan.c.obj
+2026-09-18T21:51:40.151Z [13/165] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/ecc.c.obj
+2026-09-18T21:51:40.173Z [14/165] Building C object zephyr/subsys/bluetooth/crypto/CMakeFiles/subsys__bluetooth__crypto.dir/bt_crypto_psa.c.obj
+2026-09-18T21:51:40.470Z [15/165] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/crypto_psa.c.obj
+2026-09-18T21:51:40.492Z [16/165] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/flash_page_layout.c.obj
+2026-09-18T21:51:40.572Z [17/165] Building C object zephyr/drivers/console/CMakeFiles/drivers__console.dir/uart_console.c.obj
+2026-09-18T21:51:40.661Z [18/165] Building C object zephyr/drivers/bluetooth/CMakeFiles/drivers__bluetooth.dir/hci/nrf53_support.c.obj
+2026-09-18T21:51:40.681Z [19/165] Building C object zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.obj
+2026-09-18T21:51:40.709Z [20/165] Building C object zephyr/drivers/entropy/CMakeFiles/drivers__entropy.dir/C_/ncs/v3.3.3/nrf/drivers/entropy/entropy_cc3xx.c.obj
+2026-09-18T21:51:40.730Z [21/165] Building C object zephyr/subsys/bluetooth/crypto/CMakeFiles/subsys__bluetooth__crypto.dir/bt_crypto.c.obj
+2026-09-18T21:51:40.790Z [22/165] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/keys.c.obj
+2026-09-18T21:51:40.810Z [23/165] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/jesd216.c.obj
+2026-09-18T21:51:40.831Z [24/165] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/id.c.obj
+2026-09-18T21:51:40.926Z [25/165] Building C object CMakeFiles/app.dir/src/main.c.obj
+2026-09-18T21:51:41.017Z [26/165] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/soc_flash_nrf.c.obj
+2026-09-18T21:51:41.041Z [27/165] Building C object zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/clock_control_nrf.c.obj
+2026-09-18T21:51:41.068Z [28/165] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/l2cap.c.obj
+2026-09-18T21:51:41.088Z [29/165] Building C object zephyr/drivers/mbox/CMakeFiles/drivers__mbox.dir/mbox_nrfx_ipc.c.obj
+2026-09-18T21:51:41.111Z [30/165] Building C object zephyr/drivers/bluetooth/CMakeFiles/drivers__bluetooth.dir/hci/ipc.c.obj
+2026-09-18T21:51:41.162Z [31/165] Building C object zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_nrfx.c.obj
+2026-09-18T21:51:41.226Z [32/165] Building C object zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/pinctrl_nrf.c.obj
+2026-09-18T21:51:41.246Z [33/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/bsp/stable/mdk/system_nrf5340_application.c.obj
+2026-09-18T21:51:41.312Z [34/165] Building C object zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/sys_clock_init.c.obj
+2026-09-18T21:51:41.386Z [35/165] Building C object modules/nrf/drivers/hw_cc3xx/CMakeFiles/..__nrf__drivers__hw_cc3xx.dir/hw_cc3xx.c.obj
+2026-09-18T21:51:41.442Z [36/165] Building C object modules/nrf/subsys/nrf_security/src/zephyr/CMakeFiles/mbedtls_zephyr.dir/mbedtls_heap.c.obj
+2026-09-18T21:51:41.496Z [37/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/helpers/nrfx_flag32_allocator.c.obj
+2026-09-18T21:51:41.559Z [38/165] Building C object modules/nrf/subsys/nrf_security/src/zephyr/CMakeFiles/mbedtls_zephyr.dir/psa_crypto_init.c.obj
+2026-09-18T21:51:41.581Z [39/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/nrfx_glue.c.obj
+2026-09-18T21:51:41.603Z [40/165] Building C object zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/nrf_rtc_timer.c.obj
+2026-09-18T21:51:41.624Z [41/165] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/nrf_qspi_nor.c.obj
+2026-09-18T21:51:41.860Z [42/165] Linking C static library modules\nrf\subsys\nrf_security\src\libmbedcrypto.a
+2026-09-18T21:51:41.922Z [43/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/helpers/nrfx_ram_ctrl.c.obj
+2026-09-18T21:51:41.944Z [44/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_xo24m.c.obj
+2026-09-18T21:51:41.966Z [45/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_xo.c.obj
+2026-09-18T21:51:42.013Z [46/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_clock.c.obj
+2026-09-18T21:51:42.064Z [47/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_hfclk192m.c.obj
+2026-09-18T21:51:42.118Z [48/165] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/smp.c.obj
+2026-09-18T21:51:42.122Z [49/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_lfclk.c.obj
+2026-09-18T21:51:42.150Z [50/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/helpers/nrfx_gppi_dppi.c.obj
+2026-09-18T21:51:42.171Z [51/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_hfclkaudio.c.obj
+2026-09-18T21:51:42.236Z [52/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_ipc.c.obj
+2026-09-18T21:51:42.297Z [53/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_hfclk.c.obj
+2026-09-18T21:51:42.316Z [54/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/version.c.obj
+2026-09-18T21:51:42.335Z [55/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/dma.c.obj
+2026-09-18T21:51:42.352Z [56/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_nvmc.c.obj
+2026-09-18T21:51:42.371Z [57/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/device.c.obj
+2026-09-18T21:51:42.527Z [58/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/init.c.obj
+2026-09-18T21:51:42.547Z [59/165] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/att.c.obj
+2026-09-18T21:51:42.609Z [60/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/shmem.c.obj
+2026-09-18T21:51:42.686Z [61/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/log.c.obj
+2026-09-18T21:51:42.724Z [62/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/irq.c.obj
+2026-09-18T21:51:42.768Z [63/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/alloc.c.obj
+2026-09-18T21:51:42.792Z [64/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/softirq.c.obj
+2026-09-18T21:51:42.814Z [65/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/io.c.obj
+2026-09-18T21:51:42.836Z [66/165] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/version.c.obj
+2026-09-18T21:51:42.855Z [67/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/device.c.obj
+2026-09-18T21:51:42.877Z [68/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_qspi.c.obj
+2026-09-18T21:51:42.898Z [69/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/init.c.obj
+2026-09-18T21:51:42.918Z [70/165] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/hci_core.c.obj
+2026-09-18T21:51:42.969Z [71/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/shmem.c.obj
+2026-09-18T21:51:42.988Z [72/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/condition.c.obj
+2026-09-18T21:51:43.007Z [73/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/time.c.obj
+2026-09-18T21:51:43.033Z [74/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/irq.c.obj
+2026-09-18T21:51:43.055Z [75/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/log.c.obj
+2026-09-18T21:51:43.146Z [76/165] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/sys.c.obj
+2026-09-18T21:51:43.209Z [77/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_uarte.c.obj
+2026-09-18T21:51:43.343Z [78/165] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_gpiote.c.obj
+2026-09-18T21:51:43.367Z [79/165] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/virtio/virtio.c.obj
+2026-09-18T21:51:43.392Z [80/165] Building C object modules/segger/CMakeFiles/modules__segger.dir/C_/ncs/v3.3.3/modules/debug/segger/SEGGER/SEGGER_RTT.c.obj
+2026-09-18T21:51:43.415Z [81/165] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/rpmsg/rpmsg.c.obj
+2026-09-18T21:51:43.488Z [82/165] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/virtio/virtqueue.c.obj
+2026-09-18T21:51:43.580Z [83/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/busy_wait.c.obj
+2026-09-18T21:51:43.612Z [84/165] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/utils/utilities.c.obj
+2026-09-18T21:51:43.633Z [85/165] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/rpmsg/rpmsg_virtio.c.obj
+2026-09-18T21:51:43.655Z [86/165] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/remoteproc/rsc_table_parser.c.obj
+2026-09-18T21:51:43.677Z [87/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/banner.c.obj
+2026-09-18T21:51:43.697Z [88/165] Building C object modules/segger/CMakeFiles/modules__segger.dir/SEGGER_RTT_zephyr.c.obj
+2026-09-18T21:51:43.721Z [89/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/errno.c.obj
+2026-09-18T21:51:43.742Z [90/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/device.c.obj
+2026-09-18T21:51:43.764Z [91/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/version.c.obj
+2026-09-18T21:51:43.783Z [92/165] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/conn.c.obj
+2026-09-18T21:51:43.806Z [93/165] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/remoteproc/remoteproc_virtio.c.obj
+2026-09-18T21:51:43.829Z [94/165] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/remoteproc/elf_loader.c.obj
+2026-09-18T21:51:43.852Z [95/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/main_weak.c.obj
+2026-09-18T21:51:43.871Z [96/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/fatal.c.obj
+2026-09-18T21:51:43.893Z [97/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/init.c.obj
+2026-09-18T21:51:43.917Z [98/165] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/remoteproc/remoteproc.c.obj
+2026-09-18T21:51:43.939Z [99/165] Building C object zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/uart_nrfx_uarte.c.obj
+2026-09-18T21:51:43.961Z [100/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/kheap.c.obj
+2026-09-18T21:51:43.982Z [101/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mem_slab.c.obj
+2026-09-18T21:51:44.004Z [102/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/float.c.obj
+2026-09-18T21:51:44.027Z [103/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/idle.c.obj
+2026-09-18T21:51:44.107Z [104/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mailbox.c.obj
+2026-09-18T21:51:44.223Z [105/165] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/gatt.c.obj
+2026-09-18T21:51:44.277Z [106/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/system_work_q.c.obj
+2026-09-18T21:51:44.294Z [107/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/msg_q.c.obj
+2026-09-18T21:51:44.319Z [108/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/stack.c.obj
+2026-09-18T21:51:44.344Z [109/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/sem.c.obj
+2026-09-18T21:51:44.393Z [110/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/queue.c.obj
+2026-09-18T21:51:44.411Z [111/165] Building C object zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj
+2026-09-18T21:51:44.431Z [112/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mutex.c.obj
+2026-09-18T21:51:44.455Z [113/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/thread.c.obj
+2026-09-18T21:51:44.473Z [114/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/condvar.c.obj
+2026-09-18T21:51:44.490Z [115/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/pipe.c.obj
+2026-09-18T21:51:44.516Z [116/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/dynamic_disabled.c.obj
+2026-09-18T21:51:44.538Z [117/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timeslicing.c.obj
+2026-09-18T21:51:44.555Z [118/165] Linking C static library zephyr\arch\arch\arm\core\cortex_m\cmse\libarch__arm__core__cortex_m__cmse.a
+2026-09-18T21:51:44.576Z [119/165] Linking C static library zephyr\arch\common\libarch__common.a
+2026-09-18T21:51:44.654Z [120/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timeout.c.obj
+2026-09-18T21:51:44.670Z [121/165] Linking C static library zephyr\lib\libc\common\liblib__libc__common.a
+2026-09-18T21:51:44.687Z [122/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/spinlock_validate.c.obj
+2026-09-18T21:51:44.704Z [123/165] Linking C static library zephyr\lib\libc\picolibc\liblib__libc__picolibc.a
+2026-09-18T21:51:44.722Z [124/165] Linking C static library zephyr\arch\arch\arm\core\mpu\libarch__arm__core__mpu.a
+2026-09-18T21:51:44.738Z [125/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mempool.c.obj
+2026-09-18T21:51:44.754Z [126/165] Linking C static library zephyr\arch\arch\arm\core\libarch__arm__core.a
+2026-09-18T21:51:44.772Z [127/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timer.c.obj
+2026-09-18T21:51:44.788Z [128/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/work.c.obj
+2026-09-18T21:51:44.803Z [129/165] Linking C static library zephyr\lib\posix\c_lib_ext\liblib__posix__c_lib_ext.a
+2026-09-18T21:51:44.817Z [130/165] Linking C static library zephyr\subsys\random\libsubsys__random.a
+2026-09-18T21:51:44.837Z [131/165] Linking C static library zephyr\arch\arch\arm\core\cortex_m\libarch__arm__core__cortex_m.a
+2026-09-18T21:51:44.854Z [132/165] Linking C static library zephyr\subsys\bluetooth\common\libsubsys__bluetooth__common.a
+2026-09-18T21:51:44.874Z [133/165] Linking C static library zephyr\lib\net_buf\liblib__net_buf.a
+2026-09-18T21:51:44.889Z [134/165] Linking C static library app\libapp.a
+2026-09-18T21:51:44.890Z [135/165] Linking C static library zephyr\drivers\mbox\libdrivers__mbox.a
+2026-09-18T21:51:44.890Z [136/165] Linking C static library zephyr\drivers\pinctrl\libdrivers__pinctrl.a
+2026-09-18T21:51:44.890Z [137/165] Linking C static library zephyr\soc\soc\nrf5340\libsoc__nordic.a
+2026-09-18T21:51:44.890Z [138/165] Linking C static library zephyr\drivers\clock_control\libdrivers__clock_control.a
+2026-09-18T21:51:44.890Z [139/165] Linking C static library zephyr\drivers\bluetooth\libdrivers__bluetooth.a
+2026-09-18T21:51:44.894Z [140/165] Linking C static library zephyr\subsys\bluetooth\crypto\libsubsys__bluetooth__crypto.a
+2026-09-18T21:51:44.894Z [141/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/poll.c.obj
+2026-09-18T21:51:44.894Z [142/165] Linking C static library zephyr\subsys\crc\libsubsys__crc.a
+2026-09-18T21:51:44.894Z [143/165] Linking C static library zephyr\drivers\console\libdrivers__console.a
+2026-09-18T21:51:44.894Z [144/165] Linking C static library zephyr\drivers\entropy\libdrivers__entropy.a
+2026-09-18T21:51:44.895Z [145/165] Linking C static library zephyr\libzephyr.a
+2026-09-18T21:51:44.895Z [146/165] Linking C static library zephyr\drivers\gpio\libdrivers__gpio.a
+2026-09-18T21:51:44.908Z [147/165] Linking C static library zephyr\drivers\flash\libdrivers__flash.a
+2026-09-18T21:51:44.922Z [148/165] Linking C static library zephyr\subsys\bluetooth\host\libsubsys__bluetooth__host.a
+2026-09-18T21:51:44.939Z [149/165] Linking C static library zephyr\drivers\serial\libdrivers__serial.a
+2026-09-18T21:51:44.944Z [150/165] Building C object zephyr/kernel/CMakeFiles/kernel.dir/sched.c.obj
+2026-09-18T21:51:44.960Z [151/165] Linking C static library zephyr\drivers\timer\libdrivers__timer.a
+2026-09-18T21:51:44.960Z [152/165] Linking C static library modules\nrf\drivers\hw_cc3xx\lib..__nrf__drivers__hw_cc3xx.a
+2026-09-18T21:51:44.961Z [153/165] Linking C static library modules\nrf\subsys\nrf_security\src\zephyr\libmbedtls_zephyr.a
+2026-09-18T21:51:45.005Z [154/165] Linking C static library modules\segger\libmodules__segger.a
+2026-09-18T21:51:45.023Z [155/165] Linking C static library modules\open-amp\open-amp\lib\libopen_amp.a
+2026-09-18T21:51:45.048Z [156/165] Linking C static library modules\hal_nordic\modules\hal_nordic\nrfx\libnrfx.a
+2026-09-18T21:51:45.049Z [157/165] Linking C static library modules\libmetal\libmetal\lib\libmetal.a
+2026-09-18T21:51:45.144Z [158/165] Linking C static library zephyr\kernel\libkernel.a
+2026-09-18T21:51:45.514Z [159/165] Linking C executable zephyr\zephyr_pre0.elf; Logical command for additional byproducts on target: zephyr_pre0
+2026-09-18T21:51:45.663Z [160/165] Generating linker.cmd
+2026-09-18T21:51:46.021Z [161/165] Generating isr_tables.c, isr_tables_vt.ld, isr_tables_swi.ld
+2026-09-18T21:51:46.099Z [162/165] Building C object zephyr/CMakeFiles/zephyr_final.dir/misc/empty_file.c.obj
+2026-09-18T21:51:46.239Z [163/165] Building C object zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.obj
+2026-09-18T21:51:47.234Z [164/165] Linking C executable zephyr\zephyr.elf
+2026-09-18T21:51:47.234Z Memory region         Used Size  Region Size  %age Used
+2026-09-18T21:51:47.234Z            FLASH:      209252 B         1 MB     19.96%
+2026-09-18T21:51:47.234Z              RAM:      109244 B       448 KB     23.81%
+2026-09-18T21:51:47.234Z         IDT_LIST:          0 GB        32 KB      0.00%
+2026-09-18T21:51:47.234Z Generating files from C:/nrf_work/SHA2f/central_uart/build/zephyr/zephyr.elf for board: nrf5340dk/nrf5340/cpuapp
+ zephyr/CMakeFiles/zephyr.dir/subsys/ipc/ipc_service/backends/ipc_rpmsg_static_vrings.c.obj
+2026-09-18T21:49:59.941Z [115/362] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/ipc/ipc_service/lib/ipc_rpmsg.c.obj
+2026-09-18T21:49:59.962Z [116/362] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/backends/log_backend_uart.c.obj
+2026-09-18T21:49:59.985Z [117/362] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/log_core.c.obj
+2026-09-18T21:50:00.006Z [118/362] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/log_msg.c.obj
+2026-09-18T21:50:00.024Z [119/362] Building C object CMakeFiles/app.dir/src/pqclean/common/sha2.c.obj
+2026-09-18T21:50:00.045Z [120/362] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_store.c.obj
+2026-09-18T21:50:00.064Z [121/362] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/ipc/ipc_service/lib/ipc_static_vrings.c.obj
+2026-09-18T21:50:00.085Z [122/362] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_init.c.obj
+2026-09-18T21:50:00.106Z [123/362] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/fs/nvs/nvs.c.obj
+2026-09-18T21:50:00.128Z [124/362] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/ipc/ipc_service/ipc_service.c.obj
+2026-09-18T21:50:00.173Z [125/362] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings.c.obj
+2026-09-18T21:50:00.222Z [126/362] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_nvs.c.obj
+2026-09-18T21:50:00.261Z [127/362] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_line.c.obj
+2026-09-18T21:50:00.373Z [128/362] Building ASM object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/nmi_on_reset.S.obj
+2026-09-18T21:50:00.389Z [129/362] Building C object zephyr/CMakeFiles/zephyr.dir/drivers/flash/flash_util.c.obj
+2026-09-18T21:50:00.411Z [130/362] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrf/lib/boot_banner/banner.c.obj
+2026-09-18T21:50:00.435Z [131/362] Generating linker_zephyr_pre0.cmd
+2026-09-18T21:50:00.459Z [132/362] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrfxlib/crypto/nrf_cc312_platform/src/nrf_cc3xx_platform_abort_zephyr.c.obj
+2026-09-18T21:50:00.480Z [133/362] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fault_s.S.obj
+2026-09-18T21:50:00.502Z [134/362] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrf/subsys/bluetooth/hci_vs_sdc.c.obj
+2026-09-18T21:50:00.524Z [135/362] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj
+2026-09-18T21:50:00.544Z [136/362] Linking C static library zephyr\arch\common\libisr_tables.a
+2026-09-18T21:50:00.565Z [137/362] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrfxlib/crypto/nrf_cc312_platform/src/nrf_cc3xx_platform_mutex_zephyr.c.obj
+2026-09-18T21:50:00.588Z [138/362] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/init.c.obj
+2026-09-18T21:50:00.610Z [139/362] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/nmi.c.obj
+2026-09-18T21:50:00.655Z [140/362] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/reset.S.obj
+2026-09-18T21:50:00.684Z [141/362] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrf/subsys/bluetooth/host_extensions/host_extensions.c.obj
+2026-09-18T21:50:00.704Z [142/362] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/vector_table.S.obj
+2026-09-18T21:50:00.726Z [143/362] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrf/subsys/bluetooth/services/nus_client.c.obj
+2026-09-18T21:50:00.745Z [144/362] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/xip.c.obj
+2026-09-18T21:50:00.767Z [145/362] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/swap_helper.S.obj
+2026-09-18T21:50:00.786Z [146/362] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/tls.c.obj
+2026-09-18T21:50:00.836Z [147/362] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/exc_exit.c.obj
+2026-09-18T21:50:00.858Z [148/362] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fpu.c.obj
+2026-09-18T21:50:00.880Z [149/362] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/__aeabi_read_tp.S.obj
+2026-09-18T21:50:00.902Z [150/362] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrf/subsys/bluetooth/scan.c.obj
+2026-09-18T21:50:00.925Z [151/362] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/fatal.c.obj
+2026-09-18T21:50:00.968Z [152/362] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrf/subsys/bluetooth/gatt_dm.c.obj
+2026-09-18T21:50:00.991Z [153/362] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/scb.c.obj
+2026-09-18T21:50:01.015Z [154/362] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/thread_abort.c.obj
+2026-09-18T21:50:01.065Z [155/362] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/thread.c.obj
+2026-09-18T21:50:01.092Z [156/362] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/irq_init.c.obj
+2026-09-18T21:50:01.125Z [157/362] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/prep_c.c.obj
+2026-09-18T21:50:01.160Z [158/362] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/irq_manage.c.obj
+2026-09-18T21:50:01.323Z [159/362] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_mpu_regions.c.obj
+2026-09-18T21:50:01.361Z [160/362] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/cpu_idle.c.obj
+2026-09-18T21:50:01.380Z [161/362] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/isr_wrapper.c.obj
+2026-09-18T21:50:01.400Z [162/362] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fault.c.obj
+2026-09-18T21:50:01.421Z [163/362] Building C object zephyr/lib/posix/c_lib_ext/CMakeFiles/lib__posix__c_lib_ext.dir/fnmatch.c.obj
+2026-09-18T21:50:01.440Z [164/362] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/chk_fail.c.obj
+2026-09-18T21:50:01.462Z [165/362] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/assert.c.obj
+2026-09-18T21:50:01.482Z [166/362] Building C object zephyr/arch/arch/arm/core/cortex_m/cmse/CMakeFiles/arch__arm__core__cortex_m__cmse.dir/arm_core_cmse.c.obj
+2026-09-18T21:50:01.502Z [167/362] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/time/time.c.obj
+2026-09-18T21:50:01.527Z [168/362] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_core_mpu.c.obj
+2026-09-18T21:50:01.542Z [169/362] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/errno_wrap.c.obj
+2026-09-18T21:50:01.566Z [170/362] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/cbprintf.c.obj
+2026-09-18T21:50:01.586Z [171/362] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/locks.c.obj
+2026-09-18T21:50:01.602Z [172/362] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/stdio.c.obj
+2026-09-18T21:50:01.671Z [173/362] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj
+2026-09-18T21:50:01.692Z [174/362] Building C object zephyr/lib/posix/c_lib_ext/CMakeFiles/lib__posix__c_lib_ext.dir/getopt_shim.c.obj
+2026-09-18T21:50:01.713Z [175/362] Building C object CMakeFiles/app.dir/src/main.c.obj
+2026-09-18T21:50:01.713Z [31mFAILED: [code=1] [0mCMakeFiles/app.dir/src/main.c.obj 
+2026-09-18T21:50:01.713Z C:\ncs\toolchains\936afb6332\opt\zephyr-sdk\arm-zephyr-eabi\bin\arm-zephyr-eabi-gcc.exe -DKERNEL -DK_HEAP_MEM_POOL_SIZE=4608 -DMBEDTLS_CONFIG_FILE=\"nrf-config.h\" -DMBEDTLS_PSA_CRYPTO_CONFIG_FILE=\"nrf-psa-crypto-config.h\" -DMBEDTLS_PSA_CRYPTO_USER_CONFIG_FILE=\"nrf-psa-crypto-user-config.h\" -DNRF5340_XXAA_APPLICATION -DNRF54L_CONFIGURATION_56_ENABLE=0 -DNRF_SKIP_FICR_NS_COPY_TO_RAM -DPICOLIBC_LONG_LONG_PRINTF_SCANF -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -IC:/nrf_work/SHA2f/central_uart/src/pqclean/code -IC:/nrf_work/SHA2f/central_uart/src/pqclean/common -IC:/nrf_work/SHA2f/central_uart/build/zephyr/include/generated/zephyr -IC:/ncs/v3.3.3/zephyr/include -IC:/nrf_work/SHA2f/central_uart/build/zephyr/include/generated -IC:/ncs/v3.3.3/zephyr/soc/nordic -IC:/ncs/v3.3.3/zephyr/lib/libc/picolibc/include -IC:/ncs/v3.3.3/zephyr/lib/posix/c_lib_ext/getopt -IC:/ncs/v3.3.3/zephyr/lib/midi2/. -IC:/ncs/v3.3.3/zephyr/soc/nordic/nrf53/. -IC:/ncs/v3.3.3/zephyr/soc/nordic/common/. -IC:/ncs/v3.3.3/zephyr/subsys/bluetooth -IC:/ncs/v3.3.3/zephyr/subsys/settings/include -IC:/ncs/v3.3.3/nrf/include -IC:/ncs/v3.3.3/nrf/subsys/settings/include -IC:/ncs/v3.3.3/nrf/tests/include -IC:/ncs/v3.3.3/modules/hal/cmsis_6/CMSIS/Core/Include -IC:/ncs/v3.3.3/zephyr/modules/cmsis_6/. -IC:/ncs/v3.3.3/nrf/modules/hal_nordic/. -IC:/ncs/v3.3.3/modules/hal/nordic/nrfx -IC:/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/include -IC:/ncs/v3.3.3/modules/hal/nordic/nrfx/bsp/stable -IC:/ncs/v3.3.3/modules/hal/nordic/nrfx/bsp/stable/templates -IC:/ncs/v3.3.3/zephyr/modules/hal_nordic/nrfx/. -IC:/ncs/v3.3.3/modules/hal/st/sensor/inc -IC:/nrf_work/SHA2f/central_uart/build/modules/libmetal/libmetal/lib/include -IC:/ncs/v3.3.3/modules/lib/open-amp/open-amp/lib/include -IC:/ncs/v3.3.3/modules/debug/segger/SEGGER -IC:/ncs/v3.3.3/modules/debug/segger/Config -IC:/ncs/v3.3.3/nrfxlib/softdevice_controller/include -IC:/nrf_work/SHA2f/central_uart/build/generated/library_nrf_security_psa -IC:/ncs/v3.3.3/nrf/subsys/nrf_security/include -IC:/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers -IC:/ncs/v3.3.3/nrf/subsys/nrf_security/src/utils -IC:/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/include -IC:/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/library -IC:/ncs/v3.3.3/modules/crypto/mbedtls/library -IC:/ncs/v3.3.3/modules/crypto/mbedtls/include -IC:/ncs/v3.3.3/modules/crypto/mbedtls/include/library -IC:/ncs/v3.3.3/nrfxlib/crypto/nrf_oberon/include -IC:/ncs/v3.3.3/nrfxlib/crypto/nrf_oberon/include/mbedtls -isystem C:/ncs/v3.3.3/zephyr/lib/libc/common/include -isystem C:/ncs/v3.3.3/nrfxlib/crypto/nrf_cc312_platform/include -fno-strict-aliasing -Os -imacros C:/nrf_work/SHA2f/central_uart/build/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m33 -mthumb -mabi=aapcs -mfp16-format=ieee -mtp=soft --sysroot=C:/ncs/toolchains/936afb6332/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi -imacros C:/ncs/v3.3.3/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=C:/nrf_work/SHA2f/central_uart=CMAKE_SOURCE_DIR -fmacro-prefix-map=C:/ncs/v3.3.3/zephyr=ZEPHYR_BASE -fmacro-prefix-map=C:/ncs/v3.3.3=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=picolibc.specs -std=c17 -MD -MT CMakeFiles/app.dir/src/main.c.obj -MF CMakeFiles\app.dir\src\main.c.obj.d -o CMakeFiles/app.dir/src/main.c.obj -c C:/nrf_work/SHA2f/central_uart/src/main.c
+2026-09-18T21:50:01.713Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:101:2:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #defineSPHINCSSHA2128FSIMPLE_PUBLIC_KEY_SIZE
+2026-09-18T21:50:01.713Z   101 | #[01;31m[KdefineSPHINCSSHA2128FSIMPLE_PUBLIC_KEY_SIZE[m[K PQCLEAN_FALCONPADDED512_CLEAN_CRYPTO_PUBLICKEYBYTES
+2026-09-18T21:50:01.713Z       |  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.713Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:103:27:[m[K [01;31m[Kerror: [m[K'[01m[KFALCONPADDED512_PUBLIC_KEY_SIZE[m[K' undeclared here (not in a function)
+2026-09-18T21:50:01.714Z   103 | static uint8_t public_key[[01;31m[KFALCONPADDED512_PUBLIC_KEY_SIZE[m[K];
+2026-09-18T21:50:01.714Z       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.714Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:108:2:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #defineSPHINCSSHA2128FSIMPLE_SIGNATURE_SIZE
+2026-09-18T21:50:01.714Z   108 | #[01;31m[KdefineSPHINCSSHA2128FSIMPLE_SIGNATURE_SIZE[m[K PQCLEAN_FALCONPADDED512_CLEAN_CRYPTO_BYTES
+2026-09-18T21:50:01.714Z       |  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.714Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:110:26:[m[K [01;31m[Kerror: [m[K'[01m[KFALCONPADDED512_SIGNATURE_SIZE[m[K' undeclared here (not in a function)
+2026-09-18T21:50:01.714Z   110 | static uint8_t signature[[01;31m[KFALCONPADDED512_SIGNATURE_SIZE[m[K];
+2026-09-18T21:50:01.714Z       |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.714Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:120:2:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #defineSPHINCSSHA2128FSIMPLE_MESSAGE_SIZE
+2026-09-18T21:50:01.714Z   120 | #[01;31m[KdefineSPHINCSSHA2128FSIMPLE_MESSAGE_SIZE[m[K 18
+2026-09-18T21:50:01.714Z       |  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.714Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:122:24:[m[K [01;31m[Kerror: [m[K'[01m[KFALCONPADDED512_MESSAGE_SIZE[m[K' undeclared here (not in a function)
+2026-09-18T21:50:01.714Z   122 | static uint8_t message[[01;31m[KFALCONPADDED512_MESSAGE_SIZE[m[K];
+2026-09-18T21:50:01.714Z       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.714Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:[m[K In function '[01m[Kverify_work_handler[m[K':
+2026-09-18T21:50:01.714Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:317:26:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function '[01m[KPQCLEAN_FALCONPADDED512_CLEAN_crypto_sign_verify[m[K' [[01;35m[K-Wimplicit-function-declaration[m[K]
+2026-09-18T21:50:01.714Z   317 |         int verify_ret = [01;35m[KPQCLEAN_FALCONPADDED512_CLEAN_crypto_sign_verify[m[K(
+2026-09-18T21:50:01.714Z       |                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.714Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:[m[K In function '[01m[Kble_data_received[m[K':
+2026-09-18T21:50:01.714Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:377:20:[m[K [01;31m[Kerror: [m[K'[01m[KSPHINCSSHA2128FSIMPLE_PUBLIC_KEY_SIZE[m[K' undeclared (first use in this function)
+2026-09-18T21:50:01.714Z   377 |                    [01;31m[KSPHINCSSHA2128FSIMPLE_PUBLIC_KEY_SIZE[m[K) {
+2026-09-18T21:50:01.714Z       |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.714Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:377:20:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+2026-09-18T21:50:01.714Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:442:20:[m[K [01;31m[Kerror: [m[K'[01m[KSPHINCSSHA2128FSIMPLE_SIGNATURE_SIZE[m[K' undeclared (first use in this function)
+2026-09-18T21:50:01.714Z   442 |                    [01;31m[KSPHINCSSHA2128FSIMPLE_SIGNATURE_SIZE[m[K) {
+2026-09-18T21:50:01.714Z       |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.714Z In file included from [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_macro.h:34[m[K,
+2026-09-18T21:50:01.714Z                  from [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/irq_multilevel.h:16[m[K,
+2026-09-18T21:50:01.714Z                  from [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/devicetree.h:21[m[K,
+2026-09-18T21:50:01.714Z                  from [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/device.h:12[m[K,
+2026-09-18T21:50:01.714Z                  from [01m[KC:/ncs/v3.3.3/nrf/include/uart_async_adapter.h:12[m[K,
+2026-09-18T21:50:01.714Z                  from [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:12[m[K:
+2026-09-18T21:50:01.715Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:559:65:[m[K [01;31m[Kerror: [m[K'[01m[K_v2[m[K' undeclared (first use in this function); did you mean '[01m[K_v1[m[K'?
+2026-09-18T21:50:01.715Z   559 | #define Z_LOG_LOCAL_ARG_NAME(idx, arg) COND_CODE_0(idx, (arg), ([01;31m[K_v[m[K##idx))
+2026-09-18T21:50:01.715Z       |                                                                 [01;31m[K^~[m[K
+2026-09-18T21:50:01.715Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_internal.h:72:26:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[K__DEBRACKET[m[K'
+2026-09-18T21:50:01.715Z    72 | #define __DEBRACKET(...) [01;36m[K__VA_ARGS__[m[K
+2026-09-18T21:50:01.715Z       |                          [01;36m[K^~~~~~~~~~~[m[K
+2026-09-18T21:50:01.715Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_internal.h:64:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[K__GET_ARG2_DEBRACKET[m[K'
+2026-09-18T21:50:01.715Z    64 |         [01;36m[K__GET_ARG2_DEBRACKET[m[K(one_or_two_args _if_code, _else_code)
+2026-09-18T21:50:01.715Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.715Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_internal.h:61:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[K__COND_CODE[m[K'
+2026-09-18T21:50:01.715Z    61 |         [01;36m[K__COND_CODE[m[K(_ZZZZ##_flag, _if_0_code, _else_code)
+2026-09-18T21:50:01.715Z       |         [01;36m[K^~~~~~~~~~~[m[K
+2026-09-18T21:50:01.715Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_macro.h:220:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_COND_CODE_0[m[K'
+2026-09-18T21:50:01.715Z   220 |         [01;36m[KZ_COND_CODE_0[m[K(_flag, _if_0_code, _else_code)
+2026-09-18T21:50:01.715Z       |         [01;36m[K^~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.715Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:525:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KCOND_CODE_0[m[K'
+2026-09-18T21:50:01.715Z   525 |         [01;36m[KCOND_CODE_0[m[K(NUM_VA_ARGS_LESS_1(__VA_ARGS__), \
+2026-09-18T21:50:01.715Z       |         [01;36m[K^~~~~~~~~~~[m[K
+2026-09-18T21:50:01.715Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:103:18:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_ARGIFY[m[K'
+2026-09-18T21:50:01.715Z   103 |         _Generic([01;36m[KZ_ARGIFY[m[K(x), \
+2026-09-18T21:50:01.715Z       |                  [01;36m[K^~~~~~~~[m[K
+2026-09-18T21:50:01.715Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:511:21:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_IS_PCHAR[m[K'
+2026-09-18T21:50:01.715Z   511 |                 0 : [01;36m[KZ_CBPRINTF_IS_PCHAR[m[K(x, flags))
+2026-09-18T21:50:01.715Z       |                     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.715Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1055:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_IS_X_PCHAR[m[K'
+2026-09-18T21:50:01.715Z  1055 |         [01;36m[Kfixed_arg0[m[K(idx, x, fixed_arg1)
+2026-09-18T21:50:01.715Z       |         [01;36m[K^~~~~~~~~~[m[K
+2026-09-18T21:50:01.715Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:33:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_IDX_FIXED_ARG_EXEC[m[K'
+2026-09-18T21:50:01.715Z    33 |         [01;36m[Kz_call[m[K(1, x, fixed_arg0, fixed_arg1)
+2026-09-18T21:50:01.715Z       |         [01;36m[K^~~~~~[m[K
+2026-09-18T21:50:01.715Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:23:81:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_LOOP_2[m[K'
+2026-09-18T21:50:01.715Z    23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) [01;36m[KN[m[K
+2026-09-18T21:50:01.715Z       |                                                                                 [01;36m[K^[m[K
+2026-09-18T21:50:01.715Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1058:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_ENGINE[m[K'
+2026-09-18T21:50:01.715Z  1058 |         [01;36m[KZ_FOR_EACH_ENGINE[m[K(Z_FOR_EACH_IDX_FIXED_ARG_EXEC, sep, \
+2026-09-18T21:50:01.715Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.715Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_macro.h:675:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_IDX_FIXED_ARG[m[K'
+2026-09-18T21:50:01.715Z   675 |         [01;36m[KZ_FOR_EACH_IDX_FIXED_ARG[m[K(F, sep, fixed_arg, REVERSE_ARGS(__VA_ARGS__))
+2026-09-18T21:50:01.716Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.716Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1075:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_BYPASS[m[K'
+2026-09-18T21:50:01.716Z  1075 |         [01;36m[Kfixed_arg0[m[K(x)
+2026-09-18T21:50:01.716Z       |         [01;36m[K^~~~~~~~~~[m[K
+2026-09-18T21:50:01.716Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:28:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_EXEC[m[K'
+2026-09-18T21:50:01.716Z    28 |         [01;36m[Kz_call[m[K(0, x, fixed_arg0, fixed_arg1)
+2026-09-18T21:50:01.716Z       |         [01;36m[K^~~~~~[m[K
+2026-09-18T21:50:01.716Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:31:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_LOOP_1[m[K'
+2026-09-18T21:50:01.716Z    31 |         [01;36m[KZ_FOR_LOOP_1[m[K(z_call, sep, fixed_arg0, fixed_arg1, ##__VA_ARGS__) \
+2026-09-18T21:50:01.716Z       |         [01;36m[K^~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.716Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:23:81:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_LOOP_2[m[K'
+2026-09-18T21:50:01.716Z    23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) [01;36m[KN[m[K
+2026-09-18T21:50:01.716Z       |                                                                                 [01;36m[K^[m[K
+2026-09-18T21:50:01.716Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_macro.h:682:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_ENGINE[m[K'
+2026-09-18T21:50:01.716Z   682 |         [01;36m[KZ_FOR_EACH_ENGINE[m[K(Z_FOR_EACH_EXEC, (,), Z_BYPASS, _, __VA_ARGS__)
+2026-09-18T21:50:01.716Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.716Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_macro.h:675:53:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KREVERSE_ARGS[m[K'
+2026-09-18T21:50:01.716Z   675 |         Z_FOR_EACH_IDX_FIXED_ARG(F, sep, fixed_arg, [01;36m[KREVERSE_ARGS[m[K(__VA_ARGS__))
+2026-09-18T21:50:01.716Z       |                                                     [01;36m[K^~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.716Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:522:10:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KFOR_EACH_IDX_FIXED_ARG[m[K'
+2026-09-18T21:50:01.716Z   522 |         ([01;36m[KFOR_EACH_IDX_FIXED_ARG[m[K(Z_CBPRINTF_IS_X_PCHAR, (+), flags, __VA_ARGS__))
+2026-09-18T21:50:01.716Z       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.716Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:527:22:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_HAS_PCHAR_ARGS[m[K'
+2026-09-18T21:50:01.716Z   527 |                     ([01;36m[KZ_CBPRINTF_HAS_PCHAR_ARGS[m[K(flags, __VA_ARGS__)))
+2026-09-18T21:50:01.716Z       |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.716Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:543:23:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_PCHAR_COUNT[m[K'
+2026-09-18T21:50:01.716Z   543 |                 _rv = [01;36m[KZ_CBPRINTF_PCHAR_COUNT[m[K(flags, __VA_ARGS__) > 0 ? 1 : 0; \
+2026-09-18T21:50:01.716Z       |                       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.716Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf.h:354:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_MUST_RUNTIME_PACKAGE[m[K'
+2026-09-18T21:50:01.716Z   354 |         [01;36m[KZ_CBPRINTF_MUST_RUNTIME_PACKAGE[m[K(flags, __VA_ARGS__)
+2026-09-18T21:50:01.716Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.716Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:520:27:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KCBPRINTF_MUST_RUNTIME_PACKAGE[m[K'
+2026-09-18T21:50:01.716Z   520 |         bool has_rw_str = [01;36m[KCBPRINTF_MUST_RUNTIME_PACKAGE[m[K( \
+2026-09-18T21:50:01.716Z       |                           [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.717Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:573:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE3[m[K'
+2026-09-18T21:50:01.717Z   573 |         [01;36m[KZ_LOG_MSG_CREATE3[m[K(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+2026-09-18T21:50:01.717Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.717Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_internal.h:69:53:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[K__DEBRACKET[m[K'
+2026-09-18T21:50:01.717Z    69 | #define __GET_ARG2_DEBRACKET(ignore_this, val, ...) [01;36m[K__DEBRACKET[m[K val
+2026-09-18T21:50:01.717Z       |                                                     [01;36m[K^~~~~~~~~~~[m[K
+2026-09-18T21:50:01.717Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_internal.h:64:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[K__GET_ARG2_DEBRACKET[m[K'
+2026-09-18T21:50:01.717Z    64 |         [01;36m[K__GET_ARG2_DEBRACKET[m[K(one_or_two_args _if_code, _else_code)
+2026-09-18T21:50:01.717Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.717Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_internal.h:61:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[K__COND_CODE[m[K'
+2026-09-18T21:50:01.717Z    61 |         [01;36m[K__COND_CODE[m[K(_ZZZZ##_flag, _if_0_code, _else_code)
+2026-09-18T21:50:01.717Z       |         [01;36m[K^~~~~~~~~~~[m[K
+2026-09-18T21:50:01.717Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_macro.h:220:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_COND_CODE_0[m[K'
+2026-09-18T21:50:01.717Z   220 |         [01;36m[KZ_COND_CODE_0[m[K(_flag, _if_0_code, _else_code)
+2026-09-18T21:50:01.717Z       |         [01;36m[K^~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.717Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:559:40:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KCOND_CODE_0[m[K'
+2026-09-18T21:50:01.717Z   559 | #define Z_LOG_LOCAL_ARG_NAME(idx, arg) [01;36m[KCOND_CODE_0[m[K(idx, (arg), (_v##idx))
+2026-09-18T21:50:01.717Z       |                                        [01;36m[K^~~~~~~~~~~[m[K
+2026-09-18T21:50:01.717Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1069:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_LOCAL_ARG_NAME[m[K'
+2026-09-18T21:50:01.717Z  1069 |         [01;36m[Kfixed_arg0[m[K(idx, x)
+2026-09-18T21:50:01.717Z       |         [01;36m[K^~~~~~~~~~[m[K
+2026-09-18T21:50:01.717Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:38:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_IDX_EXEC[m[K'
+2026-09-18T21:50:01.717Z    38 |         [01;36m[Kz_call[m[K(2, x, fixed_arg0, fixed_arg1)
+2026-09-18T21:50:01.717Z       |         [01;36m[K^~~~~~[m[K
+2026-09-18T21:50:01.717Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:23:81:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_LOOP_3[m[K'
+2026-09-18T21:50:01.717Z    23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) [01;36m[KN[m[K
+2026-09-18T21:50:01.717Z       |                                                                                 [01;36m[K^[m[K
+2026-09-18T21:50:01.717Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1072:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_ENGINE[m[K'
+2026-09-18T21:50:01.717Z  1072 |         [01;36m[KZ_FOR_EACH_ENGINE[m[K(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+2026-09-18T21:50:01.718Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.718Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_macro.h:619:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_IDX[m[K'
+2026-09-18T21:50:01.718Z   619 |         [01;36m[KZ_FOR_EACH_IDX[m[K(F, sep, REVERSE_ARGS(__VA_ARGS__))
+2026-09-18T21:50:01.718Z       |         [01;36m[K^~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.718Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:575:28:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KFOR_EACH_IDX[m[K'
+2026-09-18T21:50:01.718Z   575 |                            [01;36m[KFOR_EACH_IDX[m[K(Z_LOG_LOCAL_ARG_NAME, (,), __VA_ARGS__)); \
+2026-09-18T21:50:01.718Z       |                            [01;36m[K^~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.718Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:582:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE2[m[K'
+2026-09-18T21:50:01.718Z   582 |         [01;36m[KZ_LOG_MSG_CREATE2[m[K(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+2026-09-18T21:50:01.718Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.718Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_core.h:308:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE[m[K'
+2026-09-18T21:50:01.718Z   308 |                 [01;36m[KZ_LOG_MSG_CREATE[m[K(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+2026-09-18T21:50:01.718Z       |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.718Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_core.h:320:44:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG2[m[K'
+2026-09-18T21:50:01.718Z   320 | #define Z_LOG(_level, ...)                 [01;36m[KZ_LOG2[m[K(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+2026-09-18T21:50:01.718Z       |                                            [01;36m[K^~~~~~[m[K
+2026-09-18T21:50:01.718Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log.h:83:22:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG[m[K'
+2026-09-18T21:50:01.718Z    83 | #define LOG_INF(...) [01;36m[KZ_LOG[m[K(LOG_LEVEL_INF, __VA_ARGS__)
+2026-09-18T21:50:01.718Z       |                      [01;36m[K^~~~~[m[K
+2026-09-18T21:50:01.718Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:450:25:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLOG_INF[m[K'
+2026-09-18T21:50:01.718Z   450 |                         [01;36m[KLOG_INF[m[K("Signature received: %u / %u bytes",signature_received, FALCONPADDED512_SIGNATURE_SIZE);
+2026-09-18T21:50:01.718Z       |                         [01;36m[K^~~~~~~[m[K
+2026-09-18T21:50:01.718Z In file included from [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/toolchain.h:52[m[K,
+2026-09-18T21:50:01.718Z                  from [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/__assert.h:11[m[K,
+2026-09-18T21:50:01.718Z                  from [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/irq_multilevel.h:15[m[K:
+2026-09-18T21:50:01.718Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/toolchain/gcc.h:87:51:[m[K [01;31m[Kerror: [m[Kexpression in static assertion is not an integer
+2026-09-18T21:50:01.718Z    87 | #define BUILD_ASSERT(EXPR, MSG...) _Static_assert([01;31m[K([m[KEXPR), "" MSG)
+2026-09-18T21:50:01.718Z       |                                                   [01;31m[K^[m[K
+2026-09-18T21:50:01.718Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:685:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KBUILD_ASSERT[m[K'
+2026-09-18T21:50:01.718Z   685 |         [01;36m[KBUILD_ASSERT[m[K(!((sizeof(double) < VA_STACK_ALIGN(long double)) && \
+2026-09-18T21:50:01.718Z       |         [01;36m[K^~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.718Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:730:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_PACK_ARG2[m[K'
+2026-09-18T21:50:01.719Z   730 |         [01;36m[KZ_CBPRINTF_PACK_ARG2[m[K(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+2026-09-18T21:50:01.719Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.719Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1069:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_PACK_ARG[m[K'
+2026-09-18T21:50:01.719Z  1069 |         [01;36m[Kfixed_arg0[m[K(idx, x)
+2026-09-18T21:50:01.719Z       |         [01;36m[K^~~~~~~~~~[m[K
+2026-09-18T21:50:01.719Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:38:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_IDX_EXEC[m[K'
+2026-09-18T21:50:01.719Z    38 |         [01;36m[Kz_call[m[K(2, x, fixed_arg0, fixed_arg1)
+2026-09-18T21:50:01.719Z       |         [01;36m[K^~~~~~[m[K
+2026-09-18T21:50:01.719Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:23:81:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_LOOP_3[m[K'
+2026-09-18T21:50:01.719Z    23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) [01;36m[KN[m[K
+2026-09-18T21:50:01.719Z       |                                                                                 [01;36m[K^[m[K
+2026-09-18T21:50:01.719Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1072:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_ENGINE[m[K'
+2026-09-18T21:50:01.719Z  1072 |         [01;36m[KZ_FOR_EACH_ENGINE[m[K(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+2026-09-18T21:50:01.719Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.719Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_macro.h:619:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_IDX[m[K'
+2026-09-18T21:50:01.719Z   619 |         [01;36m[KZ_FOR_EACH_IDX[m[K(F, sep, REVERSE_ARGS(__VA_ARGS__))
+2026-09-18T21:50:01.719Z       |         [01;36m[K^~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.719Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:833:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KFOR_EACH_IDX[m[K'
+2026-09-18T21:50:01.719Z   833 |         [01;36m[KFOR_EACH_IDX[m[K(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+2026-09-18T21:50:01.719Z       |         [01;36m[K^~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.719Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:870:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_STATIC_PACKAGE_GENERIC[m[K'
+2026-09-18T21:50:01.719Z   870 |         [01;36m[KZ_CBPRINTF_STATIC_PACKAGE_GENERIC[m[K(packaged, inlen, outlen, \
+2026-09-18T21:50:01.719Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.719Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf.h:387:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_STATIC_PACKAGE[m[K'
+2026-09-18T21:50:01.719Z   387 |         [01;36m[KZ_CBPRINTF_STATIC_PACKAGE[m[K(packaged, inlen, outlen, \
+2026-09-18T21:50:01.719Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.719Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:336:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KCBPRINTF_STATIC_PACKAGE[m[K'
+2026-09-18T21:50:01.719Z   336 |                 [01;36m[KCBPRINTF_STATIC_PACKAGE[m[K(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+2026-09-18T21:50:01.719Z       |                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.719Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:543:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_STACK_CREATE[m[K'
+2026-09-18T21:50:01.719Z   543 |                 [01;36m[KZ_LOG_MSG_STACK_CREATE[m[K(_cstr_cnt, _domain_id, _source, _level, _data, \
+2026-09-18T21:50:01.719Z       |                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.719Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:573:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE3[m[K'
+2026-09-18T21:50:01.719Z   573 |         [01;36m[KZ_LOG_MSG_CREATE3[m[K(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+2026-09-18T21:50:01.719Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.719Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:582:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE2[m[K'
+2026-09-18T21:50:01.719Z   582 |         [01;36m[KZ_LOG_MSG_CREATE2[m[K(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+2026-09-18T21:50:01.719Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.720Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_core.h:308:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE[m[K'
+2026-09-18T21:50:01.720Z   308 |                 [01;36m[KZ_LOG_MSG_CREATE[m[K(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+2026-09-18T21:50:01.720Z       |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.720Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_core.h:320:44:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG2[m[K'
+2026-09-18T21:50:01.720Z   320 | #define Z_LOG(_level, ...)                 [01;36m[KZ_LOG2[m[K(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+2026-09-18T21:50:01.720Z       |                                            [01;36m[K^~~~~~[m[K
+2026-09-18T21:50:01.720Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log.h:83:22:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG[m[K'
+2026-09-18T21:50:01.720Z    83 | #define LOG_INF(...) [01;36m[KZ_LOG[m[K(LOG_LEVEL_INF, __VA_ARGS__)
+2026-09-18T21:50:01.720Z       |                      [01;36m[K^~~~~[m[K
+2026-09-18T21:50:01.720Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:450:25:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLOG_INF[m[K'
+2026-09-18T21:50:01.720Z   450 |                         [01;36m[KLOG_INF[m[K("Signature received: %u / %u bytes",signature_received, FALCONPADDED512_SIGNATURE_SIZE);
+2026-09-18T21:50:01.720Z       |                         [01;36m[K^~~~~~~[m[K
+2026-09-18T21:50:01.720Z In file included from [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf.h:124[m[K,
+2026-09-18T21:50:01.720Z                  from [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:11[m[K,
+2026-09-18T21:50:01.720Z                  from [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_core.h:9[m[K,
+2026-09-18T21:50:01.720Z                  from [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log.h:11[m[K,
+2026-09-18T21:50:01.720Z                  from [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:35[m[K:
+2026-09-18T21:50:01.720Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:565:20:[m[K [01;31m[Kerror: [m[K'[01m[K_uv[m[K' undeclared (first use in this function)
+2026-09-18T21:50:01.720Z   565 |         __typeof__([01;31m[K_uv[m[K) const _cv = _uv; \
+2026-09-18T21:50:01.720Z       |                    [01;31m[K^~~[m[K
+2026-09-18T21:50:01.720Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:89:35:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KZ_ARGIFY[m[K'
+2026-09-18T21:50:01.720Z    89 | #define Z_ARGIFY(arg) ((0) ? 0 : ([01;36m[Karg[m[K))
+2026-09-18T21:50:01.720Z       |                                   [01;36m[K^~~[m[K
+2026-09-18T21:50:01.720Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:569:36:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CONSTIFY[m[K'
+2026-09-18T21:50:01.720Z   569 |         __auto_type __v = Z_ARGIFY([01;36m[KZ_CONSTIFY[m[K(v)); \
+2026-09-18T21:50:01.720Z       |                                    [01;36m[K^~~~~~~~~~[m[K
+2026-09-18T21:50:01.720Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:693:30:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_ARG_SIZE[m[K'
+2026-09-18T21:50:01.720Z   693 |         uint32_t _arg_size = [01;36m[KZ_CBPRINTF_ARG_SIZE[m[K(_arg); \
+2026-09-18T21:50:01.720Z       |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.720Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:730:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_PACK_ARG2[m[K'
+2026-09-18T21:50:01.720Z   730 |         [01;36m[KZ_CBPRINTF_PACK_ARG2[m[K(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+2026-09-18T21:50:01.720Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.720Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1069:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_PACK_ARG[m[K'
+2026-09-18T21:50:01.720Z  1069 |         [01;36m[Kfixed_arg0[m[K(idx, x)
+2026-09-18T21:50:01.720Z       |         [01;36m[K^~~~~~~~~~[m[K
+2026-09-18T21:50:01.720Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:38:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_IDX_EXEC[m[K'
+2026-09-18T21:50:01.720Z    38 |         [01;36m[Kz_call[m[K(2, x, fixed_arg0, fixed_arg1)
+2026-09-18T21:50:01.720Z       |         [01;36m[K^~~~~~[m[K
+2026-09-18T21:50:01.720Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:23:81:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_LOOP_3[m[K'
+2026-09-18T21:50:01.720Z    23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) [01;36m[KN[m[K
+2026-09-18T21:50:01.721Z       |                                                                                 [01;36m[K^[m[K
+2026-09-18T21:50:01.721Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1072:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_ENGINE[m[K'
+2026-09-18T21:50:01.721Z  1072 |         [01;36m[KZ_FOR_EACH_ENGINE[m[K(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+2026-09-18T21:50:01.721Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.721Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_macro.h:619:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_IDX[m[K'
+2026-09-18T21:50:01.721Z   619 |         [01;36m[KZ_FOR_EACH_IDX[m[K(F, sep, REVERSE_ARGS(__VA_ARGS__))
+2026-09-18T21:50:01.721Z       |         [01;36m[K^~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.721Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:833:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KFOR_EACH_IDX[m[K'
+2026-09-18T21:50:01.721Z   833 |         [01;36m[KFOR_EACH_IDX[m[K(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+2026-09-18T21:50:01.721Z       |         [01;36m[K^~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.721Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:870:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_STATIC_PACKAGE_GENERIC[m[K'
+2026-09-18T21:50:01.721Z   870 |         [01;36m[KZ_CBPRINTF_STATIC_PACKAGE_GENERIC[m[K(packaged, inlen, outlen, \
+2026-09-18T21:50:01.721Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.721Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf.h:387:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_STATIC_PACKAGE[m[K'
+2026-09-18T21:50:01.721Z   387 |         [01;36m[KZ_CBPRINTF_STATIC_PACKAGE[m[K(packaged, inlen, outlen, \
+2026-09-18T21:50:01.721Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.721Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:336:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KCBPRINTF_STATIC_PACKAGE[m[K'
+2026-09-18T21:50:01.721Z   336 |                 [01;36m[KCBPRINTF_STATIC_PACKAGE[m[K(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+2026-09-18T21:50:01.721Z       |                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.721Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:543:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_STACK_CREATE[m[K'
+2026-09-18T21:50:01.721Z   543 |                 [01;36m[KZ_LOG_MSG_STACK_CREATE[m[K(_cstr_cnt, _domain_id, _source, _level, _data, \
+2026-09-18T21:50:01.721Z       |                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.721Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:573:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE3[m[K'
+2026-09-18T21:50:01.721Z   573 |         [01;36m[KZ_LOG_MSG_CREATE3[m[K(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+2026-09-18T21:50:01.721Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.721Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:582:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE2[m[K'
+2026-09-18T21:50:01.721Z   582 |         [01;36m[KZ_LOG_MSG_CREATE2[m[K(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+2026-09-18T21:50:01.721Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.721Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_core.h:308:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE[m[K'
+2026-09-18T21:50:01.721Z   308 |                 [01;36m[KZ_LOG_MSG_CREATE[m[K(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+2026-09-18T21:50:01.721Z       |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.721Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_core.h:320:44:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG2[m[K'
+2026-09-18T21:50:01.721Z   320 | #define Z_LOG(_level, ...)                 [01;36m[KZ_LOG2[m[K(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+2026-09-18T21:50:01.721Z       |                                            [01;36m[K^~~~~~[m[K
+2026-09-18T21:50:01.721Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log.h:83:22:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG[m[K'
+2026-09-18T21:50:01.721Z    83 | #define LOG_INF(...) [01;36m[KZ_LOG[m[K(LOG_LEVEL_INF, __VA_ARGS__)
+2026-09-18T21:50:01.721Z       |                      [01;36m[K^~~~~[m[K
+2026-09-18T21:50:01.722Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:450:25:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLOG_INF[m[K'
+2026-09-18T21:50:01.722Z   450 |                         [01;36m[KLOG_INF[m[K("Signature received: %u / %u bytes",signature_received, FALCONPADDED512_SIGNATURE_SIZE);
+2026-09-18T21:50:01.722Z       |                         [01;36m[K^~~~~~~[m[K
+2026-09-18T21:50:01.722Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/toolchain/gcc.h:87:51:[m[K [01;31m[Kerror: [m[Kexpression in static assertion is not an integer
+2026-09-18T21:50:01.722Z    87 | #define BUILD_ASSERT(EXPR, MSG...) _Static_assert([01;31m[K([m[KEXPR), "" MSG)
+2026-09-18T21:50:01.722Z       |                                                   [01;31m[K^[m[K
+2026-09-18T21:50:01.722Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:685:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KBUILD_ASSERT[m[K'
+2026-09-18T21:50:01.722Z   685 |         [01;36m[KBUILD_ASSERT[m[K(!((sizeof(double) < VA_STACK_ALIGN(long double)) && \
+2026-09-18T21:50:01.722Z       |         [01;36m[K^~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.722Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:730:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_PACK_ARG2[m[K'
+2026-09-18T21:50:01.722Z   730 |         [01;36m[KZ_CBPRINTF_PACK_ARG2[m[K(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+2026-09-18T21:50:01.722Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.722Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1069:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_PACK_ARG[m[K'
+2026-09-18T21:50:01.722Z  1069 |         [01;36m[Kfixed_arg0[m[K(idx, x)
+2026-09-18T21:50:01.722Z       |         [01;36m[K^~~~~~~~~~[m[K
+2026-09-18T21:50:01.722Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:38:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_IDX_EXEC[m[K'
+2026-09-18T21:50:01.722Z    38 |         [01;36m[Kz_call[m[K(2, x, fixed_arg0, fixed_arg1)
+2026-09-18T21:50:01.722Z       |         [01;36m[K^~~~~~[m[K
+2026-09-18T21:50:01.722Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:23:81:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_LOOP_3[m[K'
+2026-09-18T21:50:01.722Z    23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) [01;36m[KN[m[K
+2026-09-18T21:50:01.722Z       |                                                                                 [01;36m[K^[m[K
+2026-09-18T21:50:01.722Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1072:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_ENGINE[m[K'
+2026-09-18T21:50:01.722Z  1072 |         [01;36m[KZ_FOR_EACH_ENGINE[m[K(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+2026-09-18T21:50:01.722Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.722Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_macro.h:619:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_IDX[m[K'
+2026-09-18T21:50:01.722Z   619 |         [01;36m[KZ_FOR_EACH_IDX[m[K(F, sep, REVERSE_ARGS(__VA_ARGS__))
+2026-09-18T21:50:01.722Z       |         [01;36m[K^~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.722Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:833:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KFOR_EACH_IDX[m[K'
+2026-09-18T21:50:01.722Z   833 |         [01;36m[KFOR_EACH_IDX[m[K(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+2026-09-18T21:50:01.722Z       |         [01;36m[K^~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.723Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:870:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_STATIC_PACKAGE_GENERIC[m[K'
+2026-09-18T21:50:01.723Z   870 |         [01;36m[KZ_CBPRINTF_STATIC_PACKAGE_GENERIC[m[K(packaged, inlen, outlen, \
+2026-09-18T21:50:01.723Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.723Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf.h:387:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_STATIC_PACKAGE[m[K'
+2026-09-18T21:50:01.723Z   387 |         [01;36m[KZ_CBPRINTF_STATIC_PACKAGE[m[K(packaged, inlen, outlen, \
+2026-09-18T21:50:01.723Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.723Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:345:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KCBPRINTF_STATIC_PACKAGE[m[K'
+2026-09-18T21:50:01.723Z   345 |                 [01;36m[KCBPRINTF_STATIC_PACKAGE[m[K(_msg->data, _plen, \
+2026-09-18T21:50:01.723Z       |                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.723Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:543:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_STACK_CREATE[m[K'
+2026-09-18T21:50:01.723Z   543 |                 [01;36m[KZ_LOG_MSG_STACK_CREATE[m[K(_cstr_cnt, _domain_id, _source, _level, _data, \
+2026-09-18T21:50:01.723Z       |                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.723Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:573:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE3[m[K'
+2026-09-18T21:50:01.723Z   573 |         [01;36m[KZ_LOG_MSG_CREATE3[m[K(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+2026-09-18T21:50:01.723Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.723Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:582:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE2[m[K'
+2026-09-18T21:50:01.723Z   582 |         [01;36m[KZ_LOG_MSG_CREATE2[m[K(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+2026-09-18T21:50:01.723Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.723Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_core.h:308:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE[m[K'
+2026-09-18T21:50:01.723Z   308 |                 [01;36m[KZ_LOG_MSG_CREATE[m[K(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+2026-09-18T21:50:01.723Z       |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.723Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_core.h:320:44:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG2[m[K'
+2026-09-18T21:50:01.723Z   320 | #define Z_LOG(_level, ...)                 [01;36m[KZ_LOG2[m[K(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+2026-09-18T21:50:01.723Z       |                                            [01;36m[K^~~~~~[m[K
+2026-09-18T21:50:01.723Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log.h:83:22:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG[m[K'
+2026-09-18T21:50:01.723Z    83 | #define LOG_INF(...) [01;36m[KZ_LOG[m[K(LOG_LEVEL_INF, __VA_ARGS__)
+2026-09-18T21:50:01.723Z       |                      [01;36m[K^~~~~[m[K
+2026-09-18T21:50:01.723Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:450:25:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLOG_INF[m[K'
+2026-09-18T21:50:01.723Z   450 |                         [01;36m[KLOG_INF[m[K("Signature received: %u / %u bytes",signature_received, FALCONPADDED512_SIGNATURE_SIZE);
+2026-09-18T21:50:01.723Z       |                         [01;36m[K^~~~~~~[m[K
+2026-09-18T21:50:01.723Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:492:20:[m[K [01;31m[Kerror: [m[K'[01m[KSPHINCSSHA2128FSIMPLE_MESSAGE_SIZE[m[K' undeclared (first use in this function)
+2026-09-18T21:50:01.723Z   492 |                    [01;31m[KSPHINCSSHA2128FSIMPLE_MESSAGE_SIZE[m[K) {
+2026-09-18T21:50:01.723Z       |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.723Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/toolchain/gcc.h:87:51:[m[K [01;31m[Kerror: [m[Kexpression in static assertion is not an integer
+2026-09-18T21:50:01.723Z    87 | #define BUILD_ASSERT(EXPR, MSG...) _Static_assert([01;31m[K([m[KEXPR), "" MSG)
+2026-09-18T21:50:01.724Z       |                                                   [01;31m[K^[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:685:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KBUILD_ASSERT[m[K'
+2026-09-18T21:50:01.724Z   685 |         [01;36m[KBUILD_ASSERT[m[K(!((sizeof(double) < VA_STACK_ALIGN(long double)) && \
+2026-09-18T21:50:01.724Z       |         [01;36m[K^~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:730:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_PACK_ARG2[m[K'
+2026-09-18T21:50:01.724Z   730 |         [01;36m[KZ_CBPRINTF_PACK_ARG2[m[K(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+2026-09-18T21:50:01.724Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1069:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_PACK_ARG[m[K'
+2026-09-18T21:50:01.724Z  1069 |         [01;36m[Kfixed_arg0[m[K(idx, x)
+2026-09-18T21:50:01.724Z       |         [01;36m[K^~~~~~~~~~[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:38:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_IDX_EXEC[m[K'
+2026-09-18T21:50:01.724Z    38 |         [01;36m[Kz_call[m[K(2, x, fixed_arg0, fixed_arg1)
+2026-09-18T21:50:01.724Z       |         [01;36m[K^~~~~~[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:23:81:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_LOOP_3[m[K'
+2026-09-18T21:50:01.724Z    23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) [01;36m[KN[m[K
+2026-09-18T21:50:01.724Z       |                                                                                 [01;36m[K^[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1072:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_ENGINE[m[K'
+2026-09-18T21:50:01.724Z  1072 |         [01;36m[KZ_FOR_EACH_ENGINE[m[K(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+2026-09-18T21:50:01.724Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_macro.h:619:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_IDX[m[K'
+2026-09-18T21:50:01.724Z   619 |         [01;36m[KZ_FOR_EACH_IDX[m[K(F, sep, REVERSE_ARGS(__VA_ARGS__))
+2026-09-18T21:50:01.724Z       |         [01;36m[K^~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:833:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KFOR_EACH_IDX[m[K'
+2026-09-18T21:50:01.724Z   833 |         [01;36m[KFOR_EACH_IDX[m[K(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+2026-09-18T21:50:01.724Z       |         [01;36m[K^~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:870:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_STATIC_PACKAGE_GENERIC[m[K'
+2026-09-18T21:50:01.724Z   870 |         [01;36m[KZ_CBPRINTF_STATIC_PACKAGE_GENERIC[m[K(packaged, inlen, outlen, \
+2026-09-18T21:50:01.724Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf.h:387:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_STATIC_PACKAGE[m[K'
+2026-09-18T21:50:01.724Z   387 |         [01;36m[KZ_CBPRINTF_STATIC_PACKAGE[m[K(packaged, inlen, outlen, \
+2026-09-18T21:50:01.724Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:336:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KCBPRINTF_STATIC_PACKAGE[m[K'
+2026-09-18T21:50:01.724Z   336 |                 [01;36m[KCBPRINTF_STATIC_PACKAGE[m[K(NULL, 0, _plen, Z_LOG_MSG_ALIGN_OFFSET, _options, \
+2026-09-18T21:50:01.724Z       |                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:543:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_STACK_CREATE[m[K'
+2026-09-18T21:50:01.724Z   543 |                 [01;36m[KZ_LOG_MSG_STACK_CREATE[m[K(_cstr_cnt, _domain_id, _source, _level, _data, \
+2026-09-18T21:50:01.724Z       |                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:573:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE3[m[K'
+2026-09-18T21:50:01.724Z   573 |         [01;36m[KZ_LOG_MSG_CREATE3[m[K(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+2026-09-18T21:50:01.724Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:582:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE2[m[K'
+2026-09-18T21:50:01.724Z   582 |         [01;36m[KZ_LOG_MSG_CREATE2[m[K(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+2026-09-18T21:50:01.724Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.724Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_core.h:308:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE[m[K'
+2026-09-18T21:50:01.724Z   308 |                 [01;36m[KZ_LOG_MSG_CREATE[m[K(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+2026-09-18T21:50:01.724Z       |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_core.h:320:44:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG2[m[K'
+2026-09-18T21:50:01.725Z   320 | #define Z_LOG(_level, ...)                 [01;36m[KZ_LOG2[m[K(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+2026-09-18T21:50:01.725Z       |                                            [01;36m[K^~~~~~[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log.h:83:22:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG[m[K'
+2026-09-18T21:50:01.725Z    83 | #define LOG_INF(...) [01;36m[KZ_LOG[m[K(LOG_LEVEL_INF, __VA_ARGS__)
+2026-09-18T21:50:01.725Z       |                      [01;36m[K^~~~~[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:514:33:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLOG_INF[m[K'
+2026-09-18T21:50:01.725Z   514 |                                 [01;36m[KLOG_INF[m[K("Message: %.*s",
+2026-09-18T21:50:01.725Z       |                                 [01;36m[K^~~~~~~[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/toolchain/gcc.h:87:51:[m[K [01;31m[Kerror: [m[Kexpression in static assertion is not an integer
+2026-09-18T21:50:01.725Z    87 | #define BUILD_ASSERT(EXPR, MSG...) _Static_assert([01;31m[K([m[KEXPR), "" MSG)
+2026-09-18T21:50:01.725Z       |                                                   [01;31m[K^[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:685:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KBUILD_ASSERT[m[K'
+2026-09-18T21:50:01.725Z   685 |         [01;36m[KBUILD_ASSERT[m[K(!((sizeof(double) < VA_STACK_ALIGN(long double)) && \
+2026-09-18T21:50:01.725Z       |         [01;36m[K^~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:730:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_PACK_ARG2[m[K'
+2026-09-18T21:50:01.725Z   730 |         [01;36m[KZ_CBPRINTF_PACK_ARG2[m[K(arg_idx, _pbuf, _pkg_len, _pkg_offset, _pmax, arg)
+2026-09-18T21:50:01.725Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1069:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_PACK_ARG[m[K'
+2026-09-18T21:50:01.725Z  1069 |         [01;36m[Kfixed_arg0[m[K(idx, x)
+2026-09-18T21:50:01.725Z       |         [01;36m[K^~~~~~~~~~[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:38:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_IDX_EXEC[m[K'
+2026-09-18T21:50:01.725Z    38 |         [01;36m[Kz_call[m[K(2, x, fixed_arg0, fixed_arg1)
+2026-09-18T21:50:01.725Z       |         [01;36m[K^~~~~~[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:23:81:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_LOOP_3[m[K'
+2026-09-18T21:50:01.725Z    23 |                                 _57, _58, _59, _60, _61, _62, _63, _64, N, ...) [01;36m[KN[m[K
+2026-09-18T21:50:01.725Z       |                                                                                 [01;36m[K^[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_loops.h:1072:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_ENGINE[m[K'
+2026-09-18T21:50:01.725Z  1072 |         [01;36m[KZ_FOR_EACH_ENGINE[m[K(Z_FOR_EACH_IDX_EXEC, sep, F, _, __VA_ARGS__)
+2026-09-18T21:50:01.725Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/util_macro.h:619:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_FOR_EACH_IDX[m[K'
+2026-09-18T21:50:01.725Z   619 |         [01;36m[KZ_FOR_EACH_IDX[m[K(F, sep, REVERSE_ARGS(__VA_ARGS__))
+2026-09-18T21:50:01.725Z       |         [01;36m[K^~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:833:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KFOR_EACH_IDX[m[K'
+2026-09-18T21:50:01.725Z   833 |         [01;36m[KFOR_EACH_IDX[m[K(Z_CBPRINTF_PACK_ARG, (;), __VA_ARGS__);\
+2026-09-18T21:50:01.725Z       |         [01;36m[K^~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf_internal.h:870:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_STATIC_PACKAGE_GENERIC[m[K'
+2026-09-18T21:50:01.725Z   870 |         [01;36m[KZ_CBPRINTF_STATIC_PACKAGE_GENERIC[m[K(packaged, inlen, outlen, \
+2026-09-18T21:50:01.725Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/sys/cbprintf.h:387:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_CBPRINTF_STATIC_PACKAGE[m[K'
+2026-09-18T21:50:01.725Z   387 |         [01;36m[KZ_CBPRINTF_STATIC_PACKAGE[m[K(packaged, inlen, outlen, \
+2026-09-18T21:50:01.725Z       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:345:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KCBPRINTF_STATIC_PACKAGE[m[K'
+2026-09-18T21:50:01.725Z   345 |                 [01;36m[KCBPRINTF_STATIC_PACKAGE[m[K(_msg->data, _plen, \
+2026-09-18T21:50:01.725Z       |                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.725Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:543:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_STACK_CREATE[m[K'
+2026-09-18T21:50:01.725Z   543 |                 [01;36m[KZ_LOG_MSG_STACK_CREATE[m[K(_cstr_cnt, _domain_id, _source, _level, _data, \
+2026-09-18T21:50:01.726Z       |                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.726Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:573:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE3[m[K'
+2026-09-18T21:50:01.726Z   573 |         [01;36m[KZ_LOG_MSG_CREATE3[m[K(_try_0cpy, _mode,  _cstr_cnt, _domain_id, _source,\
+2026-09-18T21:50:01.726Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.726Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_msg.h:582:9:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE2[m[K'
+2026-09-18T21:50:01.726Z   582 |         [01;36m[KZ_LOG_MSG_CREATE2[m[K(_try_0cpy, _mode, UTIL_CAT(Z_LOG_FUNC_PREFIX_, _level), \
+2026-09-18T21:50:01.728Z       |         [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.728Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_core.h:308:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG_MSG_CREATE[m[K'
+2026-09-18T21:50:01.728Z   308 |                 [01;36m[KZ_LOG_MSG_CREATE[m[K(UTIL_NOT(IS_ENABLED(CONFIG_USERSPACE)), _mode,                    \
+2026-09-18T21:50:01.728Z       |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+2026-09-18T21:50:01.728Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log_core.h:320:44:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG2[m[K'
+2026-09-18T21:50:01.728Z   320 | #define Z_LOG(_level, ...)                 [01;36m[KZ_LOG2[m[K(_level, 0, Z_LOG_CURRENT_DATA(), __VA_ARGS__)
+2026-09-18T21:50:01.728Z       |                                            [01;36m[K^~~~~~[m[K
+2026-09-18T21:50:01.728Z [01m[KC:/ncs/v3.3.3/zephyr/include/zephyr/logging/log.h:83:22:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KZ_LOG[m[K'
+2026-09-18T21:50:01.729Z    83 | #define LOG_INF(...) [01;36m[KZ_LOG[m[K(LOG_LEVEL_INF, __VA_ARGS__)
+2026-09-18T21:50:01.729Z       |                      [01;36m[K^~~~~[m[K
+2026-09-18T21:50:01.729Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:514:33:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[KLOG_INF[m[K'
+2026-09-18T21:50:01.729Z   514 |                                 [01;36m[KLOG_INF[m[K("Message: %.*s",
+2026-09-18T21:50:01.729Z       |                                 [01;36m[K^~~~~~~[m[K
+2026-09-18T21:50:01.729Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:[m[K At top level:
+2026-09-18T21:50:01.729Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:122:16:[m[K [01;35m[Kwarning: [m[K'[01m[Kmessage[m[K' defined but not used [[01;35m[K-Wunused-variable[m[K]
+2026-09-18T21:50:01.729Z   122 | static uint8_t [01;35m[Kmessage[m[K[FALCONPADDED512_MESSAGE_SIZE];
+2026-09-18T21:50:01.729Z       |                [01;35m[K^~~~~~~[m[K
+2026-09-18T21:50:01.729Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:110:16:[m[K [01;35m[Kwarning: [m[K'[01m[Ksignature[m[K' defined but not used [[01;35m[K-Wunused-variable[m[K]
+2026-09-18T21:50:01.729Z   110 | static uint8_t [01;35m[Ksignature[m[K[FALCONPADDED512_SIGNATURE_SIZE];
+2026-09-18T21:50:01.729Z       |                [01;35m[K^~~~~~~~~[m[K
+2026-09-18T21:50:01.729Z [01m[KC:/nrf_work/SHA2f/central_uart/src/main.c:103:16:[m[K [01;35m[Kwarning: [m[K'[01m[Kpublic_key[m[K' defined but not used [[01;35m[K-Wunused-variable[m[K]
+2026-09-18T21:50:01.729Z   103 | static uint8_t [01;35m[Kpublic_key[m[K[FALCONPADDED512_PUBLIC_KEY_SIZE];
+2026-09-18T21:50:01.729Z       |                [01;35m[K^~~~~~~~~~[m[K
+2026-09-18T21:50:01.730Z [176/362] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_mpu.c.obj
+2026-09-18T21:50:01.730Z [177/362] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/exit.c.obj
+2026-09-18T21:50:01.774Z [178/362] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/addr.c.obj
+2026-09-18T21:50:01.796Z [179/362] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/validate_base_addresses.c.obj
+2026-09-18T21:50:01.802Z [180/362] Building C object zephyr/lib/posix/c_lib_ext/CMakeFiles/lib__posix__c_lib_ext.dir/getentropy.c.obj
+2026-09-18T21:50:01.807Z [181/362] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj
+2026-09-18T21:50:01.881Z [182/362] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/validate_binding_headers.c.obj
+2026-09-18T21:50:01.901Z [183/362] Building C object zephyr/lib/net_buf/CMakeFiles/lib__net_buf.dir/buf_simple.c.obj
+2026-09-18T21:50:01.925Z [184/362] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/validate_enabled_instances.c.obj
+2026-09-18T21:50:01.928Z [185/362] Building C object zephyr/lib/net_buf/CMakeFiles/lib__net_buf.dir/buf.c.obj
+2026-09-18T21:50:01.952Z [186/362] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/common/reboot.c.obj
+2026-09-18T21:50:01.959Z [187/362] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/uuid.c.obj
+2026-09-18T21:50:01.968Z [188/362] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/common/gppi_init.c.obj
+2026-09-18T21:50:02.043Z [189/362] Building C object zephyr/subsys/random/CMakeFiles/subsys__random.dir/random_entropy_device.c.obj
+2026-09-18T21:50:02.048Z [190/362] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/addr.c.obj
+2026-09-18T21:50:02.073Z [191/362] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/dummy.c.obj
+2026-09-18T21:50:02.074Z [192/362] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/bt_str.c.obj
+2026-09-18T21:50:02.114Z [193/362] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/long_wq.c.obj
+2026-09-18T21:50:02.146Z [194/362] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/rpa.c.obj
+2026-09-18T21:50:02.196Z [195/362] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/nrf53/nrf53_cpunet_mgmt.c.obj
+2026-09-18T21:50:02.205Z [196/362] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/nrf53/soc.c.obj
+2026-09-18T21:50:02.251Z [197/362] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/common/gpiote_nrfx.c.obj
+2026-09-18T21:50:02.318Z [198/362] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/settings.c.obj
+2026-09-18T21:50:02.318Z ninja: build stopped: subcommand failed.

@@ -1,0 +1,10 @@
+default: central_uart_1
+build_dir: C:/central_uart_1/build
+domains:
+  - name: central_uart_1
+    build_dir: C:/central_uart_1/build/central_uart_1
+  - name: ipc_radio
+    build_dir: C:/central_uart_1/build/ipc_radio
+flash_order:
+  - ipc_radio
+  - central_uart_1

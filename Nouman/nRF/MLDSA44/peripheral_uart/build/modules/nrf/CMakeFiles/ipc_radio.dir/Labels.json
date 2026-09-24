@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/peripheral_uart/build/modules/nrf/CMakeFiles/ipc_radio"
+		},
+		{
+			"file" : "C:/peripheral_uart/build/modules/nrf/CMakeFiles/ipc_radio.rule"
+		},
+		{
+			"file" : "C:/peripheral_uart/build/modules/nrf/CMakeFiles/ipc_radio-complete.rule"
+		},
+		{
+			"file" : "C:/peripheral_uart/build/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-build.rule"
+		},
+		{
+			"file" : "C:/peripheral_uart/build/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-configure.rule"
+		},
+		{
+			"file" : "C:/peripheral_uart/build/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-download.rule"
+		},
+		{
+			"file" : "C:/peripheral_uart/build/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-install.rule"
+		},
+		{
+			"file" : "C:/peripheral_uart/build/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-mkdir.rule"
+		},
+		{
+			"file" : "C:/peripheral_uart/build/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-patch.rule"
+		},
+		{
+			"file" : "C:/peripheral_uart/build/modules/nrf/ipc_radio-prefix/src/ipc_radio-stamp/ipc_radio-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ipc_radio"
+		],
+		"name" : "ipc_radio"
+	}
+}

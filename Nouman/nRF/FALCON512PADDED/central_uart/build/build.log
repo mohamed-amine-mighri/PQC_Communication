@@ -1,0 +1,406 @@
+2026-09-18T20:36:29.232Z west build --build-dir c:/nrf_work/FALCON512PADDED/central_uart/build c:/nrf_work/FALCON512PADDED/central_uart
+2026-09-18T20:36:30.229Z [0/2] Re-checking globbed directories...
+2026-09-18T20:36:30.396Z ninja: no work to do.
+west build: generating a build system
+2026-09-18T20:32:46.339Z -- Application: C:/nrf_work/FALCON512PADDED/central_uart
+2026-09-18T20:32:46.340Z -- CMake version: 4.2.1
+2026-09-18T20:32:46.887Z -- Found Python3: C:/ncs/toolchains/936afb6332/opt/bin/python.exe (found suitable version "3.12.4", minimum required is "3.10") found components: Interpreter
+2026-09-18T20:32:46.955Z -- Cache files will be written to: C:/ncs/v3.3.3/zephyr/.cache
+2026-09-18T20:32:47.103Z -- Zephyr version: 4.3.99 (C:/ncs/v3.3.3/zephyr)
+2026-09-18T20:32:47.314Z -- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+2026-09-18T20:33:00.907Z -- Board: nrf5340dk, qualifiers: nrf5340/cpuapp
+2026-09-18T20:33:05.433Z -- Found host-tools: zephyr 0.17.0 (C:/ncs/toolchains/936afb6332/opt/zephyr-sdk)
+2026-09-18T20:33:05.480Z -- Found toolchain: zephyr 0.17.0 (C:/ncs/toolchains/936afb6332/opt/zephyr-sdk)
+2026-09-18T20:33:05.781Z -- Found Dtc: C:/ncs/toolchains/936afb6332/opt/bin/dtc.exe (found suitable version "1.4.7", minimum required is "1.4.6")
+2026-09-18T20:33:05.782Z -- Found BOARD.dts: C:/ncs/v3.3.3/zephyr/boards/nordic/nrf5340dk/nrf5340dk_nrf5340_cpuapp.dts
+2026-09-18T20:33:44.041Z -- Generated zephyr.dts: C:/nrf_work/FALCON512PADDED/central_uart/build/zephyr/zephyr.dts
+2026-09-18T20:33:44.041Z -- Generated pickled edt: C:/nrf_work/FALCON512PADDED/central_uart/build/zephyr/edt.pickle
+2026-09-18T20:33:44.331Z -- Generated devicetree_generated.h: C:/nrf_work/FALCON512PADDED/central_uart/build/zephyr/include/generated/zephyr/devicetree_generated.h
+2026-09-18T20:34:39.283Z Parsing C:/nrf_work/FALCON512PADDED/central_uart/Kconfig
+2026-09-18T20:34:39.284Z Loaded configuration 'C:/ncs/v3.3.3/zephyr/boards/nordic/nrf5340dk/nrf5340dk_nrf5340_cpuapp_defconfig'
+2026-09-18T20:34:39.284Z Merged configuration 'C:/nrf_work/FALCON512PADDED/central_uart/prj.conf'
+2026-09-18T20:34:39.284Z Merged configuration 'C:/nrf_work/FALCON512PADDED/central_uart/boards/nrf5340dk_nrf5340_cpuapp.conf'
+2026-09-18T20:34:39.284Z Configuration saved to 'C:/nrf_work/FALCON512PADDED/central_uart/build/zephyr/.config'
+2026-09-18T20:34:39.284Z Kconfig header saved to 'C:/nrf_work/FALCON512PADDED/central_uart/build/zephyr/include/generated/zephyr/autoconf.h'
+2026-09-18T20:34:40.446Z -- Found GnuLd: c:/ncs/toolchains/936afb6332/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd.exe (found version "2.38")
+2026-09-18T20:34:42.119Z -- The C compiler identification is GNU 12.2.0
+2026-09-18T20:34:43.199Z -- The CXX compiler identification is GNU 12.2.0
+2026-09-18T20:34:43.565Z -- The ASM compiler identification is GNU
+2026-09-18T20:34:43.572Z -- Found assembler: C:/ncs/toolchains/936afb6332/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.exe
+2026-09-18T20:34:48.138Z -- libmetal version: 1.9.0 (C:/nrf_work/FALCON512PADDED/central_uart)
+2026-09-18T20:34:48.148Z -- Looking for include file stdatomic.h
+2026-09-18T20:34:48.552Z -- Looking for include file stdatomic.h - found
+2026-09-18T20:34:49.451Z -- open-amp version: 1.8.0 (C:/ncs/v3.3.3/modules/lib/open-amp/open-amp)
+2026-09-18T20:34:49.460Z -- Looking for include file fcntl.h
+2026-09-18T20:34:50.228Z -- Looking for include file fcntl.h - found
+2026-09-18T20:34:50.697Z -- Found gen_kobject_list: C:/ncs/v3.3.3/zephyr/scripts/build/gen_kobject_list.py
+2026-09-18T20:34:50.979Z -- Configuring done (124.8s)
+2026-09-18T20:34:51.941Z -- Generating done (1.0s)
+2026-09-18T20:34:51.965Z -- Build files have been written to: C:/nrf_work/FALCON512PADDED/central_uart/build
+2026-09-18T20:34:52.096Z -- west build: building application
+2026-09-18T20:34:52.377Z [0/2] Re-checking globbed directories...
+2026-09-18T20:34:52.783Z [1/360] Generating ../../zephyr/include/generated/ncs_commit.h
+2026-09-18T20:34:52.783Z [2/360] Generating ../../zephyr/include/generated/zephyr_commit.h
+2026-09-18T20:34:52.825Z [3/360] Generating ../../zephyr/include/generated/ncs_version.h
+2026-09-18T20:34:52.982Z [4/360] Generating include/generated/zephyr/version.h
+2026-09-18T20:34:52.982Z -- Zephyr version: 4.3.99 (C:/ncs/v3.3.3/zephyr), build: ncs-v3.3.3
+2026-09-18T20:36:04.091Z [5/360] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+2026-09-18T20:36:04.276Z [6/360] Generating include/generated/device-api-sections.ld, include/generated/device-api-sections.cmake
+2026-09-18T20:36:04.386Z [7/360] Generating include/generated/zephyr/driver-validation.h
+2026-09-18T20:36:04.386Z [8/360] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h
+2026-09-18T20:36:04.414Z [9/360] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_exports_llext.c, syscall_weakdefs_llext.c, include/generated/zephyr/syscall_list.h
+2026-09-18T20:36:05.060Z [10/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/padlock.c.obj
+2026-09-18T20:36:05.098Z [11/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/version.c.obj
+2026-09-18T20:36:05.132Z [12/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/nist_kw.c.obj
+2026-09-18T20:36:05.167Z [13/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/bignum_core.c.obj
+2026-09-18T20:36:05.212Z [14/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/bignum.c.obj
+2026-09-18T20:36:05.247Z [15/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/constant_time.c.obj
+2026-09-18T20:36:05.281Z [16/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/base64.c.obj
+2026-09-18T20:36:05.317Z [17/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/asn1write.c.obj
+2026-09-18T20:36:05.356Z [18/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/asn1parse.c.obj
+2026-09-18T20:36:05.396Z [19/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_helpers.c.obj
+2026-09-18T20:36:05.442Z [20/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_ecdsa.c.obj
+2026-09-18T20:36:05.475Z [21/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_ecdh.c.obj
+2026-09-18T20:36:05.508Z [22/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_spake2p.c.obj
+2026-09-18T20:36:05.541Z [23/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_eddsa.c.obj
+2026-09-18T20:36:05.572Z [24/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_jpake.c.obj
+2026-09-18T20:36:05.611Z [25/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_ec_keys.c.obj
+2026-09-18T20:36:05.651Z [26/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_srp.c.obj
+2026-09-18T20:36:05.686Z [27/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_rsa.c.obj
+2026-09-18T20:36:05.717Z [28/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_wpa3_sae.c.obj
+2026-09-18T20:36:05.751Z [29/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/oid.c.obj
+2026-09-18T20:36:05.792Z [30/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_lms.c.obj
+2026-09-18T20:36:05.820Z [31/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_ml_dsa.c.obj
+2026-09-18T20:36:05.852Z [32/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_ml_kem.c.obj
+2026-09-18T20:36:05.887Z [33/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_xmss.c.obj
+2026-09-18T20:36:05.923Z [34/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_key_management.c.obj
+2026-09-18T20:36:05.959Z [35/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_key_agreement.c.obj
+2026-09-18T20:36:05.995Z [36/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_cipher.c.obj
+2026-09-18T20:36:06.029Z [37/360] Building C object modules/nrf/subsys/nrf_security/src/drivers/nrf_oberon/CMakeFiles/oberon_psa_driver.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/oberon/drivers/oberon_mac.c.obj
+2026-09-18T20:36:06.064Z [38/360] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/library/platform.c.obj
+2026-09-18T20:36:06.098Z [39/360] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/library/platform_util.c.obj
+2026-09-18T20:36:06.098Z [40/360] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/library/psa_crypto_client.c.obj
+2026-09-18T20:36:06.099Z [41/360] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/library/psa_crypto_storage.c.obj
+2026-09-18T20:36:06.100Z [42/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/nrf_security_utils.dir/utils/nrf_security_mutexes.c.obj
+2026-09-18T20:36:06.102Z [43/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/nrf_security_utils.dir/utils/nrf_security_core.c.obj
+2026-09-18T20:36:06.102Z [44/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/nrf_security_utils.dir/utils/nrf_security_events.c.obj
+2026-09-18T20:36:06.135Z [45/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/pem.c.obj
+2026-09-18T20:36:06.135Z [46/360] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/library/psa_crypto_slot_management.c.obj
+2026-09-18T20:36:06.135Z [47/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/pkcs12.c.obj
+2026-09-18T20:36:06.135Z [48/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/pkcs5.c.obj
+2026-09-18T20:36:06.135Z [49/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/memory_buffer_alloc.c.obj
+2026-09-18T20:36:06.135Z [50/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/pkparse.c.obj
+2026-09-18T20:36:06.195Z [51/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/pkwrite.c.obj
+2026-09-18T20:36:06.204Z [52/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/dhm.c.obj
+2026-09-18T20:36:06.208Z [53/360] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+2026-09-18T20:36:06.230Z [54/360] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/C_/ncs/v3.3.3/nrf/subsys/nrf_security/src/psa_crypto_driver_wrappers.c.obj
+2026-09-18T20:36:06.259Z [55/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/cipher_wrap.c.obj
+2026-09-18T20:36:06.260Z [56/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/cipher.c.obj
+2026-09-18T20:36:06.287Z [57/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/md.c.obj
+2026-09-18T20:36:06.318Z [58/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/pk.c.obj
+2026-09-18T20:36:06.340Z [59/360] Linking C static library modules\nrf\subsys\nrf_security\src\libnrf_security_utils.a
+2026-09-18T20:36:06.355Z [60/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/pk_wrap.c.obj
+2026-09-18T20:36:06.392Z [61/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/pk_ecc.c.obj
+2026-09-18T20:36:06.440Z [62/360] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/v3.3.3/modules/crypto/mbedtls/library/psa_util.c.obj
+2026-09-18T20:36:06.513Z [63/360] Linking C static library modules\nrf\subsys\nrf_security\src\libmbedcrypto_base.a
+2026-09-18T20:36:06.537Z [64/360] Generating include/generated/zephyr/offsets.h
+2026-09-18T20:36:07.155Z [65/360] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+2026-09-18T20:36:07.189Z [66/360] Building C object CMakeFiles/app.dir/src/leds.c.obj
+2026-09-18T20:36:07.225Z [67/360] Building C object CMakeFiles/app.dir/src/pqclean/code/codec.c.obj
+2026-09-18T20:36:07.260Z [68/360] Building C object CMakeFiles/app.dir/src/pqclean/code/common.c.obj
+2026-09-18T20:36:07.296Z [69/360] Building C object CMakeFiles/app.dir/src/pqclean/code/fft.c.obj
+2026-09-18T20:36:07.342Z [70/360] Building C object CMakeFiles/app.dir/src/pqclean/code/fpr.c.obj
+2026-09-18T20:36:07.376Z [71/360] Building C object CMakeFiles/app.dir/src/pqclean/code/pqclean.c.obj
+2026-09-18T20:36:07.423Z [72/360] Building C object CMakeFiles/app.dir/src/pqclean/code/rng.c.obj
+2026-09-18T20:36:07.479Z [73/360] Linking C static library modules\nrf\subsys\nrf_security\src\drivers\nrf_oberon\liboberon_psa_driver.a
+2026-09-18T20:36:07.514Z [74/360] Building C object CMakeFiles/app.dir/src/pqclean/code/sign.c.obj
+2026-09-18T20:36:07.560Z [75/360] Building C object CMakeFiles/app.dir/src/pqclean/code/vrfy.c.obj
+2026-09-18T20:36:07.619Z [76/360] Building C object CMakeFiles/app.dir/src/pqclean/common/fips202.c.obj
+2026-09-18T20:36:07.662Z [77/360] Building C object CMakeFiles/app.dir/src/pqclean/common/randombytes.c.obj
+2026-09-18T20:36:07.711Z [78/360] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/C_/ncs/v3.3.3/modules/crypto/oberon-psa-crypto/library/psa_crypto.c.obj
+2026-09-18T20:36:07.729Z [79/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/libc/validate_libc.c.obj
+2026-09-18T20:36:07.765Z [80/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+2026-09-18T20:36:07.804Z [81/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/clock.c.obj
+2026-09-18T20:36:07.839Z [82/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+2026-09-18T20:36:07.885Z [83/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.obj
+2026-09-18T20:36:07.927Z [84/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+2026-09-18T20:36:07.962Z [85/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.obj
+2026-09-18T20:36:07.996Z [86/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+2026-09-18T20:36:08.035Z [87/360] Building C object CMakeFiles/app.dir/src/pqclean/code/keygen.c.obj
+2026-09-18T20:36:08.096Z [88/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+2026-09-18T20:36:08.132Z [89/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitmask.c.obj
+2026-09-18T20:36:08.166Z [90/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+2026-09-18T20:36:08.203Z [91/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
+2026-09-18T20:36:08.240Z [92/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+2026-09-18T20:36:08.289Z [93/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/mpsc_pbuf.c.obj
+2026-09-18T20:36:08.343Z [94/360] Linking C static library modules\nrf\subsys\nrf_security\src\core\nrf_oberon\libpsa_core.a
+2026-09-18T20:36:08.381Z [95/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt_common.c.obj
+2026-09-18T20:36:08.420Z [96/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
+2026-09-18T20:36:08.467Z [97/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/last_section_id.c.obj
+2026-09-18T20:36:08.512Z [98/360] Building C object zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+2026-09-18T20:36:08.548Z [99/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/ring_buffer.c.obj
+2026-09-18T20:36:08.586Z [100/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt.c.obj
+2026-09-18T20:36:08.621Z [101/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/notify.c.obj
+2026-09-18T20:36:08.666Z [102/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.obj
+2026-09-18T20:36:08.714Z [103/360] Building C object CMakeFiles/app.dir/src/main.c.obj
+2026-09-18T20:36:08.752Z [104/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/log_cache.c.obj
+2026-09-18T20:36:08.802Z [105/360] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/onoff.c.obj
+2026-09-18T20:36:08.847Z [106/360] Building C object CMakeFiles/app.dir/src/pqclean/common/sha2.c.obj
+2026-09-18T20:36:09.016Z [107/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map.c.obj
+2026-09-18T20:36:09.053Z [108/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/log_msg.c.obj
+2026-09-18T20:36:09.091Z [109/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map_layout.c.obj
+2026-09-18T20:36:09.132Z [110/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/log_mgmt.c.obj
+2026-09-18T20:36:09.179Z [111/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/backends/log_backend_uart.c.obj
+2026-09-18T20:36:09.220Z [112/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/ipc/ipc_service/lib/ipc_static_vrings.c.obj
+2026-09-18T20:36:09.245Z [113/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/log_output.c.obj
+2026-09-18T20:36:09.283Z [114/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/ipc/ipc_service/lib/ipc_rpmsg.c.obj
+2026-09-18T20:36:09.320Z [115/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/log_core.c.obj
+2026-09-18T20:36:09.379Z [116/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/mem_mgmt/mem_attr.c.obj
+2026-09-18T20:36:09.398Z [117/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/ipc/ipc_service/backends/ipc_rpmsg_static_vrings.c.obj
+2026-09-18T20:36:09.439Z [118/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/tracing/tracing_none.c.obj
+2026-09-18T20:36:09.475Z [119/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map_default.c.obj
+2026-09-18T20:36:09.510Z [120/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/ipc/ipc_service/ipc_service.c.obj
+2026-09-18T20:36:09.551Z [121/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/fs/nvs/nvs.c.obj
+2026-09-18T20:36:09.589Z [122/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_store.c.obj
+2026-09-18T20:36:09.627Z [123/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_init.c.obj
+2026-09-18T20:36:09.666Z [124/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings.c.obj
+2026-09-18T20:36:09.702Z [125/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_line.c.obj
+2026-09-18T20:36:09.741Z [126/360] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrf/lib/boot_banner/banner.c.obj
+2026-09-18T20:36:09.777Z [127/360] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_nvs.c.obj
+2026-09-18T20:36:09.812Z [128/360] Building C object zephyr/CMakeFiles/zephyr.dir/drivers/flash/flash_util.c.obj
+2026-09-18T20:36:09.850Z [129/360] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/init.c.obj
+2026-09-18T20:36:09.891Z [130/360] Linking C static library zephyr\arch\common\libisr_tables.a
+2026-09-18T20:36:09.925Z [131/360] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrfxlib/crypto/nrf_cc312_platform/src/nrf_cc3xx_platform_abort_zephyr.c.obj
+2026-09-18T20:36:09.962Z [132/360] Building ASM object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/nmi_on_reset.S.obj
+2026-09-18T20:36:09.998Z [133/360] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj
+2026-09-18T20:36:10.044Z [134/360] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrf/subsys/bluetooth/scan.c.obj
+2026-09-18T20:36:10.086Z [135/360] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fault_s.S.obj
+2026-09-18T20:36:10.161Z [136/360] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrf/subsys/bluetooth/hci_vs_sdc.c.obj
+2026-09-18T20:36:10.201Z [137/360] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrf/subsys/bluetooth/host_extensions/host_extensions.c.obj
+2026-09-18T20:36:10.253Z [138/360] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrfxlib/crypto/nrf_cc312_platform/src/nrf_cc3xx_platform_mutex_zephyr.c.obj
+2026-09-18T20:36:10.289Z [139/360] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrf/subsys/bluetooth/gatt_dm.c.obj
+2026-09-18T20:36:10.330Z [140/360] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/v3.3.3/nrf/subsys/bluetooth/services/nus_client.c.obj
+2026-09-18T20:36:10.371Z [141/360] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/xip.c.obj
+2026-09-18T20:36:10.412Z [142/360] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/reset.S.obj
+2026-09-18T20:36:10.444Z [143/360] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/nmi.c.obj
+2026-09-18T20:36:10.482Z [144/360] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/fatal.c.obj
+2026-09-18T20:36:10.525Z [145/360] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/tls.c.obj
+2026-09-18T20:36:10.557Z [146/360] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/vector_table.S.obj
+2026-09-18T20:36:10.589Z [147/360] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/swap_helper.S.obj
+2026-09-18T20:36:10.641Z [148/360] Generating linker_zephyr_pre0.cmd
+2026-09-18T20:36:10.681Z [149/360] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/exc_exit.c.obj
+2026-09-18T20:36:10.712Z [150/360] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fpu.c.obj
+2026-09-18T20:36:10.747Z [151/360] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/thread_abort.c.obj
+2026-09-18T20:36:10.783Z [152/360] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/scb.c.obj
+2026-09-18T20:36:10.820Z [153/360] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/__aeabi_read_tp.S.obj
+2026-09-18T20:36:10.853Z [154/360] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/irq_manage.c.obj
+2026-09-18T20:36:10.888Z [155/360] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/thread.c.obj
+2026-09-18T20:36:10.930Z [156/360] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/prep_c.c.obj
+2026-09-18T20:36:10.967Z [157/360] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/irq_init.c.obj
+2026-09-18T20:36:11.005Z [158/360] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/cpu_idle.c.obj
+2026-09-18T20:36:11.040Z [159/360] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fault.c.obj
+2026-09-18T20:36:11.075Z [160/360] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/isr_wrapper.c.obj
+2026-09-18T20:36:11.114Z [161/360] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_core_mpu.c.obj
+2026-09-18T20:36:11.155Z [162/360] Building C object zephyr/arch/arch/arm/core/cortex_m/cmse/CMakeFiles/arch__arm__core__cortex_m__cmse.dir/arm_core_cmse.c.obj
+2026-09-18T20:36:11.190Z [163/360] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_mpu_regions.c.obj
+2026-09-18T20:36:11.234Z [164/360] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/cbprintf.c.obj
+2026-09-18T20:36:11.289Z [165/360] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/time/time.c.obj
+2026-09-18T20:36:11.336Z [166/360] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/assert.c.obj
+2026-09-18T20:36:11.385Z [167/360] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/errno_wrap.c.obj
+2026-09-18T20:36:11.437Z [168/360] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/chk_fail.c.obj
+2026-09-18T20:36:11.475Z [169/360] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/exit.c.obj
+2026-09-18T20:36:11.524Z [170/360] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/stdio.c.obj
+2026-09-18T20:36:11.559Z [171/360] Building C object zephyr/lib/posix/c_lib_ext/CMakeFiles/lib__posix__c_lib_ext.dir/fnmatch.c.obj
+2026-09-18T20:36:11.597Z [172/360] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/locks.c.obj
+2026-09-18T20:36:11.633Z [173/360] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj
+2026-09-18T20:36:11.662Z [174/360] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/addr.c.obj
+2026-09-18T20:36:11.699Z [175/360] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_mpu.c.obj
+2026-09-18T20:36:11.745Z [176/360] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj
+2026-09-18T20:36:11.788Z [177/360] Building C object zephyr/lib/posix/c_lib_ext/CMakeFiles/lib__posix__c_lib_ext.dir/getopt_shim.c.obj
+2026-09-18T20:36:11.824Z [178/360] Building C object zephyr/lib/posix/c_lib_ext/CMakeFiles/lib__posix__c_lib_ext.dir/getentropy.c.obj
+2026-09-18T20:36:11.861Z [179/360] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/validate_base_addresses.c.obj
+2026-09-18T20:36:11.892Z [180/360] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/validate_binding_headers.c.obj
+2026-09-18T20:36:11.927Z [181/360] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/validate_enabled_instances.c.obj
+2026-09-18T20:36:11.974Z [182/360] Building C object zephyr/lib/net_buf/CMakeFiles/lib__net_buf.dir/buf.c.obj
+2026-09-18T20:36:12.007Z [183/360] Building C object zephyr/lib/net_buf/CMakeFiles/lib__net_buf.dir/buf_simple.c.obj
+2026-09-18T20:36:12.049Z [184/360] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/common/gppi_init.c.obj
+2026-09-18T20:36:12.098Z [185/360] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/common/reboot.c.obj
+2026-09-18T20:36:12.147Z [186/360] Building C object zephyr/subsys/random/CMakeFiles/subsys__random.dir/random_entropy_device.c.obj
+2026-09-18T20:36:12.190Z [187/360] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/dummy.c.obj
+2026-09-18T20:36:12.232Z [188/360] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/nrf53/nrf53_cpunet_mgmt.c.obj
+2026-09-18T20:36:12.274Z [189/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/uuid.c.obj
+2026-09-18T20:36:12.324Z [190/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/addr.c.obj
+2026-09-18T20:36:12.362Z [191/360] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/bt_str.c.obj
+2026-09-18T20:36:12.403Z [192/360] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/nrf53/soc.c.obj
+2026-09-18T20:36:12.441Z [193/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/long_wq.c.obj
+2026-09-18T20:36:12.581Z [194/360] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/rpa.c.obj
+2026-09-18T20:36:12.620Z [195/360] Building C object zephyr/soc/soc/nrf5340/CMakeFiles/soc__nordic.dir/common/gpiote_nrfx.c.obj
+2026-09-18T20:36:12.662Z [196/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/hci_common.c.obj
+2026-09-18T20:36:12.695Z [197/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/buf.c.obj
+2026-09-18T20:36:12.731Z [198/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/data.c.obj
+2026-09-18T20:36:12.790Z [199/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/settings.c.obj
+2026-09-18T20:36:12.824Z [200/360] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc4_sw.c.obj
+2026-09-18T20:36:12.864Z [201/360] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc8_sw.c.obj
+2026-09-18T20:36:13.007Z [202/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/ecc.c.obj
+2026-09-18T20:36:13.045Z [203/360] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc16_sw.c.obj
+2026-09-18T20:36:13.094Z [204/360] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc7_sw.c.obj
+2026-09-18T20:36:13.171Z [205/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/scan.c.obj
+2026-09-18T20:36:13.226Z [206/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/crypto_psa.c.obj
+2026-09-18T20:36:13.285Z [207/360] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc32c_sw.c.obj
+2026-09-18T20:36:13.345Z [208/360] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc32k_4_2_sw.c.obj
+2026-09-18T20:36:13.388Z [209/360] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc24_sw.c.obj
+2026-09-18T20:36:13.443Z [210/360] Building C object zephyr/subsys/crc/CMakeFiles/subsys__crc.dir/crc32_sw.c.obj
+2026-09-18T20:36:13.494Z [211/360] Building C object zephyr/subsys/bluetooth/crypto/CMakeFiles/subsys__bluetooth__crypto.dir/bt_crypto_psa.c.obj
+2026-09-18T20:36:13.674Z [212/360] Building C object zephyr/drivers/console/CMakeFiles/drivers__console.dir/uart_console.c.obj
+2026-09-18T20:36:13.771Z [213/360] Building C object zephyr/drivers/entropy/CMakeFiles/drivers__entropy.dir/C_/ncs/v3.3.3/nrf/drivers/entropy/entropy_cc3xx.c.obj
+2026-09-18T20:36:13.793Z [214/360] Building C object zephyr/drivers/bluetooth/CMakeFiles/drivers__bluetooth.dir/hci/nrf53_support.c.obj
+2026-09-18T20:36:13.836Z [215/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/keys.c.obj
+2026-09-18T20:36:13.873Z [216/360] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/flash_page_layout.c.obj
+2026-09-18T20:36:13.921Z [217/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/l2cap.c.obj
+2026-09-18T20:36:13.955Z [218/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/id.c.obj
+2026-09-18T20:36:13.991Z [219/360] Building C object zephyr/subsys/bluetooth/crypto/CMakeFiles/subsys__bluetooth__crypto.dir/bt_crypto.c.obj
+2026-09-18T20:36:14.035Z [220/360] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/jesd216.c.obj
+2026-09-18T20:36:14.083Z [221/360] Building C object zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.obj
+2026-09-18T20:36:14.311Z [222/360] Linking C static library modules\nrf\subsys\nrf_security\src\libmbedcrypto.a
+2026-09-18T20:36:14.348Z [223/360] Building C object zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/sys_clock_init.c.obj
+2026-09-18T20:36:14.386Z [224/360] Building C object zephyr/drivers/bluetooth/CMakeFiles/drivers__bluetooth.dir/hci/ipc.c.obj
+2026-09-18T20:36:14.425Z [225/360] Building C object zephyr/drivers/mbox/CMakeFiles/drivers__mbox.dir/mbox_nrfx_ipc.c.obj
+2026-09-18T20:36:14.479Z [226/360] Building C object zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/clock_control_nrf.c.obj
+2026-09-18T20:36:14.513Z [227/360] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/soc_flash_nrf.c.obj
+2026-09-18T20:36:14.553Z [228/360] Building C object zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_nrfx.c.obj
+2026-09-18T20:36:14.588Z [229/360] Building C object zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/pinctrl_nrf.c.obj
+2026-09-18T20:36:14.631Z [230/360] Building C object modules/nrf/subsys/nrf_security/src/zephyr/CMakeFiles/mbedtls_zephyr.dir/mbedtls_heap.c.obj
+2026-09-18T20:36:14.685Z [231/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/bsp/stable/mdk/system_nrf5340_application.c.obj
+2026-09-18T20:36:14.741Z [232/360] Building C object zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/nrf_rtc_timer.c.obj
+2026-09-18T20:36:14.798Z [233/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/nrfx_glue.c.obj
+2026-09-18T20:36:14.854Z [234/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/helpers/nrfx_ram_ctrl.c.obj
+2026-09-18T20:36:14.906Z [235/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/helpers/nrfx_flag32_allocator.c.obj
+2026-09-18T20:36:14.939Z [236/360] Building C object modules/nrf/subsys/nrf_security/src/zephyr/CMakeFiles/mbedtls_zephyr.dir/psa_crypto_init.c.obj
+2026-09-18T20:36:14.985Z [237/360] Building C object modules/nrf/drivers/hw_cc3xx/CMakeFiles/..__nrf__drivers__hw_cc3xx.dir/hw_cc3xx.c.obj
+2026-09-18T20:36:15.052Z [238/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/smp.c.obj
+2026-09-18T20:36:15.141Z [239/360] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/nrf_qspi_nor.c.obj
+2026-09-18T20:36:15.217Z [240/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/conn.c.obj
+2026-09-18T20:36:15.288Z [241/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_clock.c.obj
+2026-09-18T20:36:15.338Z [242/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_hfclkaudio.c.obj
+2026-09-18T20:36:15.541Z [243/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_xo24m.c.obj
+2026-09-18T20:36:15.583Z [244/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_xo.c.obj
+2026-09-18T20:36:15.635Z [245/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/att.c.obj
+2026-09-18T20:36:15.687Z [246/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_hfclk192m.c.obj
+2026-09-18T20:36:15.748Z [247/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_hfclk.c.obj
+2026-09-18T20:36:15.804Z [248/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_clock_lfclk.c.obj
+2026-09-18T20:36:15.842Z [249/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/helpers/nrfx_gppi_dppi.c.obj
+2026-09-18T20:36:15.884Z [250/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/dma.c.obj
+2026-09-18T20:36:15.916Z [251/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_nvmc.c.obj
+2026-09-18T20:36:15.950Z [252/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/device.c.obj
+2026-09-18T20:36:15.985Z [253/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/init.c.obj
+2026-09-18T20:36:16.035Z [254/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_ipc.c.obj
+2026-09-18T20:36:16.073Z [255/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/io.c.obj
+2026-09-18T20:36:16.116Z [256/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/log.c.obj
+2026-09-18T20:36:16.162Z [257/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/irq.c.obj
+2026-09-18T20:36:16.231Z [258/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/version.c.obj
+2026-09-18T20:36:16.307Z [259/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/hci_core.c.obj
+2026-09-18T20:36:16.387Z [260/360] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/version.c.obj
+2026-09-18T20:36:16.425Z [261/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/shmem.c.obj
+2026-09-18T20:36:16.463Z [262/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/softirq.c.obj
+2026-09-18T20:36:16.497Z [263/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_qspi.c.obj
+2026-09-18T20:36:16.544Z [264/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/alloc.c.obj
+2026-09-18T20:36:16.577Z [265/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/device.c.obj
+2026-09-18T20:36:16.619Z [266/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/condition.c.obj
+2026-09-18T20:36:16.658Z [267/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/init.c.obj
+2026-09-18T20:36:16.693Z [268/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_uarte.c.obj
+2026-09-18T20:36:16.740Z [269/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/log.c.obj
+2026-09-18T20:36:16.785Z [270/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/irq.c.obj
+2026-09-18T20:36:16.823Z [271/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/shmem.c.obj
+2026-09-18T20:36:16.908Z [272/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/sys.c.obj
+2026-09-18T20:36:16.954Z [273/360] Building C object modules/libmetal/libmetal/lib/CMakeFiles/metal.dir/system/zephyr/time.c.obj
+2026-09-18T20:36:17.014Z [274/360] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/virtio/virtio.c.obj
+2026-09-18T20:36:17.058Z [275/360] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/virtio/virtqueue.c.obj
+2026-09-18T20:36:17.094Z [276/360] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/rpmsg/rpmsg.c.obj
+2026-09-18T20:36:17.128Z [277/360] Building C object zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/uart_nrfx_uarte.c.obj
+2026-09-18T20:36:17.181Z [278/360] Building C object modules/hal_nordic/modules/hal_nordic/nrfx/CMakeFiles/nrfx.dir/C_/ncs/v3.3.3/modules/hal/nordic/nrfx/drivers/src/nrfx_gpiote.c.obj
+2026-09-18T20:36:17.216Z [279/360] Building C object modules/segger/CMakeFiles/modules__segger.dir/C_/ncs/v3.3.3/modules/debug/segger/SEGGER/SEGGER_RTT.c.obj
+2026-09-18T20:36:17.268Z [280/360] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/rpmsg/rpmsg_virtio.c.obj
+2026-09-18T20:36:17.301Z [281/360] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/gatt.c.obj
+2026-09-18T20:36:17.350Z [282/360] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/utils/utilities.c.obj
+2026-09-18T20:36:17.395Z [283/360] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/remoteproc/rsc_table_parser.c.obj
+2026-09-18T20:36:17.434Z [284/360] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/remoteproc/elf_loader.c.obj
+2026-09-18T20:36:17.486Z [285/360] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/remoteproc/remoteproc_virtio.c.obj
+2026-09-18T20:36:17.519Z [286/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/main_weak.c.obj
+2026-09-18T20:36:17.554Z [287/360] Building C object modules/segger/CMakeFiles/modules__segger.dir/SEGGER_RTT_zephyr.c.obj
+2026-09-18T20:36:17.598Z [288/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/banner.c.obj
+2026-09-18T20:36:17.637Z [289/360] Building C object modules/open-amp/open-amp/lib/CMakeFiles/open_amp.dir/remoteproc/remoteproc.c.obj
+2026-09-18T20:36:17.683Z [290/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/busy_wait.c.obj
+2026-09-18T20:36:17.718Z [291/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/errno.c.obj
+2026-09-18T20:36:17.760Z [292/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/device.c.obj
+2026-09-18T20:36:17.794Z [293/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/version.c.obj
+2026-09-18T20:36:17.826Z [294/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/fatal.c.obj
+2026-09-18T20:36:17.865Z [295/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/float.c.obj
+2026-09-18T20:36:17.883Z [296/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/kheap.c.obj
+2026-09-18T20:36:17.911Z [297/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/init.c.obj
+2026-09-18T20:36:17.959Z [298/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mem_slab.c.obj
+2026-09-18T20:36:17.974Z [299/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/idle.c.obj
+2026-09-18T20:36:17.993Z [300/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mailbox.c.obj
+2026-09-18T20:36:18.016Z [301/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/system_work_q.c.obj
+2026-09-18T20:36:18.034Z [302/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/msg_q.c.obj
+2026-09-18T20:36:18.049Z [303/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/sem.c.obj
+2026-09-18T20:36:18.089Z [304/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/stack.c.obj
+2026-09-18T20:36:18.120Z [305/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/queue.c.obj
+2026-09-18T20:36:18.254Z [306/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/condvar.c.obj
+2026-09-18T20:36:18.277Z [307/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mutex.c.obj
+2026-09-18T20:36:18.304Z [308/360] Building C object zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj
+2026-09-18T20:36:18.320Z [309/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/thread.c.obj
+2026-09-18T20:36:18.394Z [310/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/spinlock_validate.c.obj
+2026-09-18T20:36:18.412Z [311/360] Linking C static library zephyr\arch\arch\arm\core\cortex_m\cmse\libarch__arm__core__cortex_m__cmse.a
+2026-09-18T20:36:18.429Z [312/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timeslicing.c.obj
+2026-09-18T20:36:18.448Z [313/360] Linking C static library zephyr\arch\common\libarch__common.a
+2026-09-18T20:36:18.465Z [314/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/pipe.c.obj
+2026-09-18T20:36:18.481Z [315/360] Linking C static library zephyr\arch\arch\arm\core\mpu\libarch__arm__core__mpu.a
+2026-09-18T20:36:18.498Z [316/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/work.c.obj
+2026-09-18T20:36:18.513Z [317/360] Linking C static library zephyr\arch\arch\arm\core\libarch__arm__core.a
+2026-09-18T20:36:18.531Z [318/360] Linking C static library zephyr\lib\libc\common\liblib__libc__common.a
+2026-09-18T20:36:18.545Z [319/360] Linking C static library zephyr\lib\posix\c_lib_ext\liblib__posix__c_lib_ext.a
+2026-09-18T20:36:18.563Z [320/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timer.c.obj
+2026-09-18T20:36:18.577Z [321/360] Linking C static library app\libapp.a
+2026-09-18T20:36:18.594Z [322/360] Linking C static library zephyr\lib\libc\picolibc\liblib__libc__picolibc.a
+2026-09-18T20:36:18.611Z [323/360] Linking C static library zephyr\arch\arch\arm\core\cortex_m\libarch__arm__core__cortex_m.a
+2026-09-18T20:36:18.656Z [324/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timeout.c.obj
+2026-09-18T20:36:18.725Z [325/360] Linking C static library zephyr\soc\soc\nrf5340\libsoc__nordic.a
+2026-09-18T20:36:18.775Z [326/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mempool.c.obj
+2026-09-18T20:36:18.792Z [327/360] Linking C static library zephyr\subsys\random\libsubsys__random.a
+2026-09-18T20:36:18.808Z [328/360] Linking C static library zephyr\lib\net_buf\liblib__net_buf.a
+2026-09-18T20:36:18.825Z [329/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/dynamic_disabled.c.obj
+2026-09-18T20:36:18.825Z [330/360] Linking C static library zephyr\drivers\bluetooth\libdrivers__bluetooth.a
+2026-09-18T20:36:18.825Z [331/360] Linking C static library zephyr\subsys\bluetooth\crypto\libsubsys__bluetooth__crypto.a
+2026-09-18T20:36:18.825Z [332/360] Linking C static library zephyr\subsys\crc\libsubsys__crc.a
+2026-09-18T20:36:18.826Z [333/360] Linking C static library zephyr\drivers\console\libdrivers__console.a
+2026-09-18T20:36:18.826Z [334/360] Linking C static library zephyr\drivers\entropy\libdrivers__entropy.a
+2026-09-18T20:36:18.827Z [335/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/poll.c.obj
+2026-09-18T20:36:18.841Z [336/360] Linking C static library zephyr\libzephyr.a
+2026-09-18T20:36:18.854Z [337/360] Building C object zephyr/kernel/CMakeFiles/kernel.dir/sched.c.obj
+2026-09-18T20:36:18.874Z [338/360] Linking C static library zephyr\drivers\serial\libdrivers__serial.a
+2026-09-18T20:36:18.874Z [339/360] Linking C static library zephyr\drivers\mbox\libdrivers__mbox.a
+2026-09-18T20:36:18.874Z [340/360] Linking C static library zephyr\subsys\bluetooth\common\libsubsys__bluetooth__common.a
+2026-09-18T20:36:18.874Z [341/360] Linking C static library zephyr\drivers\gpio\libdrivers__gpio.a
+2026-09-18T20:36:18.876Z [342/360] Linking C static library zephyr\drivers\pinctrl\libdrivers__pinctrl.a
+2026-09-18T20:36:18.887Z [343/360] Linking C static library zephyr\drivers\clock_control\libdrivers__clock_control.a
+2026-09-18T20:36:18.889Z [344/360] Linking C static library modules\nrf\subsys\nrf_security\src\zephyr\libmbedtls_zephyr.a
+2026-09-18T20:36:18.898Z [345/360] Linking C static library zephyr\drivers\flash\libdrivers__flash.a
+2026-09-18T20:36:18.898Z [346/360] Linking C static library zephyr\drivers\timer\libdrivers__timer.a
+2026-09-18T20:36:18.913Z [347/360] Linking C static library zephyr\subsys\bluetooth\host\libsubsys__bluetooth__host.a
+2026-09-18T20:36:18.919Z [348/360] Linking C static library modules\nrf\drivers\hw_cc3xx\lib..__nrf__drivers__hw_cc3xx.a
+2026-09-18T20:36:19.014Z [349/360] Linking C static library modules\segger\libmodules__segger.a
+2026-09-18T20:36:19.039Z [350/360] Linking C static library modules\open-amp\open-amp\lib\libopen_amp.a
+2026-09-18T20:36:19.049Z [351/360] Linking C static library modules\libmetal\libmetal\lib\libmetal.a
+2026-09-18T20:36:19.062Z [352/360] Linking C static library modules\hal_nordic\modules\hal_nordic\nrfx\libnrfx.a
+2026-09-18T20:36:19.133Z [353/360] Linking C static library zephyr\kernel\libkernel.a
+2026-09-18T20:36:19.629Z [354/360] Linking C executable zephyr\zephyr_pre0.elf; Logical command for additional byproducts on target: zephyr_pre0
+2026-09-18T20:36:19.895Z [355/360] Generating linker.cmd
+2026-09-18T20:36:20.257Z [356/360] Generating isr_tables.c, isr_tables_vt.ld, isr_tables_swi.ld
+2026-09-18T20:36:20.429Z [357/360] Building C object zephyr/CMakeFiles/zephyr_final.dir/misc/empty_file.c.obj
+2026-09-18T20:36:20.576Z [358/360] Building C object zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.obj
+2026-09-18T20:36:21.685Z [359/360] Linking C executable zephyr\zephyr.elf
+2026-09-18T20:36:21.685Z Memory region         Used Size  Region Size  %age Used
+2026-09-18T20:36:21.685Z            FLASH:      209604 B         1 MB     19.99%
+2026-09-18T20:36:21.685Z              RAM:       93692 B       448 KB     20.42%
+2026-09-18T20:36:21.685Z         IDT_LIST:          0 GB        32 KB      0.00%
+2026-09-18T20:36:21.685Z Generating files from C:/nrf_work/FALCON512PADDED/central_uart/build/zephyr/zephyr.elf for board: nrf5340dk/nrf5340/cpuapp
