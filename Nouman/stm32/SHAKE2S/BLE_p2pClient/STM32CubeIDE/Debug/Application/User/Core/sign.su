@@ -1,0 +1,10 @@
+../Application/User/Core/sign.c:20:8:PQCLEAN_SPHINCSSHAKE128SSIMPLE_CLEAN_crypto_sign_secretkeybytes	4	static
+../Application/User/Core/sign.c:27:8:PQCLEAN_SPHINCSSHAKE128SSIMPLE_CLEAN_crypto_sign_publickeybytes	4	static
+../Application/User/Core/sign.c:34:8:PQCLEAN_SPHINCSSHAKE128SSIMPLE_CLEAN_crypto_sign_bytes	4	static
+../Application/User/Core/sign.c:41:8:PQCLEAN_SPHINCSSHAKE128SSIMPLE_CLEAN_crypto_sign_seedbytes	4	static
+../Application/User/Core/sign.c:50:5:PQCLEAN_SPHINCSSHAKE128SSIMPLE_CLEAN_crypto_sign_seed_keypair	64	static
+../Application/User/Core/sign.c:82:5:PQCLEAN_SPHINCSSHAKE128SSIMPLE_CLEAN_crypto_sign_keypair	64	static
+../Application/User/Core/sign.c:93:5:PQCLEAN_SPHINCSSHAKE128SSIMPLE_CLEAN_crypto_sign_signature	232	static
+../Application/User/Core/sign.c:162:5:PQCLEAN_SPHINCSSHAKE128SSIMPLE_CLEAN_crypto_sign_verify	816	static
+../Application/User/Core/sign.c:247:5:PQCLEAN_SPHINCSSHAKE128SSIMPLE_CLEAN_crypto_sign	40	static
+../Application/User/Core/sign.c:263:5:PQCLEAN_SPHINCSSHAKE128SSIMPLE_CLEAN_crypto_sign_open	32	static

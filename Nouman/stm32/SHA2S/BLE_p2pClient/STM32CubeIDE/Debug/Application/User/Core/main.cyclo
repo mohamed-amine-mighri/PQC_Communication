@@ -1,0 +1,15 @@
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h:1679:22:LL_RCC_LSE_SetDriveCapability	1
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h:364:22:LL_AHB1_GRP1_EnableClock	1
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h:539:22:LL_AHB2_GRP1_EnableClock	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/main.c:103:5:main	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/main.c:167:6:SystemClock_Config	3
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/main.c:219:6:PeriphCommonClock_Config	2
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/main.c:244:13:MX_IPCC_Init	2
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/main.c:270:6:MX_LPUART1_UART_Init	5
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/main.c:318:6:MX_USART1_UART_Init	5
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/main.c:366:13:MX_RF_Init	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/main.c:387:13:MX_RNG_Init	2
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/main.c:414:13:MX_RTC_Init	3
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/main.c:455:13:MX_DMA_Init	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/main.c:478:13:MX_GPIO_Init	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/main.c:511:6:Error_Handler	1

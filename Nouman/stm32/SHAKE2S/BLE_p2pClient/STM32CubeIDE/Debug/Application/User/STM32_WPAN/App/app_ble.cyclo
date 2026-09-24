@@ -1,0 +1,22 @@
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h:2223:26:LL_FLASH_GetUDN	1
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h:2235:26:LL_FLASH_GetDeviceID	1
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_system.h:2247:26:LL_FLASH_GetSTCompanyID	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:236:6:APP_BLE_Init	3
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:367:28:SVCCTL_App_Notification	38
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:776:22:APP_BLE_Get_Client_Connection_Status	2
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:785:6:APP_BLE_Key_Button1_Action	2
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:801:6:APP_BLE_Key_Button2_Action	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:805:6:APP_BLE_Key_Button3_Action	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:814:13:Ble_Tl_Init	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:825:13:Ble_Hci_Gap_Gatt_Init	13
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:1037:13:Scan_Request	3
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:1071:13:Connect_Request	3
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:1116:13:Switch_OFF_GPIO	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:1123:16:BleGetBdAddress	3
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:1180:13:Start_Service_Discovery	2
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:1203:6:hci_notify_asynch_evt	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:1209:6:hci_cmd_resp_release	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:1215:6:hci_cmd_resp_wait	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:1221:13:BLE_UserEvtRx	2
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:1241:13:BLE_StatusNot	3
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/STM32_WPAN/App/app_ble.c:1270:6:SVCCTL_ResumeUserEventFlow	1

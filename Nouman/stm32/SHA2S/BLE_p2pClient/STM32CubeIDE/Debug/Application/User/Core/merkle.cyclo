@@ -1,0 +1,2 @@
+../Application/User/Core/merkle.c:17:6:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_merkle_sign	1
+../Application/User/Core/merkle.c:44:6:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_merkle_gen_root	1

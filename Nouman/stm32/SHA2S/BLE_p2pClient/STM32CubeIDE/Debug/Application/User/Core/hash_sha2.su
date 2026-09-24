@@ -1,0 +1,5 @@
+../Application/User/Core/hash_sha2.c:28:6:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_mgf1_256	96	dynamic
+../Application/User/Core/hash_sha2.c:53:6:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_mgf1_512	128	dynamic
+../Application/User/Core/hash_sha2.c:78:6:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_prf_addr	104	static
+../Application/User/Core/hash_sha2.c:104:6:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_gen_message_random	128	static
+../Application/User/Core/hash_sha2.c:156:6:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_hash_message	200	static

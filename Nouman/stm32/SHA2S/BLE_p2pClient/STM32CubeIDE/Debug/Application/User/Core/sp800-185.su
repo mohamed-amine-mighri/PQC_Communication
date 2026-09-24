@@ -1,0 +1,15 @@
+../Application/User/Core/sp800-185.c:6:15:left_encode	32	static
+../Application/User/Core/sp800-185.c:22:6:cshake128_inc_init	32	static
+../Application/User/Core/sp800-185.c:42:6:cshake128_inc_absorb	24	static
+../Application/User/Core/sp800-185.c:46:6:cshake128_inc_finalize	48	static
+../Application/User/Core/sp800-185.c:52:6:cshake128_inc_squeeze	24	static
+../Application/User/Core/sp800-185.c:56:6:cshake128_inc_ctx_release	16	static
+../Application/User/Core/sp800-185.c:60:6:cshake128_inc_ctx_clone	16	static
+../Application/User/Core/sp800-185.c:64:6:cshake256_inc_init	32	static
+../Application/User/Core/sp800-185.c:84:6:cshake256_inc_absorb	24	static
+../Application/User/Core/sp800-185.c:88:6:cshake256_inc_finalize	48	static
+../Application/User/Core/sp800-185.c:94:6:cshake256_inc_squeeze	24	static
+../Application/User/Core/sp800-185.c:98:6:cshake256_inc_ctx_release	16	static
+../Application/User/Core/sp800-185.c:102:6:cshake256_inc_ctx_clone	16	static
+../Application/User/Core/sp800-185.c:120:6:cshake128	40	static
+../Application/User/Core/sp800-185.c:146:6:cshake256	40	static

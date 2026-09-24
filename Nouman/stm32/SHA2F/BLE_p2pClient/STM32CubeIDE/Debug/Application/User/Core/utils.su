@@ -1,0 +1,5 @@
+../Application/User/Core/utils.c:14:6:PQCLEAN_SPHINCSSHA2128FSIMPLE_CLEAN_ull_to_bytes	32	static
+../Application/User/Core/utils.c:25:6:PQCLEAN_SPHINCSSHA2128FSIMPLE_CLEAN_u32_to_bytes	16	static
+../Application/User/Core/utils.c:35:20:PQCLEAN_SPHINCSSHA2128FSIMPLE_CLEAN_bytes_to_ull	48	static
+../Application/User/Core/utils.c:49:6:PQCLEAN_SPHINCSSHA2128FSIMPLE_CLEAN_compute_root	72	static
+../Application/User/Core/utils.c:101:6:PQCLEAN_SPHINCSSHA2128FSIMPLE_CLEAN_treehash	104	dynamic

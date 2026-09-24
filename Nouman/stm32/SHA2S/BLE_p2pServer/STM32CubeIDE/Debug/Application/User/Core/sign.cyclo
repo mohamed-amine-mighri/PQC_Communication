@@ -1,0 +1,10 @@
+../Application/User/Core/sign.c:20:8:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_crypto_sign_secretkeybytes	1
+../Application/User/Core/sign.c:27:8:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_crypto_sign_publickeybytes	1
+../Application/User/Core/sign.c:34:8:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_crypto_sign_bytes	1
+../Application/User/Core/sign.c:41:8:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_crypto_sign_seedbytes	1
+../Application/User/Core/sign.c:50:5:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_crypto_sign_seed_keypair	1
+../Application/User/Core/sign.c:82:5:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_crypto_sign_keypair	1
+../Application/User/Core/sign.c:93:5:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_crypto_sign_signature	2
+../Application/User/Core/sign.c:162:5:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_crypto_sign_verify	4
+../Application/User/Core/sign.c:247:5:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_crypto_sign	1
+../Application/User/Core/sign.c:263:5:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_crypto_sign_open	3

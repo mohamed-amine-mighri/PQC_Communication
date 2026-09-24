@@ -1,0 +1,10 @@
+../../Core/Inc/fpr.h:126:1:fpr_ursh	72	static
+../../Core/Inc/fpr.h:150:1:fpr_ulsh	72	static
+../../Core/Inc/fpr.h:171:1:FPR	128	static
+../../Core/Inc/fpr.h:357:1:fpr_trunc	96	static
+../Application/User/Core/fpr.c:80:1:PQCLEAN_FALCONPADDED512_CLEAN_fpr_scaled	400	static
+../Application/User/Core/fpr.c:135:1:PQCLEAN_FALCONPADDED512_CLEAN_fpr_add	576	static
+../Application/User/Core/fpr.c:242:1:PQCLEAN_FALCONPADDED512_CLEAN_fpr_mul	360	static
+../Application/User/Core/fpr.c:337:1:PQCLEAN_FALCONPADDED512_CLEAN_fpr_div	304	static
+../Application/User/Core/fpr.c:423:1:PQCLEAN_FALCONPADDED512_CLEAN_fpr_sqrt	280	static
+../Application/User/Core/fpr.c:499:1:PQCLEAN_FALCONPADDED512_CLEAN_fpr_expm_p63	416	static

@@ -1,0 +1,5 @@
+../Application/User/Core/wots.c:23:13:gen_chain	40	static
+../Application/User/Core/wots.c:43:13:base_w	48	static
+../Application/User/Core/wots.c:64:13:wots_checksum	32	static
+../Application/User/Core/wots.c:83:6:PQCLEAN_SPHINCSSHAKE128FSIMPLE_CLEAN_chain_lengths	16	static
+../Application/User/Core/wots.c:93:6:PQCLEAN_SPHINCSSHAKE128FSIMPLE_CLEAN_wots_pk_from_sig	184	static

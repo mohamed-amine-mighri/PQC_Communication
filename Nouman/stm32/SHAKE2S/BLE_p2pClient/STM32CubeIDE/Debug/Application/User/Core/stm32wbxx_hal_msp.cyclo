@@ -1,0 +1,20 @@
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h:2883:22:LL_RCC_EnableRTC	1
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_rcc.h:2893:22:LL_RCC_DisableRTC	1
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h:539:22:LL_AHB2_GRP1_EnableClock	1
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h:744:22:LL_AHB3_GRP1_EnableClock	1
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h:798:22:LL_AHB3_GRP1_DisableClock	1
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h:939:22:LL_APB1_GRP1_EnableClock	1
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h:958:22:LL_APB1_GRP2_EnableClock	1
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h:1038:22:LL_APB1_GRP1_DisableClock	1
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h:1053:22:LL_APB1_GRP2_DisableClock	1
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h:1274:22:LL_APB2_GRP1_EnableClock	1
+../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_ll_bus.h:1328:22:LL_APB2_GRP1_DisableClock	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/stm32wbxx_hal_msp.c:65:6:HAL_MspInit	1
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/stm32wbxx_hal_msp.c:92:6:HAL_IPCC_MspInit	2
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/stm32wbxx_hal_msp.c:120:6:HAL_IPCC_MspDeInit	2
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/stm32wbxx_hal_msp.c:146:6:HAL_UART_MspInit	8
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/stm32wbxx_hal_msp.c:280:6:HAL_UART_MspDeInit	3
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/stm32wbxx_hal_msp.c:337:6:HAL_RNG_MspInit	3
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/stm32wbxx_hal_msp.c:371:6:HAL_RNG_MspDeInit	2
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/stm32wbxx_hal_msp.c:393:6:HAL_RTC_MspInit	3
+C:/Users/BIG BANG/STM32Cube/Repository/STM32Cube_FW_WB_V1.24.0/Projects/P-NUCLEO-WB55.Nucleo/Applications/My_work/BLE_p2pClient/Core/Src/stm32wbxx_hal_msp.c:431:6:HAL_RTC_MspDeInit	2

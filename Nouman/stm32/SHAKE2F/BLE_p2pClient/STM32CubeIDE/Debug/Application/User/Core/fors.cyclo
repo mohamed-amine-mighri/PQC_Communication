@@ -1,0 +1,6 @@
+../Application/User/Core/fors.c:13:13:fors_gen_sk	1
+../Application/User/Core/fors.c:18:13:fors_sk_to_leaf	1
+../Application/User/Core/fors.c:28:13:fors_gen_leafx1	1
+../Application/User/Core/fors.c:49:13:message_to_indices	3
+../Application/User/Core/fors.c:66:6:PQCLEAN_SPHINCSSHAKE128FSIMPLE_CLEAN_fors_sign	2
+../Application/User/Core/fors.c:118:6:PQCLEAN_SPHINCSSHAKE128FSIMPLE_CLEAN_fors_pk_from_sig	2

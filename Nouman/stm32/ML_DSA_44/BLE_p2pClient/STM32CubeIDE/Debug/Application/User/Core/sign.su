@@ -1,0 +1,9 @@
+../Application/User/Core/sign.c:23:5:PQCLEAN_MLDSA44_CLEAN_crypto_sign_keypair	37104	static
+../Application/User/Core/sign.c:84:5:PQCLEAN_MLDSA44_CLEAN_crypto_sign_signature_ctx	50552	static
+../Application/User/Core/sign.c:215:5:PQCLEAN_MLDSA44_CLEAN_crypto_sign_ctx	48	static
+../Application/User/Core/sign.c:248:5:PQCLEAN_MLDSA44_CLEAN_crypto_sign_verify_ctx	34760	static
+../Application/User/Core/sign.c:344:5:PQCLEAN_MLDSA44_CLEAN_crypto_sign_open_ctx	48	static
+../Application/User/Core/sign.c:378:5:PQCLEAN_MLDSA44_CLEAN_crypto_sign_signature	40	static
+../Application/User/Core/sign.c:386:5:PQCLEAN_MLDSA44_CLEAN_crypto_sign	40	static
+../Application/User/Core/sign.c:394:5:PQCLEAN_MLDSA44_CLEAN_crypto_sign_verify	40	static
+../Application/User/Core/sign.c:402:5:PQCLEAN_MLDSA44_CLEAN_crypto_sign_open	40	static

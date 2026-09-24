@@ -1,0 +1,4 @@
+../Application/User/Core/rounding.c:17:9:PQCLEAN_MLDSA44_CLEAN_power2round	24	static
+../Application/User/Core/rounding.c:39:9:PQCLEAN_MLDSA44_CLEAN_decompose	24	static
+../Application/User/Core/rounding.c:62:14:PQCLEAN_MLDSA44_CLEAN_make_hint	16	static
+../Application/User/Core/rounding.c:80:9:PQCLEAN_MLDSA44_CLEAN_use_hint	24	static

@@ -1,0 +1,3 @@
+../Application/User/Core/hash_shake.c:14:6:PQCLEAN_SPHINCSSHAKE128SSIMPLE_CLEAN_prf_addr	1
+../Application/User/Core/hash_shake.c:29:6:PQCLEAN_SPHINCSSHAKE128SSIMPLE_CLEAN_gen_message_random	1
+../Application/User/Core/hash_shake.c:50:6:PQCLEAN_SPHINCSSHAKE128SSIMPLE_CLEAN_hash_message	1

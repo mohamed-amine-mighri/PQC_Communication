@@ -1,0 +1,8 @@
+../Application/User/Core/codec.c:36:1:PQCLEAN_FALCONPADDED512_CLEAN_modq_encode	8
+../Application/User/Core/codec.c:76:1:PQCLEAN_FALCONPADDED512_CLEAN_modq_decode	6
+../Application/User/Core/codec.c:115:1:PQCLEAN_FALCONPADDED512_CLEAN_trim_i16_encode	9
+../Application/User/Core/codec.c:159:1:PQCLEAN_FALCONPADDED512_CLEAN_trim_i16_decode	7
+../Application/User/Core/codec.c:209:1:PQCLEAN_FALCONPADDED512_CLEAN_trim_i8_encode	9
+../Application/User/Core/codec.c:253:1:PQCLEAN_FALCONPADDED512_CLEAN_trim_i8_decode	7
+../Application/User/Core/codec.c:302:1:PQCLEAN_FALCONPADDED512_CLEAN_comp_encode	12
+../Application/User/Core/codec.c:398:1:PQCLEAN_FALCONPADDED512_CLEAN_comp_decode	11

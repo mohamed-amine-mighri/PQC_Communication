@@ -1,0 +1,5 @@
+../Application/User/Core/wots.c:23:13:gen_chain	3
+../Application/User/Core/wots.c:43:13:base_w	3
+../Application/User/Core/wots.c:64:13:wots_checksum	2
+../Application/User/Core/wots.c:83:6:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_chain_lengths	1
+../Application/User/Core/wots.c:93:6:PQCLEAN_SPHINCSSHA2128SSIMPLE_CLEAN_wots_pk_from_sig	2

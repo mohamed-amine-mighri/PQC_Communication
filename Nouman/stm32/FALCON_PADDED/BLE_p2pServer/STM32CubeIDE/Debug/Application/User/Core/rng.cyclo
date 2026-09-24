@@ -1,0 +1,3 @@
+../Application/User/Core/rng.c:38:1:PQCLEAN_FALCONPADDED512_CLEAN_prng_init	2
+../Application/User/Core/rng.c:82:1:PQCLEAN_FALCONPADDED512_CLEAN_prng_refill	6
+../Application/User/Core/rng.c:169:1:PQCLEAN_FALCONPADDED512_CLEAN_prng_get_bytes	4

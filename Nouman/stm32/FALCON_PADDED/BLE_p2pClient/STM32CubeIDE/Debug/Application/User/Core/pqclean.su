@@ -1,0 +1,7 @@
+../Application/User/Core/pqclean.c:41:1:PQCLEAN_FALCONPADDED512_CLEAN_crypto_sign_keypair	17000	static
+../Application/User/Core/pqclean.c:122:1:do_sign	41080	static
+../Application/User/Core/pqclean.c:217:1:do_verify	4152	static
+../Application/User/Core/pqclean.c:287:1:PQCLEAN_FALCONPADDED512_CLEAN_crypto_sign_signature	40	static
+../Application/User/Core/pqclean.c:303:1:PQCLEAN_FALCONPADDED512_CLEAN_crypto_sign_verify	32	static
+../Application/User/Core/pqclean.c:318:1:PQCLEAN_FALCONPADDED512_CLEAN_crypto_sign	40	static
+../Application/User/Core/pqclean.c:342:1:PQCLEAN_FALCONPADDED512_CLEAN_crypto_sign_open	48	static

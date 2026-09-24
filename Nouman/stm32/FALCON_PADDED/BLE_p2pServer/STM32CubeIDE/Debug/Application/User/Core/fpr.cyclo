@@ -1,0 +1,10 @@
+../../Core/Inc/fpr.h:126:1:fpr_ursh	1
+../../Core/Inc/fpr.h:150:1:fpr_ulsh	1
+../../Core/Inc/fpr.h:171:1:FPR	1
+../../Core/Inc/fpr.h:357:1:fpr_trunc	1
+../Application/User/Core/fpr.c:80:1:PQCLEAN_FALCONPADDED512_CLEAN_fpr_scaled	1
+../Application/User/Core/fpr.c:135:1:PQCLEAN_FALCONPADDED512_CLEAN_fpr_add	1
+../Application/User/Core/fpr.c:242:1:PQCLEAN_FALCONPADDED512_CLEAN_fpr_mul	1
+../Application/User/Core/fpr.c:337:1:PQCLEAN_FALCONPADDED512_CLEAN_fpr_div	2
+../Application/User/Core/fpr.c:423:1:PQCLEAN_FALCONPADDED512_CLEAN_fpr_sqrt	2
+../Application/User/Core/fpr.c:499:1:PQCLEAN_FALCONPADDED512_CLEAN_fpr_expm_p63	2
