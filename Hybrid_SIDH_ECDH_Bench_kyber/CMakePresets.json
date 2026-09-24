@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": { "major": 3, "minor": 16 },
+  "configurePresets": [
+    { "name": "release", "generator": "Unix Makefiles", "binaryDir": "build", "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release", "USE_LIBOQS": "ON", "USE_PQSIDH": "ON"
+    }}
+  ],
+  "buildPresets": [
+    { "name": "release", "configurePreset": "release" }
+  ]
+}

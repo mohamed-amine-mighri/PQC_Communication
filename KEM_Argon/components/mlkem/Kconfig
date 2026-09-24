@@ -1,0 +1,17 @@
+menu "ML-KEM configuration"
+
+    choice MLKEM_VARIANT
+        prompt "Select ML-KEM variant"
+        default MLKEM_512
+
+        config MLKEM_512
+            bool "ML-KEM-512"
+
+        config MLKEM_768
+            bool "ML-KEM-768"
+
+        config MLKEM_1024
+            bool "ML-KEM-1024"
+    endchoice
+
+endmenu

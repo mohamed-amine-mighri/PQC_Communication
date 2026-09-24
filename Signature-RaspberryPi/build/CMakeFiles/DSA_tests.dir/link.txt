@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/DSA_tests.dir/link.d "CMakeFiles/DSA_tests.dir/DSA-Test.c.o" CMakeFiles/DSA_tests.dir/transport.c.o CMakeFiles/DSA_tests.dir/queue.c.o -o DSA_tests  /usr/local/lib/liboqs.a /usr/lib/aarch64-linux-gnu/libpaho-mqtt3c.so /usr/lib/aarch64-linux-gnu/libcrypto.so

@@ -1,0 +1,151 @@
+# Signature-Argon  
+## Benchmark des signatures post-quantiques sur Particle Argon
+
+---
+
+## Présentation
+
+Ce module implémente l’évaluation expérimentale de plusieurs schémas de signature post-quantique (PQC) sur la plateforme Particle Argon.
+
+L’objectif est de mesurer les performances des algorithmes dans un environnement embarqué contraint, en termes de :
+
+- Temps d’exécution  
+- Consommation mémoire  
+- Comportement en conditions réelles  
+
+---
+
+## Algorithmes évalués
+
+Les implémentations proviennent de PQClean.
+
+### ML-DSA (Dilithium)
+- ML_DSA_44  
+- ML_DSA_65  
+- ML_DSA_87  
+
+### Falcon
+- FALCON_512  
+- FALCON_PADDED variants *(limité sur Argon)* 
+
+### SPHINCS+
+- SPHINCS_SHAKE_128S  
+- SPHINCS_SHAKE_128F  
+- SPHINCS_SHA_128S*  
+- SPHINCS_SHA_128F*  
+
+---
+
+## Configuration du benchmark
+
+Les paramètres sont définis à la compilation :
+
+```cpp
+#define BENCH_ALG "ML_DSA_44"
+#define BENCH_OP  "keypair"
+
+#define KEYPAIR_ITERS 20
+#define SV_ITERS 0
+#define WHOLE_ITERS 0
+
+#define MSG_LEN 32
+#define WARMUP 0
+#define YIELD_MS 10
+
+
+Build & Flash
+particle compile argon .
+particle flash --usb argon...
+particle serial monitor
+
+Types d’opérations
+Opération	Description
+keypair	Génération de clés
+sign	Signature
+verify	Vérification
+whole	Chaîne complète (keypair + sign + verify)
+Compilation et flash
+particle compile argon .
+particle flash --usb argon
+particle serial monitor
+Format des résultats
+
+Les résultats sont générés au format JSONL :
+
+{
+ "platform":"argon-local",
+ "scope":"local",
+ "alg":"ML_DSA_44",
+ "op":"sign",
+ "iter":0,
+ "msg_len":32,
+ "time_us":170284,
+ "free_mem_before":46464,
+ "free_mem_after":46464,
+ "mem_delta":0,
+ "min_free_mem_during":46464,
+ "pk_len":1312,
+ "sk_len":2560,
+ "sig_len":2420,
+ "ok":1
+}
+Métriques mesurées
+Temps
+time_us : temps d’exécution en microsecondes
+Mémoire
+free_mem_before : mémoire libre avant
+free_mem_after : mémoire libre après
+mem_delta : différence (souvent ≈ 0)
+min_free_mem_during : minimum observé pendant l’exécution (critique)
+
+Mémoire réellement utilisée :
+
+memory_used = free_mem_before - min_free_mem_during
+Limitations sur Argon
+Falcon-1024
+keypair fonctionne
+sign instable (crash / reset)
+Falcon padded 1024
+non supporté pour sign
+SPHINCS+
+temps très élevés
+exécution parfois longue
+
+Ces limitations sont dues aux contraintes mémoire et CPU de la plateforme.
+
+Méthodologie
+Mesures répétées (20 itérations)
+Isolation des opérations (sign et verify sans keypair)
+Instrumentation mémoire via System.freeMemory()
+Capture du minimum mémoire pendant exécution
+
+Résultats typiques (Argon)
+Algo	Keypair	Sign	Verify
+ML-DSA-44	~130 ms	~170 ms	~120 ms
+Falcon-512	~6–8 s	élevé	rapide
+SPHINCS+	très élevé	très élevé	élevé
+Structure du projet
+src/
+ ├── main.cpp
+ ├── bench_local.cpp
+ ├── bench_local.h
+
+lib/pqc/
+ ├── dsa.cpp
+ ├── dsa.h
+ ├── PQClean/
+ ├── randombytes_particle.cpp
+ ├── fips202.c
+ ├── sha2.c
+Conclusion
+
+Le Particle Argon permet d’exécuter certains algorithmes post-quantiques, mais :
+
+les contraintes mémoire sont fortes
+certaines variantes ne sont pas exploitables
+ML-DSA offre le meilleur compromis performance / coût
+Auteur
+
+Mamadou Senghor
+Master IA & Science des Données
+Projet : Benchmark PQC embarqué

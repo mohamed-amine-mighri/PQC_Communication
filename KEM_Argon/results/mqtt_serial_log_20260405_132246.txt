@@ -1,0 +1,217 @@
+====================
+Starting ML-KEM Argon
+====================
+Reset reason: 70
+Running in BENCHMARK MQTT MODE
+Role: client  |  Iterations: 10
+Waiting for WiFi...
+WiFi connected!
+MQTT Benchmark thread started (32KB stack).
+========================================
+[MQTT BENCHMARK] ML-KEM over MQTT
+[MQTT BENCHMARK] Variant    : ML-KEM-768
+[MQTT BENCHMARK] Role       : client
+[MQTT BENCHMARK] Iterations : 10
+[MQTT BENCHMARK] Free heap  : 69336 bytes
+========================================
+[MQTT BENCHMARK] Setting up transport...
+[MQTT BENCHMARK] Transport ready: 2966.428 ms
+[MQTT BENCHMARK] Warmup iteration...
+[C] READY sent, waiting for ACK...
+[MQTT] Received on topic mlkem/esp32/server_send length=3 bytes: 41 43 4B
+[MQTT] Detected raw ACK prefix
+[MQTT] ACK pushed to queue
+[C] READY/ACK: 302.697 ms
+[MQTT] Received on topic mlkem/esp32/server_send length=1186 bytes: 04 A0 43 00 9A 7D D4 2A ...
+[MQTT] Pushing 1186 bytes to queue
+[MQTT] Message pushed successfully
+[C] PK received: 215.814 ms (1186 bytes)
+[C] Encaps: 39.616 ms
+[C] CT sent: 1.536 ms (1088 bytes)
+[MQTT] Received on topic mlkem/esp32/server_send length=34 bytes: 00 20 90 37 AC 1B 59 2A ...
+[MQTT] Pushing 34 bytes to queue
+[MQTT] Message pushed successfully
+[C] SS received: 60.235 ms | match=YES
+[C] Total handshake: 621.997 ms
+[MQTT BENCHMARK] Warmup: 621.997 ms (discarded)
+--- Iteration 1/10 ---
+[C] READY sent, waiting for ACK...
+[MQTT] Received on topic mlkem/esp32/server_send length=3 bytes: 41 43 4B
+[MQTT] Detected raw ACK prefix
+[MQTT] ACK pushed to queue
+[C] READY/ACK: 222.198 ms
+[MQTT] Received on topic mlkem/esp32/server_send length=1186 bytes: 04 A0 44 F7 71 12 DC AA ...
+[MQTT] Pushing 1186 bytes to queue
+[MQTT] Message pushed successfully
+[C] PK received: 36.043 ms (1186 bytes)
+[C] Encaps: 29.461 ms
+[C] CT sent: 1.320 ms (1088 bytes)
+[MQTT] Received on topic mlkem/esp32/server_send length=34 bytes: 00 20 26 C8 FC 97 BE 06 ...
+[MQTT] Pushing 34 bytes to queue
+[MQTT] Message pushed successfully
+[C] SS received: 41.586 ms | match=YES
+[C] Total handshake: 332.514 ms
+Iter  1 | Init: 222.198  Crypto:  29.461  Network:  78.949  Total: 332.514 ms | OK
+--- Iteration 2/10 ---
+[C] READY sent, waiting for ACK...
+[MQTT] Received on topic mlkem/esp32/server_send length=3 bytes: 41 43 4B
+[MQTT] Detected raw ACK prefix
+[MQTT] ACK pushed to queue
+[C] READY/ACK: 321.696 ms
+[MQTT] Received on topic mlkem/esp32/server_send length=1186 bytes: 04 A0 10 1B 39 71 5A 48 ...
+[MQTT] Pushing 1186 bytes to queue
+[MQTT] Message pushed successfully
+[C] PK received: 231.684 ms (1186 bytes)
+[C] Encaps: 30.226 ms
+[C] CT sent: 1.302 ms (1088 bytes)
+[MQTT] Received on topic mlkem/esp32/server_send length=34 bytes: 00 20 B6 CB 38 A5 D8 A3 ...
+[MQTT] Pushing 34 bytes to queue
+[MQTT] Message pushed successfully
+[C] SS received: 50.217 ms | match=YES
+[C] Total handshake: 637.051 ms
+Iter  2 | Init: 321.696  Crypto:  30.226  Network: 283.203  Total: 637.051 ms | OK
+--- Iteration 3/10 ---
+[C] READY sent, waiting for ACK...
+[MQTT] Received on topic mlkem/esp32/server_send length=3 bytes: 41 43 4B
+[MQTT] Detected raw ACK prefix
+[MQTT] ACK pushed to queue
+[C] READY/ACK: 40.966 ms
+[MQTT] Received on topic mlkem/esp32/server_send length=1186 bytes: 04 A0 CF 48 14 AE DA 16 ...
+[MQTT] Pushing 1186 bytes to queue
+[MQTT] Message pushed successfully
+[C] PK received: 248.084 ms (1186 bytes)
+[C] Encaps: 30.758 ms
+[C] CT sent: 1.330 ms (1088 bytes)
+[MQTT] Received on topic mlkem/esp32/server_send length=34 bytes: 00 20 77 F5 EC 22 E1 54 ...
+[MQTT] Pushing 34 bytes to queue
+[MQTT] Message pushed successfully
+[C] SS received: 40.160 ms | match=YES
+[C] Total handshake: 363.202 ms
+Iter  3 | Init:  40.966  Crypto:  30.758  Network: 289.574  Total: 363.202 ms | OK
+--- Iteration 4/10 ---
+[C] READY sent, waiting for ACK...
+[MQTT] Received on topic mlkem/esp32/server_send length=3 bytes: 41 43 4B
+[MQTT] Detected raw ACK prefix
+[MQTT] ACK pushed to queue
+[C] READY/ACK: 30.819 ms
+[MQTT] Received on topic mlkem/esp32/server_send length=1186 bytes: 04 A0 32 71 59 83 80 3C ...
+[MQTT] Pushing 1186 bytes to queue
+[MQTT] Message pushed successfully
+[C] PK received: 279.753 ms (1186 bytes)
+[C] Encaps: 30.140 ms
+[C] CT sent: 1.303 ms (1088 bytes)
+[MQTT] Received on topic mlkem/esp32/server_send length=34 bytes: 00 20 05 6C 13 54 48 F4 ...
+[MQTT] Pushing 34 bytes to queue
+[MQTT] Message pushed successfully
+[C] SS received: 50.248 ms | match=YES
+[C] Total handshake: 394.210 ms
+Iter  4 | Init:  30.819  Crypto:  30.140  Network: 331.304  Total: 394.210 ms | OK
+--- Iteration 5/10 ---
+[C] READY sent, waiting for ACK...
+[MQTT] Received on topic mlkem/esp32/server_send length=3 bytes: 41 43 4B
+[MQTT] Detected raw ACK prefix
+[MQTT] ACK pushed to queue
+[C] READY/ACK: 40.825 ms
+[MQTT] Received on topic mlkem/esp32/server_send length=1186 bytes: 04 A0 82 DB 0A 6E 81 B6 ...
+[MQTT] Pushing 1186 bytes to queue
+[MQTT] Message pushed successfully
+[C] PK received: 263.797 ms (1186 bytes)
+[C] Encaps: 31.200 ms
+[C] CT sent: 1.267 ms (1088 bytes)
+[MQTT] Received on topic mlkem/esp32/server_send length=34 bytes: 00 20 2A A6 E7 32 EA 05 ...
+[MQTT] Pushing 34 bytes to queue
+[MQTT] Message pushed successfully
+[C] SS received: 50.204 ms | match=YES
+[C] Total handshake: 389.357 ms
+Iter  5 | Init:  40.825  Crypto:  31.200  Network: 315.268  Total: 389.357 ms | OK
+--- Iteration 6/10 ---
+[C] READY sent, waiting for ACK...
+[MQTT] Received on topic mlkem/esp32/server_send length=3 bytes: 41 43 4B
+[MQTT] Detected raw ACK prefix
+[MQTT] ACK pushed to queue
+[C] READY/ACK: 281.590 ms
+[MQTT] Received on topic mlkem/esp32/server_send length=1186 bytes: 04 A0 DB 90 AE 40 8C 12 ...
+[MQTT] Pushing 1186 bytes to queue
+[MQTT] Message pushed successfully
+[C] PK received: 334.125 ms (1186 bytes)
+[C] Encaps: 30.465 ms
+[C] CT sent: 1.303 ms (1088 bytes)
+[MQTT] Received on topic mlkem/esp32/server_send length=34 bytes: 00 20 C6 75 C5 2F DD F0 ...
+[MQTT] Pushing 34 bytes to queue
+[MQTT] Message pushed successfully
+[C] SS received: 50.278 ms | match=YES
+[C] Total handshake: 699.844 ms
+Iter  6 | Init: 281.590  Crypto:  30.465  Network: 385.706  Total: 699.844 ms | OK
+--- Iteration 7/10 ---
+[C] READY sent, waiting for ACK...
+[MQTT] Received on topic mlkem/esp32/server_send length=3 bytes: 41 43 4B
+[MQTT] Detected raw ACK prefix
+[MQTT] ACK pushed to queue
+[C] READY/ACK: 211.374 ms
+[MQTT] Received on topic mlkem/esp32/server_send length=1186 bytes: 04 A0 45 B5 57 1D 8B 8C ...
+[MQTT] Pushing 1186 bytes to queue
+[MQTT] Message pushed successfully
+[C] PK received: 343.631 ms (1186 bytes)
+[C] Encaps: 29.101 ms
+[C] CT sent: 1.303 ms (1088 bytes)
+[MQTT] Received on topic mlkem/esp32/server_send length=34 bytes: 00 20 03 E8 83 10 15 CD ...
+[MQTT] Pushing 34 bytes to queue
+[MQTT] Message pushed successfully
+[C] SS received: 70.275 ms | match=YES
+[C] Total handshake: 657.595 ms
+Iter  7 | Init: 211.374  Crypto:  29.101  Network: 415.209  Total: 657.595 ms | OK
+--- Iteration 8/10 ---
+[C] READY sent, waiting for ACK...
+[MQTT] Received on topic mlkem/esp32/server_send length=3 bytes: 41 43 4B
+[MQTT] Detected raw ACK prefix
+[MQTT] ACK pushed to queue
+[C] READY/ACK: 202.366 ms
+[MQTT] Received on topic mlkem/esp32/server_send length=1186 bytes: 04 A0 A3 24 C1 CE 05 8D ...
+[MQTT] Pushing 1186 bytes to queue
+[MQTT] Message pushed successfully
+[C] PK received: 337.765 ms (1186 bytes)
+[C] Encaps: 29.123 ms
+[C] CT sent: 1.316 ms (1088 bytes)
+[MQTT] Received on topic mlkem/esp32/server_send length=34 bytes: 00 20 30 F7 29 B9 81 2F ...
+[MQTT] Pushing 34 bytes to queue
+[MQTT] Message pushed successfully
+[C] SS received: 61.502 ms | match=YES
+[C] Total handshake: 633.993 ms
+Iter  8 | Init: 202.366  Crypto:  29.123  Network: 400.583  Total: 633.993 ms | OK
+--- Iteration 9/10 ---
+[C] READY sent, waiting for ACK...
+[MQTT] Received on topic mlkem/esp32/server_send length=3 bytes: 41 43 4B
+[MQTT] Detected raw ACK prefix
+[MQTT] ACK pushed to queue
+[C] READY/ACK: 321.662 ms
+[MQTT] Received on topic mlkem/esp32/server_send length=1186 bytes: 04 A0 82 C8 11 D8 37 A2 ...
+[MQTT] Pushing 1186 bytes to queue
+[MQTT] Message pushed successfully
+[C] PK received: 234.991 ms (1186 bytes)
+[C] Encaps: 29.046 ms
+[C] CT sent: 1.303 ms (1088 bytes)
+[MQTT] Received on topic mlkem/esp32/server_send length=34 bytes: 00 20 FD 2E DC 2F 8F 31 ...
+[MQTT] Pushing 34 bytes to queue
+[MQTT] Message pushed successfully
+[C] SS received: 70.279 ms | match=YES
+[C] Total handshake: 659.272 ms
+Iter  9 | Init: 321.662  Crypto:  29.046  Network: 306.573  Total: 659.272 ms | OK
+--- Iteration 10/10 ---
+[C] READY sent, waiting for ACK...
+[MQTT] Received on topic mlkem/esp32/server_send length=3 bytes: 41 43 4B
+[MQTT] Detected raw ACK prefix
+[MQTT] ACK pushed to queue
+[C] READY/ACK: 201.367 ms
+[MQTT] Received on topic mlkem/esp32/server_send length=1186 bytes: 04 A0 F4 B2 B7 51 25 89 ...
+[MQTT] Pushing 1186 bytes to queue
+[MQTT] Message pushed successfully
+[C] PK received: 434.631 ms (1186 bytes)
+[C] Encaps: 30.997 ms
+[C] CT sent: 1.328 ms (1088 bytes)
+[MQTT] Received on topic mlkem/esp32/server_send length=34 bytes: 00 20 92 34 D4 E2 89 0B ...
+[MQTT] Pushing 34 bytes to queue
+[MQTT] Message pushed successfully
+[C] SS received: 143.558 ms | match=YES
+[C] Total handshake: 813.801 ms
+Iter 10 | Init: 201.367  Crypto:  30.997  Network: 579.517  Total: 813.801 ms | OK
+[MQTT BENCHMARK] Completed 10/10 iterations
