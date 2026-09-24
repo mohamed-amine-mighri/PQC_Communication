@@ -1,0 +1,64 @@
+# Build outputs
+build/
+Build/
+Debug/
+Release/
+out/
+bin/
+obj/
+
+# Zephyr / nRF build outputs
+build*/
+zephyr/.config
+zephyr/zephyr.*
+zephyr/include/generated/
+zephyr/misc/generated/
+
+# West / nRF generated files
+.west/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# C/C++ generated files
+*.o
+*.obj
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.d
+*.su
+*.a
+*.so
+*.dll
+*.exe
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE / OS files
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*~
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Windows reserved files
+nul
+**/nul
