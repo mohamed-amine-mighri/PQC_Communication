@@ -1,6 +1,4 @@
-# ==============================
 # Build outputs
-# ==============================
 build/
 Build/
 Debug/
@@ -9,19 +7,21 @@ out/
 bin/
 obj/
 
-# Particle build files
-.particle/
-target/
+# Zephyr / nRF build outputs
+build*/
+zephyr/.config
+zephyr/zephyr.*
+zephyr/include/generated/
+zephyr/misc/generated/
 
-# ==============================
+# West / nRF generated files
+.west/
+
 # VS Code
-# ==============================
 .vscode/
 *.code-workspace
 
-# ==============================
 # C/C++ generated files
-# ==============================
 *.o
 *.obj
 *.elf
@@ -36,36 +36,29 @@ target/
 *.dll
 *.exe
 
-# ==============================
-# Temporary / backup files
-# ==============================
+# Python
+__pycache__/
+*.pyc
+
+# IDE / OS files
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
 *.tmp
 *.temp
 *.log
 *.bak
 *.swp
 *~
-.DS_Store
-Thumbs.db
 
-# ==============================
-# Python cache
-# ==============================
-__pycache__/
-*.pyc
-
-# ==============================
-# IDE-generated files
-# ==============================
-.idea/
-
-# ==============================
-# Secrets / environment files
-# ==============================
+# Secrets
 .env
 .env.*
 *.pem
 *.key
-# Windows reserved NUL files
+
+# Windows reserved files
 nul
 **/nul
