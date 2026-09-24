@@ -11,4 +11,5 @@ C:\Users\BIG BANG\STM32Cube\Repository\
             └── Applications\
 Than in Application make a new folder. 
 Copy the desire 'BLE_p2pClient' and 'BLE_p2pServer' code into the folder.
+Open .project file inside STM32CubeIDE
 Build and run the code on boards.
